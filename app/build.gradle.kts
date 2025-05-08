@@ -1,0 +1,99 @@
+import io.gitlab.arturbosch.detekt.extensions.DetektExtension.Companion.DEFAULT_SRC_DIR_JAVA
+import io.gitlab.arturbosch.detekt.extensions.DetektExtension.Companion.DEFAULT_SRC_DIR_KOTLIN
+
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.detekt.gradle)
+    alias(libs.plugins.google.services)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+}
+
+android {
+    namespace = "com.example.vibeaway"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.vibeaway"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_21.toString()
+    }
+
+    buildFeatures {
+        compose = true
+    }
+}
+
+dependencies {
+    // ANDROID X
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.startup.runtime)
+
+    // COMPOSE
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+
+    // DETEKT
+    detektPlugins(libs.detekt.formatting)
+    implementation(libs.okhttp3)
+    // Network
+    implementation(platform(libs.retrofit.bom))
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+
+    // FIREBASE
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore.ktx)
+
+    // KOIN
+    implementation(platform(libs.koin.bom))
+    implementation(libs.koin.compose)
+
+    // KOTLIN X
+    implementation(libs.kotlinx.immutableCollections)
+
+    // NAVIGATION
+    implementation(libs.navigation.compose)
+}
+
+detekt {
+    source.setFrom(
+        DEFAULT_SRC_DIR_JAVA,
+        DEFAULT_SRC_DIR_KOTLIN,
+        "${project.rootDir}/app/$DEFAULT_SRC_DIR_JAVA",
+        "${project.rootDir}/app/$DEFAULT_SRC_DIR_KOTLIN",
+    )
+    buildUponDefaultConfig = true
+    parallel = true
+    autoCorrect = true
+    config.setFrom("$rootDir/detekt/detekt.yml")
+}
