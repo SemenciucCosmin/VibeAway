@@ -1,0 +1,52 @@
+package com.example.vibeaway.data.datasource
+
+import com.example.vibeaway.data.model.BFIDimension
+import com.example.vibeaway.data.model.BFIQuestion
+import com.example.vibeaway.data.model.BFIQuestionDTO
+import kotlinx.serialization.json.Json
+import java.util.Collections
+
+class BFIQuestionsDataSourceImpl : BFIQuestionsDataSource, JsonDataSource() {
+
+    private val bfiQuestions: MutableList<BFIQuestion> =
+        Collections.synchronizedList(mutableListOf())
+
+    override fun getBfiQuestions(): List<BFIQuestion> {
+        return when {
+            this.bfiQuestions.isNotEmpty() -> this.bfiQuestions
+
+            else -> {
+                val bfiQuestionsFromFile = getBfiQuestionsFromFile()
+                this.bfiQuestions.clear()
+                this.bfiQuestions.addAll(bfiQuestionsFromFile)
+                bfiQuestionsFromFile
+            }
+        }
+    }
+
+    private fun getBfiQuestionsFromFile(): List<BFIQuestion> {
+        val jsonString = getJson(FILE_PATH)
+        val bfiQuestionDTOs = Json.decodeFromString<List<BFIQuestionDTO>>(jsonString)
+        return mapBFIQuestionDTOtoBFIQuestion(bfiQuestionDTOs)
+    }
+
+    private fun mapBFIQuestionDTOtoBFIQuestion(
+        bfiQuestionDTOs: List<BFIQuestionDTO>
+    ): List<BFIQuestion> {
+        return bfiQuestionDTOs.mapNotNull { bfiQuestionDTO ->
+            val bfiDimensionId = bfiQuestionDTO.bfiDimensionId ?: return@mapNotNull null
+            val bfiDimension = BFIDimension.getBFIDimensionById(bfiDimensionId)
+
+            BFIQuestion(
+                id = bfiQuestionDTO.id ?: return@mapNotNull null,
+                text = bfiQuestionDTO.text ?: return@mapNotNull null,
+                bfiDimension = bfiDimension ?: return@mapNotNull null,
+                reverseScore = bfiQuestionDTO.reverseScore,
+            )
+        }
+    }
+
+    companion object {
+        private const val FILE_PATH = "big_five_inventory_questions.json"
+    }
+}

@@ -1,6 +1,6 @@
 package com.example.vibeaway.data.model
 
-data class Question(
+data class BFIQuestion(
     val id: Int,
     val text: String,
     val bfiDimension: BFIDimension,

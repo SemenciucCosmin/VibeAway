@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.google.services)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -64,7 +65,8 @@ dependencies {
     // DETEKT
     detektPlugins(libs.detekt.formatting)
     implementation(libs.okhttp3)
-    // Network
+
+    // NETWORK
     implementation(platform(libs.retrofit.bom))
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
@@ -80,6 +82,7 @@ dependencies {
 
     // KOTLIN X
     implementation(libs.kotlinx.immutableCollections)
+    implementation(libs.kotlinx.serialization.json)
 
     // NAVIGATION
     implementation(libs.navigation.compose)
