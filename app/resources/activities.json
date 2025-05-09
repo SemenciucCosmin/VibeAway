@@ -1,0 +1,410 @@
+[
+  {
+    "id": "A1",
+    "description": "Go to a Gastronomy Festival (food and/or drinks)",
+    "categoryId": "F9",
+    "estimatedCorrelation": 0.798
+  },
+  {
+    "id": "A2",
+    "description": "Watch a natural phenomenon (e.g., volcanic eruption or northern lights)",
+    "categoryId": "F11",
+    "estimatedCorrelation": 0.686
+  },
+  {
+    "id": "A3",
+    "description": "Watch a religious celebration",
+    "categoryId": "F7",
+    "estimatedCorrelation": 0.531
+  },
+  {
+    "id": "A4",
+    "description": "Visit the historic cities/villages of the destination",
+    "categoryId": "F7",
+    "estimatedCorrelation": 0.690
+  },
+  {
+    "id": "A5",
+    "description": "Visit an oceanarium",
+    "categoryId": "F6",
+    "estimatedCorrelation": 0.667
+  },
+  {
+    "id": "A6",
+    "description": "Visit caves/caverns/volcanoes",
+    "categoryId": "F11",
+    "estimatedCorrelation": 0.626
+  },
+  {
+    "id": "A7",
+    "description": "Visit archeological sites / ruins",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A8",
+    "description": "Attend cultural activities / artistic performances",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A9",
+    "description": "Go to the disco/nightclub",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.581
+  },
+  {
+    "id": "A10",
+    "description": "Appreciate natural landscapes",
+    "categoryId": "F2",
+    "estimatedCorrelation": 0.655
+  },
+  {
+    "id": "A11",
+    "description": "Do hiking/mountaineering",
+    "categoryId": "F2",
+    "estimatedCorrelation": 0.760
+  },
+  {
+    "id": "A12",
+    "description": "Practice aquatic sports (e.g., sailing, canoeing, diving, jet skiing)",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.711
+  },
+  {
+    "id": "A13",
+    "description": "Go to a theme park (e.g., Disneyland Paris)",
+    "categoryId": "F6",
+    "estimatedCorrelation": 0.670
+  },
+  {
+    "id": "A14",
+    "description": "Undergo health and wellness treatments (e.g., hydrotherapy centers, mineral water resorts)",
+    "categoryId": "F10",
+    "estimatedCorrelation": 0.724
+  },
+  {
+    "id": "A15",
+    "description": "Go to a Zoo",
+    "categoryId": "F6",
+    "estimatedCorrelation": 0.774
+  },
+  {
+    "id": "A16",
+    "description": "Attend a typical celebration of the destination (e.g., popular celebrations, carnivals, fireworks)",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A17",
+    "description": "Go to a film festival",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.596
+  },
+  {
+    "id": "A18",
+    "description": "Taste typical local dishes",
+    "categoryId": "F9",
+    "estimatedCorrelation": 0.693
+  },
+  {
+    "id": "A19",
+    "description": "Visit a botanical garden",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A20",
+    "description": "Visit monuments (e.g., churches, cathedrals, castles, fortresses, monasteries, palaces, etc.)",
+    "categoryId": "F7",
+    "estimatedCorrelation": 0.775
+  },
+  {
+    "id": "A21",
+    "description": "Visit a beach for its natural beauty",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A22",
+    "description": "Go to the beach (sunbathing/ swimming)",
+    "categoryId": "F4",
+    "estimatedCorrelation": 0.707
+  },
+  {
+    "id": "A23",
+    "description": "To enjoy / buy local handicrafts",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A24",
+    "description": "Ride a bike",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A25",
+    "description": "Go to a funfair (e.g., amusements such as Ferris wheel, bumper cars, etc.)",
+    "categoryId": "F6",
+    "estimatedCorrelation": 0.563
+  },
+  {
+    "id": "A26",
+    "description": "Attend gyms/fitness centers",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A27",
+    "description": "Go to a water park",
+    "categoryId": "F6",
+    "estimatedCorrelation": 0.619
+  },
+  {
+    "id": "A28",
+    "description": "Go to a SPA/beauty center",
+    "categoryId": "F10",
+    "estimatedCorrelation": 0.626
+  },
+  {
+    "id": "A29",
+    "description": "Do motorsports (e.g., karting, motocross)",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.658
+  },
+  {
+    "id": "A30",
+    "description": "Have a picnic",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A31",
+    "description": "To go shopping / see storefronts (window shopping)",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A32",
+    "description": "Visit museums of historical themes",
+    "categoryId": "F5",
+    "estimatedCorrelation": 0.780
+  },
+  {
+    "id": "A33",
+    "description": "Visit museums of scientific themes (e.g., planetarium, paleontology)",
+    "categoryId": "F5",
+    "estimatedCorrelation": 0.742
+  },
+  {
+    "id": "A34",
+    "description": "Visit viewpoints of natural landscape",
+    "categoryId": "F5",
+    "estimatedCorrelation": 0.786
+  },
+  {
+    "id": "A35",
+    "description": "Visit viewpoints of urban landscape",
+    "categoryId": "F5",
+    "estimatedCorrelation": 0.707
+  },
+  {
+    "id": "A36",
+    "description": "Visit nature or wildlife reserves",
+    "categoryId": "F2",
+    "estimatedCorrelation": 0.546
+  },
+  {
+    "id": "A37",
+    "description": "Observe sub-aquatic environments/marine life (e.g., snorkeling, submarine)",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.521
+  },
+  {
+    "id": "A38",
+    "description": "Visit large man-made constructions (e.g., bridges, tunnels, mines)",
+    "categoryId": "F7",
+    "estimatedCorrelation": 0.539
+  },
+  {
+    "id": "A39",
+    "description": "Go to a thematic parade (e.g., military, electronic music)",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.472
+  },
+  {
+    "id": "A40",
+    "description": "Participate in a gastronomy tour (typical and/or gourmet dishes, wine tasting)",
+    "categoryId": "F9",
+    "estimatedCorrelation": 0.770
+  },
+  {
+    "id": "A41",
+    "description": "Walk in the forest/woods",
+    "categoryId": "F2",
+    "estimatedCorrelation": 0.843
+  },
+  {
+    "id": "A42",
+    "description": "Take a walk along the river/sea coast",
+    "categoryId": "F2",
+    "estimatedCorrelation": 0.667
+  },
+  {
+    "id": "A43",
+    "description": "Go to a music festival/concert",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.796
+  },
+  {
+    "id": "A44",
+    "description": "Go to a dance/ballet festival",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.790
+  },
+  {
+    "id": "A45",
+    "description": "Go to balls (dancing)",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.743
+  },
+  {
+    "id": "A46",
+    "description": "Practice climbing or bungee jumping",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.799
+  },
+  {
+    "id": "A47",
+    "description": "Visit mountain areas/gorges",
+    "categoryId": "F2",
+    "estimatedCorrelation": 0.618
+  },
+  {
+    "id": "A48",
+    "description": "Go to a live music bar/place",
+    "categoryId": "F3",
+    "estimatedCorrelation": 0.677
+  },
+  {
+    "id": "A49",
+    "description": "Take boat trips to know the destination's coast",
+    "categoryId": "F5",
+    "estimatedCorrelation": 0.714
+  },
+  {
+    "id": "A50",
+    "description": "Take boat trips for the historical value of the route",
+    "categoryId": "F5",
+    "estimatedCorrelation": 0.729
+  },
+  {
+    "id": "A51",
+    "description": "Take boat trips for the pleasure of boating",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A52",
+    "description": "Take a walk in a city park",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A53",
+    "description": "Play ball sports (e.g., football, handball, volleyball, tennis)",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A54",
+    "description": "Do a safari",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A55",
+    "description": "Play at the casino",
+    "categoryId": "F8",
+    "estimatedCorrelation": 0.561
+  },
+  {
+    "id": "A56",
+    "description": "Assist to a sporting competition (e.g., watch a football game from a club of that country)",
+    "categoryId": "F8",
+    "estimatedCorrelation": 0.499
+  },
+  {
+    "id": "A57",
+    "description": "Ride a horse",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A58",
+    "description": "Hunt/fish",
+    "categoryId": "F8",
+    "estimatedCorrelation": 0.713
+  },
+  {
+    "id": "A59",
+    "description": "Participate in an escape game",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.436
+  },
+  {
+    "id": "A60",
+    "description": "Watch a bullfight",
+    "categoryId": "F8",
+    "estimatedCorrelation": 0.698
+  },
+  {
+    "id": "A61",
+    "description": "Go to the circus",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A62",
+    "description": "Go on a cruise",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A63",
+    "description": "Do air sports (e.g., parachute jump, skydiving, gliding)",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.774
+  },
+  {
+    "id": "A64",
+    "description": "Go to the swimming pool to swim/dive",
+    "categoryId": "F4",
+    "estimatedCorrelation": 0.745
+  },
+  {
+    "id": "A65",
+    "description": "Go to the swimming pool to relax",
+    "categoryId": "F4",
+    "estimatedCorrelation": 0.803
+  },
+  {
+    "id": "A66",
+    "description": "Have vacation on an island",
+    "categoryId": "F4",
+    "estimatedCorrelation": 0.694
+  },
+  {
+    "id": "A67",
+    "description": "Assist an opera/theater",
+    "categoryId": "",
+    "estimatedCorrelation": 0
+  },
+  {
+    "id": "A68",
+    "description": "Ski",
+    "categoryId": "F1",
+    "estimatedCorrelation": 0.734
+  }
+]

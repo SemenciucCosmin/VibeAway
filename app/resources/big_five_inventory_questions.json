@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "text": "I am the life of the party",
+    "bfiDimensionId": "E",
+    "reverseScore": false
+  },
+  {
+    "id": 2,
+    "text": "I feel little concern for others",
+    "bfiDimensionId": "A",
+    "reverseScore": true
+  },
+  {
+    "id": 3,
+    "text": "I am always prepared",
+    "bfiDimensionId": "C",
+    "reverseScore": false
+  },
+  {
+    "id": 4,
+    "text": "I get stressed out easily",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 5,
+    "text": "I have a rich vocabulary",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  },
+  {
+    "id": 6,
+    "text": "I don't talk a lot",
+    "bfiDimensionId": "E",
+    "reverseScore": true
+  },
+  {
+    "id": 7,
+    "text": "I am interested in people",
+    "bfiDimensionId": "A",
+    "reverseScore": false
+  },
+  {
+    "id": 8,
+    "text": "I leave my belongings around",
+    "bfiDimensionId": "C",
+    "reverseScore": true
+  },
+  {
+    "id": 9,
+    "text": "I am relaxed most of the time",
+    "bfiDimensionId": "N",
+    "reverseScore": true
+  },
+  {
+    "id": 10,
+    "text": "I have difficulty understanding abstract ideas",
+    "bfiDimensionId": "O",
+    "reverseScore": true
+  },
+  {
+    "id": 11,
+    "text": "I feel comfortable around people",
+    "bfiDimensionId": "E",
+    "reverseScore": false
+  },
+  {
+    "id": 12,
+    "text": "I insult people",
+    "bfiDimensionId": "A",
+    "reverseScore": true
+  },
+  {
+    "id": 13,
+    "text": "I pay attention to details",
+    "bfiDimensionId": "C",
+    "reverseScore": false
+  },
+  {
+    "id": 14,
+    "text": "I worry about things",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 15,
+    "text": "I have a vivid imagination",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  },
+  {
+    "id": 16,
+    "text": "I keep in the background",
+    "bfiDimensionId": "E",
+    "reverseScore": true
+  },
+  {
+    "id": 17,
+    "text": "I sympathize with others' feelings",
+    "bfiDimensionId": "A",
+    "reverseScore": false
+  },
+  {
+    "id": 18,
+    "text": "I make a mess of things",
+    "bfiDimensionId": "C",
+    "reverseScore": true
+  },
+  {
+    "id": 19,
+    "text": "I rarely feel blue",
+    "bfiDimensionId": "N",
+    "reverseScore": true
+  },
+  {
+    "id": 20,
+    "text": "I am not interested in abstract ideas",
+    "bfiDimensionId": "O",
+    "reverseScore": true
+  },
+  {
+    "id": 21,
+    "text": "I start conversations",
+    "bfiDimensionId": "E",
+    "reverseScore": false
+  },
+  {
+    "id": 22,
+    "text": "I am not interested in other people's problems",
+    "bfiDimensionId": "A",
+    "reverseScore": true
+  },
+  {
+    "id": 23,
+    "text": "I get chores done right away",
+    "bfiDimensionId": "C",
+    "reverseScore": false
+  },
+  {
+    "id": 24,
+    "text": "I am easily disturbed",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 25,
+    "text": "I have excellent ideas",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  },
+  {
+    "id": 26,
+    "text": "I have little to say",
+    "bfiDimensionId": "E",
+    "reverseScore": true
+  },
+  {
+    "id": 27,
+    "text": "I have a soft heart",
+    "bfiDimensionId": "A",
+    "reverseScore": false
+  },
+  {
+    "id": 28,
+    "text": "I often forget to put things back in their proper place",
+    "bfiDimensionId": "C",
+    "reverseScore": true
+  },
+  {
+    "id": 29,
+    "text": "I get upset easily",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 30,
+    "text": "I do not have a good imagination",
+    "bfiDimensionId": "O",
+    "reverseScore": true
+  },
+  {
+    "id": 31,
+    "text": "I talk to a lot of different people at parties",
+    "bfiDimensionId": "E",
+    "reverseScore": false
+  },
+  {
+    "id": 32,
+    "text": "I am not really interested in others",
+    "bfiDimensionId": "A",
+    "reverseScore": true
+  },
+  {
+    "id": 33,
+    "text": "I like order",
+    "bfiDimensionId": "C",
+    "reverseScore": false
+  },
+  {
+    "id": 34,
+    "text": "I change my mood a lot",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 35,
+    "text": "I am quick to understand things",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  },
+  {
+    "id": 36,
+    "text": "I don't like to draw attention to myself",
+    "bfiDimensionId": "E",
+    "reverseScore": true
+  },
+  {
+    "id": 37,
+    "text": "I take time out for others",
+    "bfiDimensionId": "A",
+    "reverseScore": false
+  },
+  {
+    "id": 38,
+    "text": "I shirk my duties",
+    "bfiDimensionId": "C",
+    "reverseScore": true
+  },
+  {
+    "id": 39,
+    "text": "I have frequent mood swings",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 40,
+    "text": "I use difficult words",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  },
+  {
+    "id": 41,
+    "text": "I don't mind being the center of attention",
+    "bfiDimensionId": "E",
+    "reverseScore": false
+  },
+  {
+    "id": 42,
+    "text": "I feel others' emotions",
+    "bfiDimensionId": "A",
+    "reverseScore": false
+  },
+  {
+    "id": 43,
+    "text": "I follow a schedule",
+    "bfiDimensionId": "C",
+    "reverseScore": false
+  },
+  {
+    "id": 44,
+    "text": "I get irritated easily",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 45,
+    "text": "I spend time reflecting on things",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  },
+  {
+    "id": 46,
+    "text": "I am quiet around strangers",
+    "bfiDimensionId": "E",
+    "reverseScore": true
+  },
+  {
+    "id": 47,
+    "text": "I make people feel at ease",
+    "bfiDimensionId": "A",
+    "reverseScore": false
+  },
+  {
+    "id": 48,
+    "text": "I am exacting in my work",
+    "bfiDimensionId": "C",
+    "reverseScore": false
+  },
+  {
+    "id": 49,
+    "text": "I often feel blue",
+    "bfiDimensionId": "N",
+    "reverseScore": false
+  },
+  {
+    "id": 50,
+    "text": "I am full of ideas",
+    "bfiDimensionId": "O",
+    "reverseScore": false
+  }
+]

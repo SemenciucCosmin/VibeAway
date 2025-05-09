@@ -1,0 +1,288 @@
+[
+  {
+    "id": "F1",
+    "name": "Adrenaline",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.039
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.320
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.715
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.024
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.012
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Wild Nature",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": 0.017
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.223
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.404
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.573
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.053
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Party, Music & Nightlife",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.115
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.108
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.751
+      },
+      {
+        "id": "A",
+        "regressionWeight": -0.050
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.129
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "Sun, Water & Sand",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.232
+      },
+      {
+        "id": "C",
+        "regressionWeight": 0.016
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.617
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.008
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.076
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Museums, Boat trips & Viewpoints",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": 0.078
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.182
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.063
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.525
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.078
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Theme & Animal Parks",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.204
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.077
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.790
+      },
+      {
+        "id": "A",
+        "regressionWeight": -0.123
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.128
+      }
+    ]
+  },
+  {
+    "id": "F7",
+    "name": "Cultural Heritage",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.006
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.006
+      },
+      {
+        "id": "E",
+        "regressionWeight": -0.019
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.625
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.044
+      }
+    ]
+  },
+  {
+    "id": "F8",
+    "name": "Sports & Games",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.152
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.150
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.717
+      },
+      {
+        "id": "A",
+        "regressionWeight": -0.309
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.010
+      }
+    ]
+  },
+  {
+    "id": "F9",
+    "name": "Gastronomy Events",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.116
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.089
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.459
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.187
+      },
+      {
+        "id": "N",
+        "regressionWeight": -0.010
+      }
+    ]
+  },
+  {
+    "id": "F10",
+    "name": "Health & Well-being",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": -0.143
+      },
+      {
+        "id": "C",
+        "regressionWeight": 0.079
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.649
+      },
+      {
+        "id": "A",
+        "regressionWeight": -0.168
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.144
+      }
+    ]
+  },
+  {
+    "id": "F11",
+    "name": "Natural Phenomena ",
+    "bfiDimensionsInfo": [
+      {
+        "id": "O",
+        "regressionWeight": 0.020
+      },
+      {
+        "id": "C",
+        "regressionWeight": -0.365
+      },
+      {
+        "id": "E",
+        "regressionWeight": 0.336
+      },
+      {
+        "id": "A",
+        "regressionWeight": 0.605
+      },
+      {
+        "id": "N",
+        "regressionWeight": 0.045
+      }
+    ]
+  }
+]
