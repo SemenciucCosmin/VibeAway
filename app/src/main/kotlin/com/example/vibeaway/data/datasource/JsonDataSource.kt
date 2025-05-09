@@ -1,10 +1,12 @@
 package com.example.vibeaway.data.datasource
 
+/**
+ * Data source for managing access to json filed.
+ */
 abstract class JsonDataSource {
 
     /**
-     * Returns a json string from a certain file at [path].
-     * Should be a json file saved under resources folder.
+     * Returns the content of a json file specified at [path] as a [String].
      */
     fun getJson(path: String): String {
         val inputStream = requireNotNull(

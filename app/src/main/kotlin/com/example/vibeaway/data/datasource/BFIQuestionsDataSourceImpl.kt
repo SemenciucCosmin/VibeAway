@@ -6,11 +6,20 @@ import com.example.vibeaway.data.model.BFIQuestionDTO
 import kotlinx.serialization.json.Json
 import java.util.Collections
 
+/**
+ * Data source for providing the list of [BFIQuestion] from a json file or from in memory cache.
+ */
 class BFIQuestionsDataSourceImpl : BFIQuestionsDataSource, JsonDataSource() {
 
+    /**
+     * In memory cache for list of [BFIQuestion]
+     */
     private val bfiQuestions: MutableList<BFIQuestion> =
         Collections.synchronizedList(mutableListOf())
 
+    /**
+     * Parses a json file into a list of [BFIQuestion] or retrieves it from in memory cache.
+     */
     override fun getBfiQuestions(): List<BFIQuestion> {
         return when {
             this.bfiQuestions.isNotEmpty() -> this.bfiQuestions
@@ -24,12 +33,18 @@ class BFIQuestionsDataSourceImpl : BFIQuestionsDataSource, JsonDataSource() {
         }
     }
 
+    /**
+     * Parses a json file into a list of [BFIQuestionDTO] and maps it to a list of [BFIQuestion].
+     */
     private fun getBfiQuestionsFromFile(): List<BFIQuestion> {
         val jsonString = getJson(FILE_PATH)
         val bfiQuestionDTOs = Json.decodeFromString<List<BFIQuestionDTO>>(jsonString)
         return mapBFIQuestionDTOtoBFIQuestion(bfiQuestionDTOs)
     }
 
+    /**
+     * Maps a list of [BFIQuestionDTO] to a list of [BFIQuestion].
+     */
     private fun mapBFIQuestionDTOtoBFIQuestion(
         bfiQuestionDTOs: List<BFIQuestionDTO>
     ): List<BFIQuestion> {

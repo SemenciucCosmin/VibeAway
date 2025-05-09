@@ -2,15 +2,25 @@ package com.example.vibeaway.data.repository
 
 import com.example.vibeaway.data.datasource.ActivitiesDataSource
 import com.example.vibeaway.data.datasource.ActivityCategoriesDataSource
+import com.example.vibeaway.data.model.Activity
+import com.example.vibeaway.data.model.ActivityCategory
 import com.example.vibeaway.data.model.BFIResult
 import com.example.vibeaway.data.model.CompatibleActivity
 import com.example.vibeaway.data.model.CompatibleActivityCategory
 
+/**
+ * Repository responsible with computing a set of compatible [Location] with a BFI dataset, using
+ * multiple datasets that include [ActivityCategory], [Activity] etc.
+ */
 class RecommendationRepositoryImpl(
     private val activityCategoriesDataSource: ActivityCategoriesDataSource,
     private val activitiesDataSource: ActivitiesDataSource,
 ) : RecommendationRepository {
 
+    /**
+     * Returns a list of [CompatibleActivityCategory] by computing some correlations between
+     * a dataset of [BFIResult] and a dataset of [ActivityCategory]
+     */
     private fun getCompatibleActivityCategories(
         bfiResults: List<BFIResult>
     ): List<CompatibleActivityCategory> {
@@ -32,6 +42,10 @@ class RecommendationRepositoryImpl(
         }
     }
 
+    /**
+     * Returns a list of [CompatibleActivity] by computing some correlations between
+     * a dataset of [CompatibleActivityCategory] and a dataset of [Activity]
+     */
     private fun getCompatibleActivities(
         compatibleActivityCategories: List<CompatibleActivityCategory>
     ): List<CompatibleActivity> {
@@ -46,7 +60,7 @@ class RecommendationRepositoryImpl(
 
             CompatibleActivity(
                 id = activity.id,
-                compatibilityScore = score
+                score = score
             )
         }
     }

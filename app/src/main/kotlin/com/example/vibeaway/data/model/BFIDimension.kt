@@ -1,5 +1,9 @@
 package com.example.vibeaway.data.model
 
+/**
+ * Enum class for all possible BFI dimensions
+ * @param [id]: unique identifier of the object
+ */
 enum class BFIDimension(val id: String) {
     OPENNESS(id = "O"),
     CONSCIENTIOUSNESS(id = "C"),
