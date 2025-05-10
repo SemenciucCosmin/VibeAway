@@ -1,5 +1,13 @@
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension.Companion.DEFAULT_SRC_DIR_JAVA
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension.Companion.DEFAULT_SRC_DIR_KOTLIN
+import java.util.Properties
+
+val localProperties = Properties().apply {
+    load(project.rootProject.file("local.properties").inputStream())
+}
+
+val amadeusApiKey = localProperties.getProperty("AMADEUS_API_KEY") ?: ""
+val amadeusApiSecret = localProperties.getProperty("AMADEUS_API_SECRET") ?: ""
 
 plugins {
     alias(libs.plugins.android.application)
@@ -22,6 +30,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "AMADEUS_API_KEY", "\"${amadeusApiKey}\"")
+        buildConfigField("String", "AMADEUS_API_SECRET", "\"${amadeusApiSecret}\"")
     }
 
     buildTypes {
