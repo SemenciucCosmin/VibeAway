@@ -2,7 +2,7 @@ package com.example.vibeaway.domain.init
 
 import android.content.Context
 import androidx.startup.Initializer
-import com.example.vibeaway.domain.auth.AuthTokenDataSource
+import com.example.vibeaway.data.network.datasource.AuthTokenDataSource
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
 

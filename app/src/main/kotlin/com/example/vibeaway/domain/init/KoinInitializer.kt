@@ -3,10 +3,10 @@ package com.example.vibeaway.domain.init
 import android.content.Context
 import androidx.startup.Initializer
 import com.example.vibeaway.BuildConfig
+import com.example.vibeaway.data.network.di.networkDataModule
+import com.example.vibeaway.data.quiz.di.quizDataModule
+import com.example.vibeaway.data.recommendation.di.recommendationDataModule
 import com.example.vibeaway.di.appModule
-import com.example.vibeaway.di.authModule
-import com.example.vibeaway.di.dataModule
-import com.example.vibeaway.di.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -18,12 +18,12 @@ class KoinInitializer : Initializer<Unit> {
             modules(
                 listOf(
                     appModule(),
-                    authModule(
+                    networkDataModule(
                         amadeusApiKey = BuildConfig.AMADEUS_API_KEY,
                         amadeusApiSecret = BuildConfig.AMADEUS_API_SECRET,
                     ),
-                    dataModule(),
-                    networkModule(),
+                    quizDataModule(),
+                    recommendationDataModule()
                 )
             )
         }
