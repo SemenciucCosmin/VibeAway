@@ -1,9 +1,9 @@
-package com.example.vibeaway.feature.auth.component
+package com.example.vibeaway.ui.catalog.components
 
+import android.R.attr.contentDescription
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
@@ -12,24 +12,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.vibeaway.R
-import com.example.vibeaway.ui.catalog.dimension.IconSize
 import com.example.vibeaway.ui.catalog.dimension.Radius
 import com.example.vibeaway.ui.catalog.dimension.Spacing
 import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
-/**
- * Custom button for google authentication.
- */
 @Composable
-fun AuthGoogleButton(
-    label: String,
+fun PrimaryButton(
+    text: String,
     onClick: () -> Unit,
-    modifier: Modifier = Modifier,
+    modifier: Modifier = Modifier
 ) {
     Button(
         modifier = modifier,
@@ -41,16 +36,14 @@ fun AuthGoogleButton(
                 horizontalArrangement = Arrangement.spacedBy(Spacing.Small),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Icon(
-                    tint = Color.Unspecified,
-                    modifier = Modifier.size(IconSize.Small),
-                    painter = painterResource(R.drawable.ic_google),
-                    contentDescription = null
+                Text(
+                    text = text,
+                    style = MaterialTheme.typography.labelLarge,
                 )
 
-                Text(
-                    text = label,
-                    style = MaterialTheme.typography.labelLarge,
+                Icon(
+                    painter = painterResource(R.drawable.ic_arrow),
+                    contentDescription = null
                 )
             }
         }
@@ -60,11 +53,11 @@ fun AuthGoogleButton(
 @Preview
 @PreviewVibeAway
 @Composable
-private fun PreviewAuthGoogleButton() {
+private fun PreviewPrimaryButton() {
     VibeAwayTheme {
-        AuthGoogleButton(
-            label = "Sign in with Google",
-            onClick = {},
+        PrimaryButton(
+            text = "Button",
+            onClick = {}
         )
     }
 }

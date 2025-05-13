@@ -9,7 +9,6 @@ import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 class MainActivity : ComponentActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

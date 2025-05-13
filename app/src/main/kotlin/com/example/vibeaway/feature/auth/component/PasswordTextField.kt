@@ -2,6 +2,7 @@ package com.example.vibeaway.feature.auth.component
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -17,8 +18,9 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.vibeaway.R
-import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.catalog.dimension.IconSize
+import com.example.vibeaway.ui.catalog.dimension.Radius
+import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 /**
@@ -40,6 +42,7 @@ fun PasswordTextField(
         onValueChange = onValueChange,
         isError = isError,
         singleLine = true,
+        shape = RoundedCornerShape(Radius.Large),
         visualTransformation = when {
             isPasswordVisible -> VisualTransformation.None
             else -> PasswordVisualTransformation()

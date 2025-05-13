@@ -16,7 +16,7 @@ import org.koin.core.context.startKoin
 class KoinInitializer : Initializer<Unit> {
 
     override fun create(context: Context) {
-        val defaultWebClientId = context.getString(R.string.lbl_no)
+        val defaultWebClientId = context.getString(R.string.default_web_client_id)
 
         startKoin {
             androidContext(context.applicationContext)

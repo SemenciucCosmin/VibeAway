@@ -21,6 +21,9 @@
     <string name="lbl_sign_in">Sign in</string>
     <string name="lbl_sign_up">Sign up</string>
 
+    <string name="lbl_sign_in_message">Complete de fields below in order to sign in.</string>
+    <string name="lbl_sign_up_message">Complete de fields below in order to sign up.</string>
+
     <string name="lbl_sign_in_google">Sign in with Google</string>
     <string name="lbl_sign_up_google">Sign up with Google</string>
 
@@ -37,8 +40,8 @@
     <string name="lbl_passwords_not_matching">Passwords not matching</string>
     <string name="lbl_weak_password">Weak password</string>
 
-    <string name="lbl_sign_in_redirect_message">Already have an account? Sign in</string>
-    <string name="lbl_sign_up_redirect_message">Don\'t have an account? Sign up</string>
+    <string name="lbl_sign_in_redirect_message">Already have an account?</string>
+    <string name="lbl_sign_up_redirect_message">Don\'t have an account?</string>
 
     <string name="lbl_accessibility_password_visible">Hide password</string>
     <string name="lbl_accessibility_password_hidden">Show password</string>
