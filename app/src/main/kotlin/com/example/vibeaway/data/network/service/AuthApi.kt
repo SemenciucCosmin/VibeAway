@@ -1,7 +1,6 @@
 package com.example.vibeaway.data.network.service
 
 import com.example.vibeaway.data.network.model.AuthTokenDTO
-import com.example.vibeaway.network.model.AuthTokenDTO
 import retrofit2.Response
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded

@@ -67,16 +67,25 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.startup.runtime)
 
+    // COIL
+    implementation(platform(libs.coil.bom))
+    implementation(libs.coil.compose)
+
     // COMPOSE
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
     // DETEKT
     detektPlugins(libs.detekt.formatting)
     implementation(libs.okhttp3)
+
+    // GOOGLE
+    implementation(libs.play.services.auth)
+    implementation(libs.google.id)
 
     // NETWORK
     implementation(platform(libs.retrofit.bom))
@@ -99,6 +108,7 @@ dependencies {
 
     // NAVIGATION
     implementation(libs.navigation.compose)
+    implementation(libs.navigation.runtime.ktx)
 }
 
 detekt {

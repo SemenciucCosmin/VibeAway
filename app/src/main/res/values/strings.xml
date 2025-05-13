@@ -1,3 +1,45 @@
 <resources>
-    <string name="app_name">VibeAway</string>
+    <!--  GENERAL  -->
+    <string name="lbl_app_name">VibeAway</string>
+    <string name="lbl_empty" />
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_no">No</string>
+    <string name="lbl_accessibility_back">Back</string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_send">Send</string>
+    <string name="lbl_finish">Finish</string>
+    <string name="lbl_loading">Loading</string>
+
+    <!--  FAILURE  -->
+    <string name="lbl_failure_label">Server connection error</string>
+    <string name="lbl_failure_message">Something went wrong. Please try again.</string>
+    <string name="lbl_failure_accessibility">Failure</string>
+    <string name="lbl_retry">Retry</string>
+    <string name="lbl_no_results">No results for %s</string>
+
+    <!--  AUTH  -->
+    <string name="lbl_sign_in">Sign in</string>
+    <string name="lbl_sign_up">Sign up</string>
+
+    <string name="lbl_sign_in_google">Sign in with Google</string>
+    <string name="lbl_sign_up_google">Sign up with Google</string>
+
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_repeat_password">Repeat password</string>
+
+    <string name="lbl_empty_email">Email cannot be empty</string>
+    <string name="lbl_invalid_email">Invalid email</string>
+    <string name="lbl_email_collision">Email already exists!</string>
+
+    <string name="lbl_empty_password">Password cannot be empty</string>
+    <string name="lbl_invalid_password">Invalid password</string>
+    <string name="lbl_passwords_not_matching">Passwords not matching</string>
+    <string name="lbl_weak_password">Weak password</string>
+
+    <string name="lbl_sign_in_redirect_message">Already have an account? Sign in</string>
+    <string name="lbl_sign_up_redirect_message">Don\'t have an account? Sign up</string>
+
+    <string name="lbl_accessibility_password_visible">Hide password</string>
+    <string name="lbl_accessibility_password_hidden">Show password</string>
 </resources>
