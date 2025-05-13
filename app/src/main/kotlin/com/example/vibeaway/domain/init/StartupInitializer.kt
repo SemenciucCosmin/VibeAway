@@ -13,6 +13,7 @@ class StartupInitializer : Initializer<Unit> {
 
     override fun dependencies(): List<Class<out Initializer<*>>> = listOf(
         KoinInitializer::class.java,
+        AuthTokenInitializer::class.java
     )
 
     companion object {

@@ -95,6 +95,7 @@ dependencies {
     // KOTLIN X
     implementation(libs.kotlinx.immutableCollections)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.kotlinx.serialization.converter)
 
     // NAVIGATION
     implementation(libs.navigation.compose)
