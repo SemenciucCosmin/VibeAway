@@ -77,7 +77,7 @@ fun AuthScreen(
 
                     Text(
                         text = stringResource(authScreenType.messageLabelRes),
-                        style = MaterialTheme.typography.labelLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                     )
                 }
 

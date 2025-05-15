@@ -11,6 +11,12 @@ val String.Companion.ASTERISK: String
 val String.Companion.QUESTION: String
     get() = "?"
 
+val String.Companion.SLASH: String
+    get() = "/"
+
+val String.Companion.COLON: String
+    get() = ":"
+
 fun String.isValidEmail() = when {
     this.isEmpty() -> false
     else -> Pattern.EMAIL_ADDRESS.toRegex().matches(this)

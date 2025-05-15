@@ -7,5 +7,5 @@ object Radius {
     val Large: Dp = 24.dp
     val Medium: Dp = 16.dp
     val Small: Dp = 8.dp
-    val ExtraSmall: Dp = 4.dp
+    val XSmall: Dp = 4.dp
 }

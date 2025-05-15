@@ -10,10 +10,12 @@ val lightColorScheme = lightColorScheme(
     primary = Color(0xFFC2BD97),
     onPrimary = Color(0xFF6B6133),
 
-    surface = Color(0xFFC2BD97),
+    surface = Color(0xFFFAF1E0),
     onSurface = Color(0xFF2C2C2C),
 
     onSurfaceVariant = Color(0xFF656F77),
 
     outline = Color(0xFFACB8C2),
+
+    surfaceContainerHighest = Color(0xFFFAF1E0),
 )

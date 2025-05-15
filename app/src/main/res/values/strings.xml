@@ -45,4 +45,19 @@
 
     <string name="lbl_accessibility_password_visible">Hide password</string>
     <string name="lbl_accessibility_password_hidden">Show password</string>
+
+    <!--  ONBOARDING  -->
+    <string name="lbl_onboarding_title">Let\'s Discover Your Travel Personality!</string>
+    <string name="lbl_onboarding_message">Unlock your perfect travel destinations by exploring your unique personality traits. Answer the following questions honestly, and we\'ll match you with unforgettable experiences.</string>
+    <string name="lbl_onboarding_redirect_message">Already have your Big Five scores?</string>
+    <string name="lbl_onboarding_redirect_action">Write them here!</string>
+    <string name="lbl_onboarding_lets_go">Let\'s go</string>
+    <string name="lbl_onboarding_manual_input_title">Fill in the score values from your personality test</string>
+
+    <!--  BFI Dimensions  -->
+    <string name="lbl_openness">Openness</string>
+    <string name="lbl_conscientiousness">Conscientiousness</string>
+    <string name="lbl_extraversion">Extraversion</string>
+    <string name="lbl_agreeableness">Agreeableness</string>
+    <string name="lbl_neuroticism">Neuroticism</string>
 </resources>

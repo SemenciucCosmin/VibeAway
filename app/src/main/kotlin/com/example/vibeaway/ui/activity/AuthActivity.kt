@@ -16,9 +16,7 @@ class AuthActivity : ComponentActivity() {
 
         setContent {
             VibeAwayTheme {
-                AuthRoute(
-                    onSigned = { MainActivity.Companion.startActivity(this) }
-                )
+                AuthRoute()
             }
         }
     }

@@ -50,7 +50,7 @@ fun AuthGoogleButton(
 
                 Text(
                     text = label,
-                    style = MaterialTheme.typography.labelLarge,
+                    style = MaterialTheme.typography.bodyMedium,
                 )
             }
         }

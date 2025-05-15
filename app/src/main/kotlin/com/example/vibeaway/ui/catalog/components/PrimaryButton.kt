@@ -1,6 +1,5 @@
 package com.example.vibeaway.ui.catalog.components
 
-import android.R.attr.contentDescription
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -24,13 +23,18 @@ import com.example.vibeaway.ui.theme.VibeAwayTheme
 fun PrimaryButton(
     text: String,
     onClick: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true
 ) {
     Button(
         modifier = modifier,
         onClick = onClick,
         shape = RoundedCornerShape(Radius.Large),
-        contentPadding = PaddingValues(Spacing.Medium),
+        enabled = enabled,
+        contentPadding = PaddingValues(
+            vertical = Spacing.Medium,
+            horizontal = Spacing.XXLarge
+        ),
         content = {
             Row(
                 horizontalArrangement = Arrangement.spacedBy(Spacing.Small),
@@ -38,11 +42,11 @@ fun PrimaryButton(
             ) {
                 Text(
                     text = text,
-                    style = MaterialTheme.typography.labelLarge,
+                    style = MaterialTheme.typography.bodyMedium,
                 )
 
                 Icon(
-                    painter = painterResource(R.drawable.ic_arrow),
+                    painter = painterResource(R.drawable.ic_arrow_right),
                     contentDescription = null
                 )
             }
