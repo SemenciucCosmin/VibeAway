@@ -23,6 +23,7 @@ class DatabaseRepositoryImpl : DatabaseRepository {
             .set(scores)
             .addOnSuccessListener { Log.d(TAG, "Firestore write successful") }
             .addOnFailureListener { Log.d(TAG, "Firestore write failure") }
+            .await()
     }
 
     /**
@@ -33,12 +34,14 @@ class DatabaseRepositoryImpl : DatabaseRepository {
         val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return null
 
         return try {
-            val scores = firestore.collection(USERS_COLLECTION_NAME)
+            val documentSnapshot = firestore.collection(USERS_COLLECTION_NAME)
                 .document(userId)
                 .get()
                 .addOnSuccessListener { Log.d(TAG, "Firestore read successful") }
                 .addOnFailureListener { Log.d(TAG, "Firestore read failure") }
-                .await() as? Map<*, *>
+                .await()
+
+            val scores = documentSnapshot.data as? Map<*, *>
 
             scores?.mapNotNull {
                 val dimensionId = it.key as? String ?: return@mapNotNull null
