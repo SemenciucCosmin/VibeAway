@@ -54,10 +54,21 @@
     <string name="lbl_onboarding_lets_go">Let\'s go</string>
     <string name="lbl_onboarding_manual_input_title">Fill in the score values from your personality test</string>
 
-    <!--  BFI Dimensions  -->
+    <!--  BFI DIMENSIONS  -->
     <string name="lbl_openness">Openness</string>
     <string name="lbl_conscientiousness">Conscientiousness</string>
     <string name="lbl_extraversion">Extraversion</string>
     <string name="lbl_agreeableness">Agreeableness</string>
     <string name="lbl_neuroticism">Neuroticism</string>
+
+    <!--  FORM  -->
+    <string name="lbl_form_questions_message">Choose how accurately each statement reflects you:</string>
+    <string name="lbl_page_counter">Page %d/%d</string>
+
+    <!--  FORM QUESTION RESPONSE OPTION  -->
+    <string name="lbl_strongly_disagree">strongly disagree</string>
+    <string name="lbl_disagree">disagree</string>
+    <string name="lbl_neutral">neutral</string>
+    <string name="lbl_agree">agree</string>
+    <string name="lbl_strongly_agree">strongly agree</string>
 </resources>

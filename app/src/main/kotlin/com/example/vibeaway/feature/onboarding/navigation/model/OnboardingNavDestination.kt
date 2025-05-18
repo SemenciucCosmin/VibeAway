@@ -10,4 +10,7 @@ sealed class OnboardingNavDestination {
 
     @Serializable
     data object ManualInput
+
+    @Serializable
+    data class Form(val index: Int)
 }

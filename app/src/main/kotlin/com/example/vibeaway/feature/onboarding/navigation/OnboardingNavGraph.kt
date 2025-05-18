@@ -7,7 +7,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.toRoute
 import com.example.vibeaway.feature.onboarding.navigation.model.OnboardingNavDestination
+import com.example.vibeaway.feature.onboarding.route.FormRoute
 import com.example.vibeaway.feature.onboarding.route.ManualInputRoute
 import com.example.vibeaway.feature.onboarding.route.WelcomeRoute
 
@@ -51,6 +53,15 @@ fun OnboardingNavGraph(
 
         composable<OnboardingNavDestination.ManualInput> {
             ManualInputRoute(navController)
+        }
+
+        composable<OnboardingNavDestination.Form> { nacBackStackEntry ->
+            val args = nacBackStackEntry.toRoute<OnboardingNavDestination.Form>()
+
+            FormRoute(
+                index = args.index,
+                navController = navController
+            )
         }
     }
 }
