@@ -29,6 +29,7 @@ fun FormScreen(
     selectedPageIndex: Int,
     questions: List<BFIQuestion>,
     responses: Map<Int, Int>,
+    isNextButtonEnabled: Boolean,
     onResponseClick: (Int, Int) -> Unit,
     onNextClick: () -> Unit,
     onBack: () -> Unit,
@@ -85,7 +86,7 @@ fun FormScreen(
             PrimaryButton(
                 text = stringResource(R.string.lbl_next),
                 onClick = onNextClick,
-                enabled = responses.size == questions.size,
+                enabled = isNextButtonEnabled,
                 modifier = Modifier.fillMaxWidth()
             )
         }
