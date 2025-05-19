@@ -23,8 +23,6 @@ fun AuthRoute() {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val activity = LocalActivity.current as? AuthActivity
 
-    activity?.let(OnboardingActivity::startActivity)
-
     AuthScreen(
         modifier = Modifier.imePadding(),
         authScreenType = uiState.authScreenType,
