@@ -13,6 +13,9 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for manual input flow
+ */
 class ManualInputViewModel(
     private val databaseRepository: DatabaseRepository
 ) : EventViewModel<ManualInputUiState.Event>() {
@@ -25,6 +28,9 @@ class ManualInputViewModel(
             initialValue = _uiState.value
         )
 
+    /**
+     * Changes the manual score for a certain BFI Dimension
+     */
     fun changeScore(dimension: BFIDimension, newScore: Int) {
         _uiState.update { uiState ->
             val newBFIDimensionsScores = BFIDimension.entries.associateWith {
@@ -38,6 +44,9 @@ class ManualInputViewModel(
         }
     }
 
+    /**
+     * Saves the manual scores for Firestore and ends the onboarding flow
+     */
     fun saveScores() = viewModelScope.launch {
         val scores = _uiState.value.bfiDimensionsScores.mapKeys { (dimension, _) ->
             dimension.id

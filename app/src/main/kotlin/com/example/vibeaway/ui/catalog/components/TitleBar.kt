@@ -25,6 +25,9 @@ import com.example.vibeaway.ui.catalog.model.TitleBarMenuItem
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 
+/**
+ * Custom title bar
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TitleBar(

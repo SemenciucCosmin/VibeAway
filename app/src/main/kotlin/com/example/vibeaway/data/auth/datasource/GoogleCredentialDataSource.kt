@@ -15,6 +15,10 @@ class GoogleCredentialDataSource(
     private val context: Context,
     private val defaultWebClientId: String,
 ) {
+
+    /**
+     * Retrieves Google [Credential] using googleId identity library for Google auth on Firebase.
+     */
     suspend fun getCredential(): Credential? {
         val credentialManager = CredentialManager.create(context)
 

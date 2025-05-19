@@ -3,6 +3,9 @@ package com.example.vibeaway.ui.catalog.dimension
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+/**
+ * Object as wrapper over all spacing sizes
+ */
 object Spacing {
     val XXLarge: Dp = 64.dp
     val XLarge: Dp = 32.dp

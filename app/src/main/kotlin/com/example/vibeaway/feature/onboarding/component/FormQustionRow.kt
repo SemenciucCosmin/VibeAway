@@ -18,6 +18,9 @@ import com.example.vibeaway.ui.catalog.dimension.Spacing
 import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
+/**
+ * Row for question model with [label] and a selection row of [FormQuestionResponseButton]
+ */
 @Composable
 fun FormQuestionRow(
     label: String,

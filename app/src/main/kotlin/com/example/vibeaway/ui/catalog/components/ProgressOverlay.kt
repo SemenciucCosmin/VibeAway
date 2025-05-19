@@ -10,6 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.vibeaway.ui.core.modifier.conditional
 
+/**
+ * Custom loading composable
+ */
 @Composable
 fun ProgressOverlay(modifier: Modifier = Modifier, hasBackground: Boolean = false) {
     Box(

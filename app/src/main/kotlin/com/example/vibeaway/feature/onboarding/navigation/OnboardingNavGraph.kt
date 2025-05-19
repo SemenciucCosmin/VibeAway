@@ -13,6 +13,9 @@ import com.example.vibeaway.feature.onboarding.route.FormRoute
 import com.example.vibeaway.feature.onboarding.route.ManualInputRoute
 import com.example.vibeaway.feature.onboarding.route.WelcomeRoute
 
+/**
+ * Navigation graph for onboarding flow
+ */
 @Composable
 fun OnboardingNavGraph(
     navController: NavHostController,

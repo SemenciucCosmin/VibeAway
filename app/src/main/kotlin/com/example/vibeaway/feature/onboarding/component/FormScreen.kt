@@ -23,6 +23,9 @@ import com.example.vibeaway.feature.onboarding.model.FormQuestionResponse
 import com.example.vibeaway.ui.catalog.components.PrimaryButton
 import com.example.vibeaway.ui.catalog.dimension.Spacing
 
+/**
+ * Reusable screen for onboarding form flow
+ */
 @Composable
 fun FormScreen(
     pageCount: Int,

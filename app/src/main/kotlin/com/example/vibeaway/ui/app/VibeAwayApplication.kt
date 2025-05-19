@@ -7,6 +7,9 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
+/**
+ * Application class
+ */
 class VibeAwayApplication : Application() {
 
     override fun onCreate() {
@@ -14,6 +17,9 @@ class VibeAwayApplication : Application() {
         configureFirebaseServices()
     }
 
+    /**
+     * Configures the Firebase services with their hosts and ports.
+     */
     private fun configureFirebaseServices() {
         if (BuildConfig.DEBUG) {
             Firebase.auth.useEmulator(AUTH_HOST, AUTH_PORT)

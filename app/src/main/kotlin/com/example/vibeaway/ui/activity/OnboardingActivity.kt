@@ -18,6 +18,9 @@ import com.example.vibeaway.ui.core.components.EventHandler
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 import org.koin.androidx.compose.koinViewModel
 
+/**
+ * Activity for onboarding feature
+ */
 class OnboardingActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -8,6 +8,9 @@ import androidx.activity.enableEdgeToEdge
 import com.example.vibeaway.feature.auth.route.AuthRoute
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
+/**
+ * Activity for auth feature
+ */
 class AuthActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

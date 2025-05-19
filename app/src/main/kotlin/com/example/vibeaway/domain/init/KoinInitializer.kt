@@ -15,6 +15,9 @@ import com.example.vibeaway.feature.onboarding.di.onboardingFeatureModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
+/**
+ * Initializer for Koin dependency injection modules.
+ */
 class KoinInitializer : Initializer<Unit> {
 
     override fun create(context: Context) {

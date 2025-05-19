@@ -9,6 +9,9 @@ import org.koin.compose.getKoin
 
 private const val FIRST_FORM_PAGE_INDEX = 0
 
+/**
+ * Route for star of onboarding flow
+ */
 @Composable
 fun WelcomeRoute(navController: NavController) {
     val koin = getKoin()

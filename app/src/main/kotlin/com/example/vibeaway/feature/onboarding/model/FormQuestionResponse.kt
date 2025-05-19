@@ -4,6 +4,13 @@ import androidx.annotation.StringRes
 import androidx.compose.ui.graphics.Color
 import com.example.vibeaway.R
 
+/**
+ * Enum class for all possible question responses
+ * @param [score]: value scored for each response
+ * @param [selectedColor]: color for selected state
+ * @param [unselectedColor]: color for unselected state
+ * @param [labelRes]: string resource as description for each response
+ */
 enum class FormQuestionResponse(
     val score: Int,
     val selectedColor: Color,

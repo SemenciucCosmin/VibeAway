@@ -14,6 +14,9 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for form flow
+ */
 class FormViewModel(
     private val bfiQuestionsDataSource: BFIQuestionsDataSource,
     private val databaseRepository: DatabaseRepository
@@ -28,6 +31,9 @@ class FormViewModel(
             initialValue = _uiState.value
         )
 
+    /**
+     * Retrieves the BFI questions and prepares them for display
+     */
     private fun loadQuestions() {
         _uiState.update {
             val bfiQuestions = bfiQuestionsDataSource.getBfiQuestions()
@@ -35,6 +41,9 @@ class FormViewModel(
         }
     }
 
+    /**
+     * Registers or changes a response for a certain question
+     */
     fun registerResponse(questionId: Int, responseScore: Int) {
         _uiState.update {
             val newResponses = it.responses.toMutableMap().apply {
@@ -45,6 +54,10 @@ class FormViewModel(
         }
     }
 
+    /**
+     * Computes the overall score for each BFI Dimension, save then into Firestore and ends
+     * the onboarding flow
+     */
     fun finishForm() = viewModelScope.launch {
         val questionsCount = _uiState.value.bfiPages.flatten().size
         val responsesCount = _uiState.value.responses.size

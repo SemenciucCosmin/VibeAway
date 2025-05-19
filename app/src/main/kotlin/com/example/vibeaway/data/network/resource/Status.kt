@@ -1,5 +1,8 @@
 package com.example.vibeaway.data.network.resource
 
+/**
+ * Sealed class for all possible data retrieval process outcomes.
+ */
 sealed class Status {
     data object Loading : Status()
 

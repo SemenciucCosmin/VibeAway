@@ -1,7 +1,6 @@
 package com.example.vibeaway.feature.auth.component
 
 import EmailError
-import android.R.attr.fontWeight
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

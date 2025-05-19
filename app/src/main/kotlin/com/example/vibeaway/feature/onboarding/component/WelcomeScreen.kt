@@ -25,6 +25,9 @@ import com.example.vibeaway.ui.catalog.dimension.Spacing
 import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
+/**
+ * Starting screen for onboarding flow
+ */
 @Composable
 fun WelcomeScreen(
     onWriteManualClick: () -> Unit,

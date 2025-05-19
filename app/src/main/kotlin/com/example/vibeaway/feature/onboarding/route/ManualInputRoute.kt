@@ -13,6 +13,9 @@ import com.example.vibeaway.ui.activity.OnboardingActivity
 import com.example.vibeaway.ui.core.components.EventHandler
 import org.koin.androidx.compose.koinViewModel
 
+/**
+ * Route for manual input of scores in onboarding flow
+ */
 @Composable
 fun ManualInputRoute(navController: NavController) {
     val viewModel = koinViewModel<ManualInputViewModel>()

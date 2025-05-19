@@ -19,6 +19,9 @@ import com.example.vibeaway.feature.onboarding.model.FormQuestionResponse
 import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
+/**
+ * Circle button for form question row
+ */
 @Composable
 fun FormQuestionResponseButton(
     isSelected: Boolean,

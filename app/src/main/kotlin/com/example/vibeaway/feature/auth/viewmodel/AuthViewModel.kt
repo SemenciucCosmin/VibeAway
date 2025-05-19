@@ -28,6 +28,9 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * View model for auth flow
+ */
 class AuthViewModel(
     private val authRepository: AuthRepository,
     private val googleCredentialDataSource: GoogleCredentialDataSource

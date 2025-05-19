@@ -26,6 +26,9 @@ import com.example.vibeaway.ui.theme.VibeAwayTheme
 private const val MAXIMUM_SCORE_VALUE = 50
 private const val MINIMUM_SCORE_VALUE = 0
 
+/**
+ * Row with text field for BFI score manual input
+ */
 @Composable
 fun ScoreInputRow(
     label: String,

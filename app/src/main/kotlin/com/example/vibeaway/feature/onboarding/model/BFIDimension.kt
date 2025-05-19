@@ -6,6 +6,7 @@ import com.example.vibeaway.R
 /**
  * Enum class for all possible BFI dimensions
  * @param [id]: unique identifier of the object
+ * @param [labelRes]: string resource as description for each dimension
  */
 enum class BFIDimension(
     val id: String,

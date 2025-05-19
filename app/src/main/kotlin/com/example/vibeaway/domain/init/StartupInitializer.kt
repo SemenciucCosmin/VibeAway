@@ -4,6 +4,9 @@ import android.content.Context
 import android.util.Log
 import androidx.startup.Initializer
 
+/**
+ * Initializer for all other initializers
+ */
 @Suppress("unused")
 class StartupInitializer : Initializer<Unit> {
 

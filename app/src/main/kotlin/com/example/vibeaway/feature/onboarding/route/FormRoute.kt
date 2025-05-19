@@ -18,6 +18,9 @@ import com.example.vibeaway.ui.catalog.dimension.Spacing
 import com.example.vibeaway.ui.core.components.EventHandler
 import org.koin.compose.getKoin
 
+/**
+ * Route for form onboarding flow
+ */
 @Composable
 fun FormRoute(
     index: Int,

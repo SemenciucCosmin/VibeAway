@@ -19,6 +19,9 @@ import com.example.vibeaway.ui.catalog.dimension.Spacing
 import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
+/**
+ * Generic custom primary button
+ */
 @Composable
 fun PrimaryButton(
     text: String,

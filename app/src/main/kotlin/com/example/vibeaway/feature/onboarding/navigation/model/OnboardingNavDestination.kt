@@ -2,6 +2,9 @@ package com.example.vibeaway.feature.onboarding.navigation.model
 
 import kotlinx.serialization.Serializable
 
+/**
+ * Sealed class for all possible navigation destination from onboarding flow.
+ */
 @Serializable
 sealed class OnboardingNavDestination {
 

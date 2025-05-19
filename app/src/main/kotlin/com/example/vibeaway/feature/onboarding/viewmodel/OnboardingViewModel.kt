@@ -13,10 +13,16 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for onboarding flow
+ */
 class OnboardingViewModel(
     private val databaseRepository: DatabaseRepository
 ) : EventViewModel<OnboardingEvent>() {
 
+    /**
+     * State for for determining the loading state of the screen
+     */
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
         .onStart { checkBFIScore() }
@@ -26,6 +32,11 @@ class OnboardingViewModel(
             initialValue = _isLoading.value
         )
 
+    /**
+     * Retrieves the BFI score from Firebase for the current user.
+     * If there is a score the onboarding is marked as done, otherwise the loading stops and the
+     * onboarding flow is available
+     */
     private fun checkBFIScore() = viewModelScope.launch {
         if (databaseRepository.getBFIScores() != null) {
             registerEvent(OnboardingEvent.ONBOARDING_DONE)

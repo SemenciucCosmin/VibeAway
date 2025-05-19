@@ -3,6 +3,9 @@ package com.example.vibeaway.data.network
 import okhttp3.Interceptor
 import okhttp3.Response
 
+/**
+ * Interceptor class for attaching the Amadeus auth bearer token to the http client
+ */
 class AuthTokenInterceptor(
     private val authTokenManager: AuthTokenManager
 ) : Interceptor {

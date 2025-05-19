@@ -6,6 +6,9 @@ import com.example.vibeaway.feature.auth.model.AuthScreenType
 import com.example.vibeaway.feature.auth.model.PasswordError
 import com.example.vibeaway.ui.core.viewmodel.model.BasicEvent
 
+/**
+ * Data class for auth flow state
+ */
 data class AuthUiState(
     val authScreenType: AuthScreenType = AuthScreenType.SIGN_UP,
     val email: String = String.BLANK,
