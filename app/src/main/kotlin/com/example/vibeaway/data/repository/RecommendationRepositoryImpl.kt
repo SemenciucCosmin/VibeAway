@@ -6,6 +6,11 @@ import com.example.vibeaway.data.activity.model.Activity
 import com.example.vibeaway.data.activity.model.ActivityCategory
 import com.example.vibeaway.data.activity.model.CompatibleActivity
 import com.example.vibeaway.data.activity.model.CompatibleActivityCategory
+import com.example.vibeaway.data.activitydetails.datasource.ActivityDetailsDataSource
+import com.example.vibeaway.data.activitydetails.model.ActivityDetails
+import com.example.vibeaway.data.location.model.Location
+import com.example.vibeaway.data.locationdetails.datasource.LocationDetailsDataSource
+import com.example.vibeaway.data.locationdetails.model.LocationDetails
 import com.example.vibeaway.data.quiz.model.BFIResult
 
 /**
@@ -15,6 +20,8 @@ import com.example.vibeaway.data.quiz.model.BFIResult
 class RecommendationRepositoryImpl(
     private val activityCategoriesDataSource: ActivityCategoriesDataSource,
     private val activitiesDataSource: ActivitiesDataSource,
+    private val locationDetailsDataSource: LocationDetailsDataSource,
+    private val activityDetailsDataSource: ActivityDetailsDataSource
 ) : RecommendationRepository {
 
     /**
@@ -63,5 +70,13 @@ class RecommendationRepositoryImpl(
                 score = score
             )
         }
+    }
+
+    override suspend fun getRecommendedLocationsDetails(): List<LocationDetails> {
+        return locationDetailsDataSource.getLocations()
+    }
+
+    override suspend fun getRecommendedActivitiesDetails(): List<ActivityDetails> {
+        return activityDetailsDataSource.getActivitiesDetails()
     }
 }

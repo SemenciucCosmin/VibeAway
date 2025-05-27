@@ -15,9 +15,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.vibeaway.R
 import com.example.vibeaway.feature.feed.viewmodel.model.FeedUiState
+import com.example.vibeaway.ui.catalog.components.ListItemCard
 import com.example.vibeaway.ui.catalog.dimension.Spacing
+import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
+import com.example.vibeaway.ui.theme.VibeAwayTheme
+import kotlin.random.Random
 
 private const val COLUMN_COUNT = 2
 
@@ -70,15 +75,39 @@ fun FeedContent(
         }
 
         items(locationsDetails) { locationsDetails ->
-            LocationCard(
+            ListItemCard(
                 modifier = Modifier.aspectRatio(0.8f),
-                city = locationsDetails.city,
-                country = locationsDetails.country,
+                title = locationsDetails.city,
+                label = locationsDetails.country,
                 imageUrl = locationsDetails.imageUrl,
                 isFavourite = locationsDetails.isFavourite,
                 onClick = { onLocationDetailsClick(locationsDetails.id) },
                 onFavouriteClick = { onLocationDetailsFavouriteClick(locationsDetails.id) }
             )
         }
+    }
+}
+
+@Preview
+@PreviewVibeAway
+@Composable
+private fun PreviewFeedContent() {
+    VibeAwayTheme {
+        FeedContent(
+            onLocationsCategoryClick = {},
+            onActivitiesCategoryClick = {},
+            onViewAllClick = {},
+            onLocationDetailsClick = {},
+            onLocationDetailsFavouriteClick = {},
+            locationsDetails = List(6) {
+                FeedUiState.LocationDetails(
+                    id = it.toString(),
+                    city = "City: $it",
+                    country = "Country: $it",
+                    isFavourite = Random.nextBoolean(),
+                    imageUrl = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
+                )
+            },
+        )
     }
 }

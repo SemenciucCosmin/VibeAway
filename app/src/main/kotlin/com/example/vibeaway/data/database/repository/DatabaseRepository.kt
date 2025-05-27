@@ -28,4 +28,19 @@ interface DatabaseRepository {
      * Retrieves user favourite location IDs
      */
     suspend fun getFavouriteLocationIds(): List<String>
+
+    /**
+     * Saves activity by [activityId] which is favourite by user
+     */
+    suspend fun saveFavouriteActivity(activityId: String)
+
+    /**
+     * Removes activity by [activityId] which is favourite by user
+     */
+    suspend fun removeFavouriteActivity(activityId: String)
+
+    /**
+     * Retrieves user favourite activity IDs
+     */
+    suspend fun getFavouriteActivityIds(): List<String>
 }

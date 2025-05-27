@@ -16,6 +16,7 @@ import com.example.vibeaway.data.recommendation.di.recommendationDataModule
 import com.example.vibeaway.di.appModule
 import com.example.vibeaway.domain.locationdetails.di.locationDetailsDomainModule
 import com.example.vibeaway.feature.auth.di.authFeatureModule
+import com.example.vibeaway.feature.category.di.categoryFeatureModule
 import com.example.vibeaway.feature.feed.di.feedFeatureModule
 import com.example.vibeaway.feature.onboarding.di.onboardingFeatureModule
 import org.koin.android.ext.koin.androidContext
@@ -38,6 +39,7 @@ class KoinInitializer : Initializer<Unit> {
                     appModule(),
                     authDataModule(defaultWebClientId),
                     authFeatureModule(),
+                    categoryFeatureModule(),
                     databaseDataModule(),
                     feedFeatureModule(),
                     locationDataModule(),

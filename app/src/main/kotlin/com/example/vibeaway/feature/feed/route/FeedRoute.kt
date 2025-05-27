@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.example.vibeaway.feature.category.model.Category
 import com.example.vibeaway.feature.feed.component.FeedScreen
 import com.example.vibeaway.feature.feed.viewmodel.FeedViewModel
 import com.example.vibeaway.ui.navigation.model.RecommendationNavDestination
@@ -19,16 +20,23 @@ fun FeedRoute(navController: NavController) {
         isLoading = uiState.isLoading,
         onLocationDetailsFavouriteClick = viewModel::changeLocationDetailsFavouriteState,
         onLocationsCategoryClick = {
-            navController.navigate(RecommendationNavDestination.Category)
+            val categoryId = Category.RECOMMENDED_LOCATIONS.ordinal
+            val destination = RecommendationNavDestination.Category(categoryId)
+            navController.navigate(destination)
         },
         onActivitiesCategoryClick = {
-            navController.navigate(RecommendationNavDestination.Category)
-        },
-        onLocationDetailsClick = { locationDetailsId ->
-            navController.navigate(RecommendationNavDestination.LocationDetails(locationDetailsId))
+            val categoryId = Category.RECOMMENDED_ACTIVITIES.ordinal
+            val destination = RecommendationNavDestination.Category(categoryId)
+            navController.navigate(destination)
         },
         onViewAllClick = {
-            navController.navigate(RecommendationNavDestination.Category)
+            val categoryId = Category.POPULAR_LOCATIONS.ordinal
+            val destination = RecommendationNavDestination.Category(categoryId)
+            navController.navigate(destination)
+        },
+        onLocationDetailsClick = { locationDetailsId ->
+            val destination = RecommendationNavDestination.LocationDetails(locationDetailsId)
+            navController.navigate(destination)
         }
     )
 }

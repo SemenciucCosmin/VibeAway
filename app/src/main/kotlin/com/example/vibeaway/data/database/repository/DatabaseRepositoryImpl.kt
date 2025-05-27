@@ -72,7 +72,7 @@ class DatabaseRepositoryImpl : DatabaseRepository {
     override suspend fun removeFavouriteLocation(locationId: String) {
         val newFavouriteLocations = getFavouriteLocationIds().toMutableList().apply {
             remove(locationId)
-        }.toSet()
+        }.toSet().associateWith { true }
 
         val firestore = Firebase.firestore
         val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return
@@ -107,10 +107,65 @@ class DatabaseRepositoryImpl : DatabaseRepository {
         }
     }
 
+    override suspend fun saveFavouriteActivity(activityId: String) {
+        val newFavouriteLocations = getFavouriteLocationIds().toMutableList().apply {
+            add(activityId)
+        }.toSet().associateWith { true }
+
+        val firestore = Firebase.firestore
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return
+
+        firestore.collection(USERS_COLLECTION_NAME)
+            .document(userId + FAVOURITE_ACTIVITIES_DOCUMENT)
+            .set(newFavouriteLocations)
+            .addOnSuccessListener { Log.d(TAG, "Firestore write successful") }
+            .addOnFailureListener { Log.d(TAG, "Firestore write failure") }
+            .await()
+    }
+
+    override suspend fun removeFavouriteActivity(activityId: String) {
+        val newFavouriteLocations = getFavouriteLocationIds().toMutableList().apply {
+            remove(activityId)
+        }.toSet().associateWith { true }
+
+        val firestore = Firebase.firestore
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return
+
+        firestore.collection(USERS_COLLECTION_NAME)
+            .document(userId + FAVOURITE_ACTIVITIES_DOCUMENT)
+            .set(newFavouriteLocations)
+            .addOnSuccessListener { Log.d(TAG, "Firestore write successful") }
+            .addOnFailureListener { Log.d(TAG, "Firestore write failure") }
+            .await()
+    }
+
+    override suspend fun getFavouriteActivityIds(): List<String> {
+        val firestore = Firebase.firestore
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return emptyList()
+
+        return try {
+            val documentSnapshot = firestore.collection(USERS_COLLECTION_NAME)
+                .document(userId + FAVOURITE_ACTIVITIES_DOCUMENT)
+                .get()
+                .addOnSuccessListener { Log.d(TAG, "Firestore read successful") }
+                .addOnFailureListener { Log.d(TAG, "Firestore read failure") }
+                .await()
+
+            val locations = documentSnapshot.data as? Map<*, *>
+
+            locations?.mapNotNull {
+                it.key as? String ?: return@mapNotNull null
+            } ?: emptyList()
+        } catch (_: Exception) {
+            emptyList()
+        }
+    }
+
     companion object {
         private const val TAG = "DatabaseRepository"
         private const val USERS_COLLECTION_NAME = "users"
         private const val BFI_SCORES_DOCUMENT = "bfi_scores_document"
         private const val FAVOURITE_LOCATIONS_DOCUMENT = "favourite_locations_document"
+        private const val FAVOURITE_ACTIVITIES_DOCUMENT = "favourite_activities_document"
     }
 }

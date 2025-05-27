@@ -12,10 +12,10 @@ sealed class RecommendationNavDestination {
     data object Feed
 
     @Serializable
-    data object Category
+    data class Category(val id: Int)
 
     @Serializable
-    data object ActivityDetails
+    data class ActivityDetails(val id: String)
 
     @Serializable
     data class LocationDetails(val id: String)

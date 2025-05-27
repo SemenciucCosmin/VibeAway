@@ -1,4 +1,4 @@
-package com.example.vibeaway.feature.feed.component
+package com.example.vibeaway.ui.catalog.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
