@@ -16,6 +16,7 @@ fun FeedRoute(navController: NavController) {
 
     FeedScreen(
         locationsDetails = uiState.locationsDetails,
+        isLoading = uiState.isLoading,
         onLocationDetailsFavouriteClick = viewModel::changeLocationDetailsFavouriteState,
         onLocationsCategoryClick = {
             navController.navigate(RecommendationNavDestination.Category)
