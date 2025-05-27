@@ -6,16 +6,16 @@ lifecycleRuntimeKtx = "2.9.0"
 startupRuntime = "1.2.0"
 
 # COIL
-coil = "3.1.0"
+coil = "3.2.0"
 
 # COMPOSE
-composeBom = "2025.05.00"
+composeBom = "2025.05.01"
 
 # DETEKT
 detekt = "1.23.8"
 
 # FIREBASE
-firebaseBom = "33.13.0"
+firebaseBom = "33.14.0"
 
 # GOOGLE
 googleServices = "4.4.2"
@@ -32,8 +32,8 @@ koin = "4.0.4"
 paging = "3.3.6"
 
 # KOTLIN
-kotlin = "2.1.20"
-kotlinxImmutableCollections = "0.3.8"
+kotlin = "2.1.21"
+kotlinxImmutableCollections = "0.4.0"
 kotlinSerialization = "1.8.1"
 kotlinSerializationConverter = "1.0.0"
 
@@ -42,7 +42,7 @@ navigation = "2.9.0"
 
 # NETWORK
 okhttp3 = "5.0.0-alpha.14"
-retrofit = "2.11.0"
+retrofit = "3.0.0"
 
 [libraries]
 # ANDROID X
@@ -74,8 +74,8 @@ detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", 
 
 # FIREBASE
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
-firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx"}
-firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx"}
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx" }
 
 # GOOGLE
 play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }

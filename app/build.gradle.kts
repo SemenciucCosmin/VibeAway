@@ -84,19 +84,14 @@ dependencies {
     detektPlugins(libs.detekt.formatting)
     implementation(libs.okhttp3)
 
-    // GOOGLE
-    implementation(libs.play.services.auth)
-    implementation(libs.google.id)
-
-    // NETWORK
-    implementation(platform(libs.retrofit.bom))
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.converter.gson)
-
     // FIREBASE
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth.ktx)
     implementation(libs.firebase.firestore.ktx)
+
+    // GOOGLE
+    implementation(libs.play.services.auth)
+    implementation(libs.google.id)
 
     // KOIN
     implementation(platform(libs.koin.bom))
@@ -110,6 +105,11 @@ dependencies {
     // NAVIGATION
     implementation(libs.navigation.compose)
     implementation(libs.navigation.runtime.ktx)
+
+    // NETWORK
+    implementation(platform(libs.retrofit.bom))
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
 }
 
 detekt {
