@@ -1,12 +1,12 @@
 package com.example.vibeaway.data.repository
 
+import com.example.vibeaway.data.activity.datasource.ActivitiesDataSource
+import com.example.vibeaway.data.activity.datasource.ActivityCategoriesDataSource
+import com.example.vibeaway.data.activity.model.Activity
+import com.example.vibeaway.data.activity.model.ActivityCategory
+import com.example.vibeaway.data.activity.model.CompatibleActivity
+import com.example.vibeaway.data.activity.model.CompatibleActivityCategory
 import com.example.vibeaway.data.quiz.model.BFIResult
-import com.example.vibeaway.data.recommendation.datasource.ActivitiesDataSource
-import com.example.vibeaway.data.recommendation.datasource.ActivityCategoriesDataSource
-import com.example.vibeaway.data.recommendation.model.Activity
-import com.example.vibeaway.data.recommendation.model.ActivityCategory
-import com.example.vibeaway.data.recommendation.model.CompatibleActivity
-import com.example.vibeaway.data.recommendation.model.CompatibleActivityCategory
 
 /**
  * Repository responsible with computing a set of compatible [Location] with a BFI dataset, using

@@ -13,4 +13,5 @@ object Spacing {
     val Medium: Dp = 16.dp
     val Small: Dp = 8.dp
     val XSmall: Dp = 4.dp
+    val XXSmall: Dp = 2.dp
 }

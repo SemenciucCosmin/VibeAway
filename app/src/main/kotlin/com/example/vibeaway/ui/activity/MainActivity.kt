@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.navigation.compose.rememberNavController
+import com.example.vibeaway.ui.navigation.RecommendationNavGraph
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 /**
@@ -16,7 +18,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            VibeAwayTheme {}
+            val navController = rememberNavController()
+
+            VibeAwayTheme {
+                RecommendationNavGraph(navController)
+            }
         }
     }
 

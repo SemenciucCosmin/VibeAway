@@ -70,6 +70,7 @@ dependencies {
     // COIL
     implementation(platform(libs.coil.bom))
     implementation(libs.coil.compose)
+    implementation(libs.coil.network)
 
     // COMPOSE
     implementation(platform(libs.androidx.compose.bom))

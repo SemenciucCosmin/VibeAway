@@ -49,7 +49,7 @@ fun PrimaryButton(
                 )
 
                 Icon(
-                    painter = painterResource(R.drawable.ic_arrow_right),
+                    painter = painterResource(R.drawable.ic_arrow_right_large),
                     contentDescription = null
                 )
             }

@@ -9,6 +9,7 @@
     <string name="lbl_send">Send</string>
     <string name="lbl_finish">Finish</string>
     <string name="lbl_loading">Loading</string>
+    <string name="lbl_view_all">View All</string>
 
     <!--  FAILURE  -->
     <string name="lbl_failure_label">Server connection error</string>
@@ -71,4 +72,14 @@
     <string name="lbl_neutral">neutral</string>
     <string name="lbl_agree">agree</string>
     <string name="lbl_strongly_agree">strongly agree</string>
+
+    <!--  FEED  -->
+    <string name="lbl_feed_title">Discover</string>
+    <string name="lbl_recommendation_title">Based on your personality, discover:</string>
+    <string name="lbl_popular_title">Popular this month</string>
+    <string name="lbl_locations">Locations</string>
+    <string name="lbl_activities">Activities</string>
+    <string name="lbl_recommended_locations_message">See recommended locations based on your personality.</string>
+    <string name="lbl_recommended_activities_message">See recommended activities based on your personality.</string>
+
 </resources>

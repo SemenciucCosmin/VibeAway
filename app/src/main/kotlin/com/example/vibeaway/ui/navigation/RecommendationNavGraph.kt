@@ -1,4 +1,4 @@
-package com.example.vibeaway.feature.onboarding.navigation
+package com.example.vibeaway.ui.navigation
 
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.core.tween
@@ -8,23 +8,21 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
-import com.example.vibeaway.feature.onboarding.navigation.model.OnboardingNavDestination
-import com.example.vibeaway.feature.onboarding.route.FormRoute
-import com.example.vibeaway.feature.onboarding.route.ManualInputRoute
-import com.example.vibeaway.feature.onboarding.route.WelcomeRoute
+import com.example.vibeaway.feature.feed.route.FeedRoute
+import com.example.vibeaway.ui.navigation.model.RecommendationNavDestination
 
 /**
- * Navigation graph for onboarding flow
+ * Navigation graph for recommendation flow
  */
 @Composable
-fun OnboardingNavGraph(
+fun RecommendationNavGraph(
     navController: NavHostController,
     modifier: Modifier = Modifier,
 ) {
     NavHost(
         modifier = modifier,
         navController = navController,
-        startDestination = OnboardingNavDestination.Welcome,
+        startDestination = RecommendationNavDestination.Feed,
         enterTransition = {
             slideIntoContainer(
                 towards = AnimatedContentTransitionScope.SlideDirection.Left,
@@ -50,21 +48,18 @@ fun OnboardingNavGraph(
             )
         },
     ) {
-        composable<OnboardingNavDestination.Welcome> {
-            WelcomeRoute(navController)
+        composable<RecommendationNavDestination.Feed> {
+            FeedRoute(navController)
         }
 
-        composable<OnboardingNavDestination.ManualInput> {
-            ManualInputRoute(navController)
+        composable<RecommendationNavDestination.Category> {
         }
 
-        composable<OnboardingNavDestination.Form> { navBackStackEntry ->
-            val args = navBackStackEntry.toRoute<OnboardingNavDestination.Form>()
+        composable<RecommendationNavDestination.LocationDetails> { navBackStackEntry ->
+            val args = navBackStackEntry.toRoute<RecommendationNavDestination.LocationDetails>()
+        }
 
-            FormRoute(
-                index = args.index,
-                navController = navController
-            )
+        composable<RecommendationNavDestination.ActivityDetails> { navBackStackEntry ->
         }
     }
 }

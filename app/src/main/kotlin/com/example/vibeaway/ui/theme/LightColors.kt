@@ -18,4 +18,6 @@ val lightColorScheme = lightColorScheme(
     outline = Color(0xFFACB8C2),
 
     surfaceContainerHighest = Color(0xFFFAF1E0),
+
+    inverseOnSurface = Color(0xFFFFFFFF),
 )

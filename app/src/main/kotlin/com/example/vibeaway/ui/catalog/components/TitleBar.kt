@@ -44,7 +44,7 @@ fun TitleBar(
             onBack?.let {
                 IconButton(onClick = it) {
                     Icon(
-                        painter = painterResource(R.drawable.ic_arrow_left),
+                        painter = painterResource(R.drawable.ic_arrow_left_large),
                         contentDescription = stringResource(R.string.lbl_accessibility_back)
                     )
                 }
