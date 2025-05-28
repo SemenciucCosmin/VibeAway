@@ -73,7 +73,7 @@ class RecommendationRepositoryImpl(
     }
 
     override suspend fun getRecommendedLocationsDetails(): List<LocationDetails> {
-        return locationDetailsDataSource.getLocations()
+        return locationDetailsDataSource.getLocationsDetails()
     }
 
     override suspend fun getRecommendedActivitiesDetails(): List<ActivityDetails> {

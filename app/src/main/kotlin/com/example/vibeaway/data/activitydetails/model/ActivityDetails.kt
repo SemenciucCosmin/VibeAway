@@ -8,6 +8,7 @@ package com.example.vibeaway.data.activitydetails.model
 data class ActivityDetails(
     val id: String,
     val title: String,
+    val city: String,
     val description: String,
     val imageUrl: String?
 )

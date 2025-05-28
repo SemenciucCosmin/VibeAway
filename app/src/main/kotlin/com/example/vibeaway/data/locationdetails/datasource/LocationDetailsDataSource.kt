@@ -7,5 +7,5 @@ import com.example.vibeaway.data.locationdetails.model.LocationDetails
  */
 interface LocationDetailsDataSource {
 
-    fun getLocations(): List<LocationDetails>
+    fun getLocationsDetails(): List<LocationDetails>
 }

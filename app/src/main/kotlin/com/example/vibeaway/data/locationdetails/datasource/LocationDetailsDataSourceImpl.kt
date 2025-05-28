@@ -8,14 +8,15 @@ import kotlin.random.Random
  */
 class LocationDetailsDataSourceImpl : LocationDetailsDataSource {
 
-    override fun getLocations(): List<LocationDetails> {
+    override fun getLocationsDetails(): List<LocationDetails> {
         return List(20) {
             LocationDetails(
                 id = it.toString(),
                 city = "City: $it",
                 country = "Country: $it",
-                latitude = 0.0,
-                longitude = 0.0,
+                latitude = 46.7712,
+                longitude = 23.6236,
+                description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
                 imageUrl = listOf(
                     "https://i0.wp.com/www.touristitaly.com/wp-content/uploads/2023/03/Trevi-Fountain-rome-2-scaled.jpg?fit=4272%2C2848&ssl=1",
                     "https://static.independent.co.uk/2025/04/25/13/42/iStock-1498516775.jpg",

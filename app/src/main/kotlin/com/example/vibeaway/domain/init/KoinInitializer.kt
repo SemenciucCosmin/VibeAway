@@ -18,6 +18,7 @@ import com.example.vibeaway.domain.locationdetails.di.locationDetailsDomainModul
 import com.example.vibeaway.feature.auth.di.authFeatureModule
 import com.example.vibeaway.feature.category.di.categoryFeatureModule
 import com.example.vibeaway.feature.feed.di.feedFeatureModule
+import com.example.vibeaway.feature.locationdetails.di.locationDetailsFeatureModule
 import com.example.vibeaway.feature.onboarding.di.onboardingFeatureModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -45,6 +46,7 @@ class KoinInitializer : Initializer<Unit> {
                     locationDataModule(),
                     locationDetailsDataModule(),
                     locationDetailsDomainModule(),
+                    locationDetailsFeatureModule(),
                     networkDataModule(
                         amadeusApiKey = BuildConfig.AMADEUS_API_KEY,
                         amadeusApiSecret = BuildConfig.AMADEUS_API_SECRET,

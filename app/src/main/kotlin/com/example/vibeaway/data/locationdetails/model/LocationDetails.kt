@@ -13,6 +13,7 @@ data class LocationDetails(
     val id: String,
     val city: String,
     val country: String,
+    val description: String,
     val latitude: Double,
     val longitude: Double,
     val imageUrl: String?,

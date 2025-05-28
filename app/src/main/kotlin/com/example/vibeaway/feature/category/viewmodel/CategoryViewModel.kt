@@ -68,7 +68,7 @@ class CategoryViewModel(
             CategoryUiState.Item(
                 id = it.id,
                 title = it.title,
-                label = it.description,
+                label = it.city,
                 imageUrl = it.imageUrl,
                 isFavourite = favouriteLocationsIds.contains(it.id)
             )

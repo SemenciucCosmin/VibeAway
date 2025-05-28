@@ -82,4 +82,7 @@
     <string name="lbl_recommended_locations_message">See recommended locations based on your personality.</string>
     <string name="lbl_recommended_activities_message">See recommended activities based on your personality.</string>
 
+    <!--  DETAILS  -->
+    <string name="lbl_description_title">Description</string>
+    <string name="lbl_activities_for_you_title">Activities for you</string>
 </resources>

@@ -46,9 +46,9 @@ fun ListItem(
         )
     ) {
         Row(
-            modifier = Modifier.padding(Spacing.Medium),
             horizontalArrangement = Arrangement.spacedBy(Spacing.Medium),
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(Spacing.Medium)
         ) {
             leadingContent()
 

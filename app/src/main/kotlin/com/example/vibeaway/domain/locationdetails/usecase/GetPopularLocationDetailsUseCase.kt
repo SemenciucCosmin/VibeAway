@@ -10,6 +10,6 @@ class GetPopularLocationDetailsUseCase(
     private val locationDetailsDataSource: LocationDetailsDataSource
 ) {
     operator fun invoke(): List<LocationDetails> {
-        return locationDetailsDataSource.getLocations().sortedBy { it.rating }
+        return locationDetailsDataSource.getLocationsDetails().sortedBy { it.rating }
     }
 }
