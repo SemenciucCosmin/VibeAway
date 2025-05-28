@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalContext
+import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
 import com.example.vibeaway.feature.locationdetails.component.LocationDetailsScreen
@@ -11,7 +12,6 @@ import com.example.vibeaway.feature.locationdetails.viewmodel.LocationDetailsVie
 import com.example.vibeaway.ui.navigation.model.RecommendationNavDestination
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
-import androidx.core.net.toUri
 
 private const val GOOGLE_MAPS_URI = "geo:%s,%s"
 private const val GOOGLE_MAPS_PACKAGE = "com.google.android.apps.maps"
@@ -34,7 +34,9 @@ fun LocationDetailsRoute(
         description = uiState.description,
         imageUrl = uiState.imageUrl,
         activities = uiState.activities,
+        isFavourite = uiState.isFavourite,
         isLoading = uiState.isLoading,
+        onFavouriteClicked = viewModel::changeFavouriteState,
         onActivityClick = { activityId ->
             val destination = RecommendationNavDestination.ActivityDetails(activityId)
             navController.navigate(destination)

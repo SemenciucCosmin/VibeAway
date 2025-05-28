@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.example.vibeaway.R
+import com.example.vibeaway.feature.feed.component.FavouriteButton
 import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
 import com.example.vibeaway.ui.catalog.components.ListItem
 import com.example.vibeaway.ui.catalog.dimension.Radius
@@ -35,18 +36,29 @@ fun LocationDetailsContent(
     city: String,
     country: String,
     description: String,
+    isFavourite: Boolean,
     activities: List<LocationDetailsUiState.Activity>,
     onLocationClick: () -> Unit,
+    onFavouriteClicked: () -> Unit,
     onActivityClick: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier) {
-        Text(
-            text = city,
-            color = MaterialTheme.colorScheme.onSurface,
-            style = MaterialTheme.typography.headlineLarge,
-            fontWeight = FontWeight.Bold
-        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                text = city,
+                color = MaterialTheme.colorScheme.onSurface,
+                style = MaterialTheme.typography.headlineLarge,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.weight(1f)
+            )
+
+            FavouriteButton(
+                isSelected = isFavourite,
+                onClick = onFavouriteClicked,
+                modifier = Modifier.size(Spacing.XLarge)
+            )
+        }
 
         Spacer(modifier = Modifier.size(Spacing.XSmall))
 
@@ -130,8 +142,10 @@ private fun PreviewLocationDetailsContent() {
             city = "Satu Mare",
             country = "Romania",
             description = "Best city in Romania for all its beautiful locations, especially the cemetery from the city center; must've been a very intelligent man that put it there. <3",
+            isFavourite = true,
             onLocationClick = {},
             onActivityClick = {},
+            onFavouriteClicked = {},
             activities = List(4) {
                 LocationDetailsUiState.Activity(
                     id = it.toString(),

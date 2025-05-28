@@ -3,6 +3,7 @@ package com.example.vibeaway.feature.locationdetails.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.vibeaway.data.activitydetails.datasource.ActivityDetailsDataSource
+import com.example.vibeaway.data.database.repository.DatabaseRepository
 import com.example.vibeaway.data.locationdetails.datasource.LocationDetailsDataSource
 import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
 import kotlinx.coroutines.async
@@ -19,6 +20,7 @@ class LocationDetailsViewModel(
     private val locationDetailsId: String,
     private val locationDetailsDataSource: LocationDetailsDataSource,
     private val activityDetailsDataSource: ActivityDetailsDataSource,
+    private val databaseRepository: DatabaseRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(LocationDetailsUiState())
@@ -65,6 +67,19 @@ class LocationDetailsViewModel(
                 longitude = locationDetails.longitude,
                 activities = locationDetailsActivities,
             )
+        }
+    }
+
+    fun changeFavouriteState() = viewModelScope.launch {
+        _uiState.update {
+            val isFavourite = !it.isFavourite
+
+            when {
+                isFavourite -> databaseRepository.saveFavouriteLocation(locationDetailsId)
+                else -> databaseRepository.removeFavouriteLocation(locationDetailsId)
+            }
+
+            it.copy(isFavourite = isFavourite)
         }
     }
 }

@@ -8,6 +8,7 @@ data class LocationDetailsUiState(
     val country: String = String.BLANK,
     val imageUrl: String? = null,
     val description: String = String.BLANK,
+    val isFavourite: Boolean = false,
     val latitude: Double? = null,
     val longitude: Double? = null,
     val activities: List<Activity> = emptyList()

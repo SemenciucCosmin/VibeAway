@@ -13,7 +13,7 @@ class ActivityDetailsDataSourceImpl : ActivityDetailsDataSource {
                 id = it.toString(),
                 title = "Title: $it",
                 city = "City: $it",
-                description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 imageUrl = listOf(
                     "https://gmgc.com/wp-content/uploads/2024/04/Ultimate-Guide-To-Indoor-Rock-Climbing-For-Kids_770x400-770x400.jpg",
                     "https://images.giant-bicycles.com/xum4rnsmri9byrk75pz4/preview.jpg",

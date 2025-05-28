@@ -21,9 +21,11 @@ fun LocationDetailsScreen(
     country: String,
     description: String,
     imageUrl: String?,
+    isFavourite: Boolean,
     activities: List<LocationDetailsUiState.Activity>,
     isLoading: Boolean,
     onLocationClick: () -> Unit,
+    onFavouriteClicked: () -> Unit,
     onActivityClick: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -46,9 +48,11 @@ fun LocationDetailsScreen(
                     city = city,
                     country = country,
                     description = description,
+                    isFavourite = isFavourite,
                     activities = activities,
                     onLocationClick = onLocationClick,
                     onActivityClick = onActivityClick,
+                    onFavouriteClicked = onFavouriteClicked,
                     modifier = Modifier.padding(
                         vertical = Spacing.XLarge,
                         horizontal = Spacing.Large
@@ -70,8 +74,10 @@ private fun PreviewLocationDetailsScreen() {
             description = "Best city in Romania for all its beautiful locations, especially the cemetery from the city center; must've been a very intelligent man that put it there. <3",
             imageUrl = null,
             isLoading = false,
+            isFavourite = true,
             onLocationClick = {},
             onActivityClick = {},
+            onFavouriteClicked = {},
             activities = List(4) {
                 LocationDetailsUiState.Activity(
                     id = it.toString(),

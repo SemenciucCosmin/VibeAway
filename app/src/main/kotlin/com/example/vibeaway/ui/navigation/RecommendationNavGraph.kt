@@ -71,7 +71,6 @@ fun RecommendationNavGraph(
         }
 
         composable<RecommendationNavDestination.ActivityDetails> { navBackStackEntry ->
-
         }
     }
 }
