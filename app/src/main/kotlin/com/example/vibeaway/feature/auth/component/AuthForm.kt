@@ -108,7 +108,7 @@ fun AuthForm(
 
             TextButton(onClick = onChangeAuthClick) {
                 Text(
-                    text = stringResource(authScreenType.signLabelRes),
+                    text = stringResource(authScreenType.redirectSignLabelRes),
                     color = MaterialTheme.colorScheme.onPrimary,
                     fontWeight = FontWeight.Bold
                 )
