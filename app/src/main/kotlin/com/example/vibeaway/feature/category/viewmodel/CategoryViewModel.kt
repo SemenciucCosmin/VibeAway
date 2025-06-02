@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.vibeaway.data.database.repository.DatabaseRepository
 import com.example.vibeaway.data.repository.RecommendationRepository
+import com.example.vibeaway.domain.core.string.BLANK
 import com.example.vibeaway.domain.locationdetails.usecase.GetPopularLocationDetailsUseCase
 import com.example.vibeaway.feature.category.model.Category
 import com.example.vibeaway.feature.category.viewmodel.model.CategoryUiState
@@ -49,7 +50,8 @@ class CategoryViewModel(
                 id = it.id,
                 title = it.city,
                 label = it.country,
-                imageUrl = it.imageUrl,
+                imageUrl = null,
+                imageFileName = it.imageFileName,
                 isFavourite = favouriteLocationsIds.contains(it.id)
             )
         }
@@ -68,8 +70,9 @@ class CategoryViewModel(
             CategoryUiState.Item(
                 id = it.id,
                 title = it.title,
-                label = it.city,
+                label = String.BLANK,
                 imageUrl = it.imageUrl,
+                imageFileName = null,
                 isFavourite = favouriteLocationsIds.contains(it.id)
             )
         }
@@ -89,7 +92,8 @@ class CategoryViewModel(
                 id = it.id,
                 title = it.city,
                 label = it.country,
-                imageUrl = it.imageUrl,
+                imageUrl = null,
+                imageFileName = it.imageFileName,
                 isFavourite = favouriteLocationsIds.contains(it.id)
             )
         }

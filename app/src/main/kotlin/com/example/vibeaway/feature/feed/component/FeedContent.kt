@@ -13,6 +13,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -36,6 +37,8 @@ fun FeedContent(
     onLocationDetailsFavouriteClick: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val context = LocalContext.current
+
     LazyVerticalGrid(
         modifier = modifier,
         contentPadding = PaddingValues(Spacing.Medium),
@@ -75,14 +78,18 @@ fun FeedContent(
         }
 
         items(locationsDetails) { locationsDetails ->
+            val resId = locationsDetails.imageFileName?.let {
+                context.resources.getIdentifier(it, "drawable", context.packageName)
+            }
+
             ListItemCard(
                 modifier = Modifier.aspectRatio(0.8f),
                 title = locationsDetails.city,
                 label = locationsDetails.country,
-                imageUrl = locationsDetails.imageUrl,
                 isFavourite = locationsDetails.isFavourite,
                 onClick = { onLocationDetailsClick(locationsDetails.id) },
-                onFavouriteClick = { onLocationDetailsFavouriteClick(locationsDetails.id) }
+                onFavouriteClick = { onLocationDetailsFavouriteClick(locationsDetails.id) },
+                imageModel = resId
             )
         }
     }
@@ -105,7 +112,7 @@ private fun PreviewFeedContent() {
                     city = "City: $it",
                     country = "Country: $it",
                     isFavourite = Random.nextBoolean(),
-                    imageUrl = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
+                    imageFileName = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
                 )
             },
         )

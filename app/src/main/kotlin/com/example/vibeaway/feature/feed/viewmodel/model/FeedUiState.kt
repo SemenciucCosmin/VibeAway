@@ -12,7 +12,7 @@ data class FeedUiState(
      */
     data class LocationDetails(
         val id: String,
-        val imageUrl: String?,
+        val imageFileName: String?,
         val isFavourite: Boolean,
         val city: String,
         val country: String,

@@ -6,7 +6,7 @@ data class LocationDetailsUiState(
     val isLoading: Boolean = false,
     val city: String = String.BLANK,
     val country: String = String.BLANK,
-    val imageUrl: String? = null,
+    val imageFileName: String? = null,
     val description: String = String.BLANK,
     val isFavourite: Boolean = false,
     val latitude: Double? = null,
@@ -16,7 +16,7 @@ data class LocationDetailsUiState(
     data class Activity(
         val id: String,
         val title: String,
-        val description: String,
+        val description: String?,
         val imageUrl: String?,
     )
 }

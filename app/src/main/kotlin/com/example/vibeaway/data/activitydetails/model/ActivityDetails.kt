@@ -8,7 +8,12 @@ package com.example.vibeaway.data.activitydetails.model
 data class ActivityDetails(
     val id: String,
     val title: String,
-    val city: String,
-    val description: String,
-    val imageUrl: String?
+    val description: String?,
+    val imageUrl: String?,
+    val latitude: Double,
+    val longitude: Double,
+    val priceAmount: Double?,
+    val currencyCode: String?,
+    val bookingUrl: String?,
+    val rating: Float
 )

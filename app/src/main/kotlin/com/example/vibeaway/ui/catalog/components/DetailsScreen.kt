@@ -21,7 +21,7 @@ import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 @Composable
 fun DetailsScreen(
-    imageUrl: String?,
+    imageModel: Any?,
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit
 ) {
@@ -30,7 +30,7 @@ fun DetailsScreen(
         verticalArrangement = Arrangement.spacedBy(-Spacing.Large)
     ) {
         AsyncImage(
-            model = imageUrl,
+            model = imageModel,
             contentDescription = null,
             contentScale = ContentScale.Crop,
             placeholder = painterResource(R.drawable.image_placeholder),
@@ -55,7 +55,7 @@ fun DetailsScreen(
 private fun PreviewDetailsScreen() {
     VibeAwayTheme {
         DetailsScreen(
-            imageUrl = null,
+            imageModel = null,
             content = {},
         )
     }

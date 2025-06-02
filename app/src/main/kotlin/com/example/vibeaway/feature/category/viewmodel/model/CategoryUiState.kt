@@ -9,6 +9,7 @@ data class CategoryUiState(
         val title: String,
         val label: String,
         val imageUrl: String?,
+        val imageFileName: String?,
         val isFavourite: Boolean
     )
 }

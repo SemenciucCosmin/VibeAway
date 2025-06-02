@@ -110,6 +110,9 @@ dependencies {
     implementation(platform(libs.retrofit.bom))
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
+
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+
 }
 
 detekt {

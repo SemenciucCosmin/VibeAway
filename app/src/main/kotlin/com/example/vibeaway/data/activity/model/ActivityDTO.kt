@@ -7,9 +7,9 @@ import kotlinx.serialization.Serializable
  * DTO data class for activity model
  * @param [id]: unique identifier of the object
  * @param [description]: description of the activity model
- * @param [categoryId]: [ActivityCategory] to which this activity is related
+ * @param [categoryId]: [ActivityInfo] to which this activity is related
  * @param [estimatedCorrelation]: coefficient determining the level of correlation between this
- * activity and the [ActivityCategory] specified by [categoryId]
+ * activity and the [ActivityInfo] specified by [categoryId]
  */
 @Serializable
 data class ActivityDTO(

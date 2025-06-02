@@ -7,6 +7,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
 import com.example.vibeaway.ui.catalog.components.DetailsScreen
@@ -20,7 +21,7 @@ fun LocationDetailsScreen(
     city: String,
     country: String,
     description: String,
-    imageUrl: String?,
+    imageFileName: String?,
     isFavourite: Boolean,
     activities: List<LocationDetailsUiState.Activity>,
     isLoading: Boolean,
@@ -29,6 +30,11 @@ fun LocationDetailsScreen(
     onActivityClick: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val context = LocalContext.current
+    val imageModel = imageFileName?.let {
+        context.resources.getIdentifier(it, "drawable", context.packageName)
+    }
+
     Scaffold(modifier = modifier) { paddingValues ->
         when {
             isLoading -> ProgressOverlay(
@@ -38,7 +44,7 @@ fun LocationDetailsScreen(
             )
 
             else -> DetailsScreen(
-                imageUrl = imageUrl,
+                imageModel = imageModel,
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues)
@@ -72,7 +78,7 @@ private fun PreviewLocationDetailsScreen() {
             city = "Satu Mare",
             country = "Romania",
             description = "Best city in Romania for all its beautiful locations, especially the cemetery from the city center; must've been a very intelligent man that put it there. <3",
-            imageUrl = null,
+            imageFileName = null,
             isLoading = false,
             isFavourite = true,
             onLocationClick = {},

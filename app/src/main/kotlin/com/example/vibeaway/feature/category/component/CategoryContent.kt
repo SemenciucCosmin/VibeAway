@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.vibeaway.feature.category.viewmodel.model.CategoryUiState
 import com.example.vibeaway.ui.catalog.components.ListItemCard
@@ -22,16 +23,30 @@ fun CategoryContent(
     onFavouriteClick: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val context = LocalContext.current
+
     LazyColumn(
         modifier = modifier,
         contentPadding = PaddingValues(Spacing.Medium),
         verticalArrangement = Arrangement.spacedBy(Spacing.Medium)
     ) {
         items(items) { item ->
+            val imageModel = when {
+                item.imageFileName != null -> {
+                    context.resources.getIdentifier(
+                        item.imageFileName,
+                        "drawable",
+                        context.packageName
+                    )
+                }
+
+                else -> item.imageUrl
+            }
+
             ListItemCard(
                 title = item.title,
                 label = item.label,
-                imageUrl = item.imageUrl,
+                imageModel = imageModel,
                 isFavourite = item.isFavourite,
                 onClick = { onItemClick(item.id) },
                 onFavouriteClick = { onFavouriteClick(item.id) },
@@ -56,6 +71,7 @@ private fun PreviewCategoryContent() {
                     label = "label: $it",
                     isFavourite = Random.nextBoolean(),
                     imageUrl = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
+                    imageFileName = null,
                 )
             }
         )

@@ -12,7 +12,7 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class GenericAmadeusDTO<T>(
-    @SerialName("meta") val meta: String? = null,
+    @SerialName("meta") val meta: MetaDTO? = null,
     @SerialName("data") val data: T? = null,
 ) {
     /**

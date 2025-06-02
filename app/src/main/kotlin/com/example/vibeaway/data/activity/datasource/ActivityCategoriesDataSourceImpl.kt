@@ -1,26 +1,26 @@
 package com.example.vibeaway.data.activity.datasource
 
-import com.example.vibeaway.data.activity.model.ActivityCategory
 import com.example.vibeaway.data.activity.model.ActivityCategoryDTO
+import com.example.vibeaway.data.activity.model.ActivityInfo
 import com.example.vibeaway.data.core.datasource.JsonDataSource
 import kotlinx.serialization.json.Json
 import java.util.Collections
 
 /**
- * Data source for providing the list of [ActivityCategory] from a json file or from in memory cache.
+ * Data source for providing the list of [ActivityInfo] from a json file or from in memory cache.
  */
 class ActivityCategoriesDataSourceImpl : ActivityCategoriesDataSource, JsonDataSource() {
 
     /**
-     * In memory cache for list of [ActivityCategory]
+     * In memory cache for list of [ActivityInfo]
      */
-    private val activityCategories: MutableList<ActivityCategory> =
+    private val activityCategories: MutableList<ActivityInfo> =
         Collections.synchronizedList(mutableListOf())
 
     /**
-     * Parses a json file into a list of [ActivityCategory] or retrieves it from in memory cache.
+     * Parses a json file into a list of [ActivityInfo] or retrieves it from in memory cache.
      */
-    override fun getActivityCategories(): List<ActivityCategory> {
+    override fun getActivityCategories(): List<ActivityInfo> {
         return when {
             this.activityCategories.isNotEmpty() -> this.activityCategories
 
@@ -35,29 +35,29 @@ class ActivityCategoriesDataSourceImpl : ActivityCategoriesDataSource, JsonDataS
 
     /**
      * Parses a json file into a list of [ActivityCategoryDTO] and maps
-     * it to a list of [ActivityCategory].
+     * it to a list of [ActivityInfo].
      */
-    private fun getActivityCategoriesFromFile(): List<ActivityCategory> {
+    private fun getActivityCategoriesFromFile(): List<ActivityInfo> {
         val jsonString = getJson(FILE_PATH)
         val activityCategoryDTOs = Json.decodeFromString<List<ActivityCategoryDTO>>(jsonString)
         return mapActivityCategoryDTOtoActivityCategory(activityCategoryDTOs)
     }
 
     /**
-     * Maps a list of [ActivityCategoryDTO] to a list of [ActivityCategory].
+     * Maps a list of [ActivityCategoryDTO] to a list of [ActivityInfo].
      */
     private fun mapActivityCategoryDTOtoActivityCategory(
         activityCategoryDTOs: List<ActivityCategoryDTO>
-    ): List<ActivityCategory> {
+    ): List<ActivityInfo> {
         return activityCategoryDTOs.mapNotNull { activityCategoryDTO ->
             val bfiDimensionsInfo = activityCategoryDTO.bfiDimensionsInfoDTOs?.mapNotNull {
-                ActivityCategory.BFIDimensionInfo(
+                ActivityInfo.BFIDimensionInfo(
                     id = it.id ?: return@mapNotNull null,
                     regressionsWeight = it.regressionsWeight ?: return@mapNotNull null,
                 )
             }
 
-            ActivityCategory(
+            ActivityInfo(
                 id = activityCategoryDTO.id ?: return@mapNotNull null,
                 name = activityCategoryDTO.name ?: return@mapNotNull null,
                 bfiDimensionsInfo = bfiDimensionsInfo ?: return@mapNotNull null,

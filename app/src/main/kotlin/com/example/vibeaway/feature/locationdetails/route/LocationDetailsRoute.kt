@@ -32,7 +32,7 @@ fun LocationDetailsRoute(
         city = uiState.city,
         country = uiState.country,
         description = uiState.description,
-        imageUrl = uiState.imageUrl,
+        imageFileName = uiState.imageFileName,
         activities = uiState.activities,
         isFavourite = uiState.isFavourite,
         isLoading = uiState.isLoading,

@@ -1,15 +1,15 @@
 package com.example.vibeaway.domain.locationdetails.usecase
 
-import com.example.vibeaway.data.locationdetails.datasource.LocationDetailsDataSource
 import com.example.vibeaway.data.locationdetails.model.LocationDetails
+import com.example.vibeaway.data.repository.RecommendationRepository
 
 /**
  * Use case for fetching the list of popular [LocationDetails]
  */
 class GetPopularLocationDetailsUseCase(
-    private val locationDetailsDataSource: LocationDetailsDataSource
+    private val recommendationRepository: RecommendationRepository
 ) {
-    operator fun invoke(): List<LocationDetails> {
-        return locationDetailsDataSource.getLocationsDetails().sortedBy { it.rating }
+    suspend operator fun invoke(): List<LocationDetails> {
+        return recommendationRepository.getRecommendedLocationsDetails()
     }
 }

@@ -1,5 +1,7 @@
 package com.example.vibeaway.data.locationdetails.model
 
+import com.example.vibeaway.data.activitydetails.model.ActivityDetails
+
 /**
  * Data class for extended location model
  * @param [id]: unique identifier of the location model
@@ -7,7 +9,7 @@ package com.example.vibeaway.data.locationdetails.model
  * @param [country]: country of the location model
  * @param [latitude]: latitude coordinate of the location model
  * @param [longitude]: latitude coordinate of the location model
- * @param [imageUrl]: image url of the location model
+ * @param [imageFileName]: image file name of the location model
  */
 data class LocationDetails(
     val id: String,
@@ -16,7 +18,6 @@ data class LocationDetails(
     val description: String,
     val latitude: Double,
     val longitude: Double,
-    val imageUrl: String?,
-    val rating: Float,
-    val activitiesIds: List<String>
+    val imageFileName: String?,
+    val activitiesDetails: List<ActivityDetails>
 )

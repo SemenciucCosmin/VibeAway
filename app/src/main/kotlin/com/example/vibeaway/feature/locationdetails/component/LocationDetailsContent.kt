@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.example.vibeaway.R
+import com.example.vibeaway.domain.core.string.BLANK
 import com.example.vibeaway.feature.feed.component.FavouriteButton
 import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
 import com.example.vibeaway.ui.catalog.components.ListItem
@@ -99,20 +100,22 @@ fun LocationDetailsContent(
 
         Spacer(modifier = Modifier.size(Spacing.Large))
 
-        Text(
-            text = stringResource(R.string.lbl_activities_for_you_title),
-            color = MaterialTheme.colorScheme.onSurface,
-            style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold
-        )
+        if (activities.isNotEmpty()) {
+            Text(
+                text = stringResource(R.string.lbl_activities_for_you_title),
+                color = MaterialTheme.colorScheme.onSurface,
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold
+            )
 
-        Spacer(modifier = Modifier.size(Spacing.Medium))
+            Spacer(modifier = Modifier.size(Spacing.Medium))
+        }
 
         activities.forEach { activity ->
             ListItem(
                 modifier = Modifier.height(IntrinsicSize.Min),
                 title = activity.title,
-                description = activity.description,
+                description = activity.description ?: String.BLANK,
                 onClick = { onActivityClick(activity.id) },
                 leadingContent = {
                     AsyncImage(

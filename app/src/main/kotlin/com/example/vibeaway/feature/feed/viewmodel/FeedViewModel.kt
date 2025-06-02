@@ -40,7 +40,7 @@ class FeedViewModel(
         val popularLocationDetails = getPopularLocationDetailsUseCase().map {
             FeedUiState.LocationDetails(
                 id = it.id,
-                imageUrl = it.imageUrl,
+                imageFileName = it.imageFileName,
                 isFavourite = favouriteLocationsIds.contains(it.id),
                 city = it.city,
                 country = it.country

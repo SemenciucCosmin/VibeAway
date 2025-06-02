@@ -7,7 +7,7 @@ package com.example.vibeaway.data.activity.model
  * @param [bfiDimensionsInfo]: list of related [BFIDimensionInfo], should always
  * contain all 5 of them
  */
-data class ActivityCategory(
+data class ActivityInfo(
     val id: String,
     val name: String,
     val bfiDimensionsInfo: List<BFIDimensionInfo>

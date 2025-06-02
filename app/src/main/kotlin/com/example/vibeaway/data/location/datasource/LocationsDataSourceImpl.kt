@@ -48,15 +48,18 @@ class LocationsDataSourceImpl : LocationsDataSource, JsonDataSource() {
     private fun mapLocationDTOtoLocation(locationDTOs: List<LocationDTO>): List<Location> {
         return locationDTOs.mapNotNull { locationDTO ->
             Location(
+                id = locationDTO.id ?: return@mapNotNull null,
                 city = locationDTO.city ?: return@mapNotNull null,
                 country = locationDTO.country ?: return@mapNotNull null,
                 latitude = locationDTO.latitude ?: return@mapNotNull null,
                 longitude = locationDTO.longitude ?: return@mapNotNull null,
+                description = locationDTO.description ?: return@mapNotNull null,
+                imageFileName = locationDTO.imageFileName ?: return@mapNotNull null,
             )
         }
     }
 
     companion object {
-        private const val FILE_PATH = "locations.json"
+        private const val FILE_PATH = "locations_details.json"
     }
 }

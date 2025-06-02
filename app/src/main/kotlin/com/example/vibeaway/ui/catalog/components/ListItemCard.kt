@@ -35,7 +35,7 @@ import com.example.vibeaway.ui.theme.VibeAwayTheme
 fun ListItemCard(
     title: String,
     label: String,
-    imageUrl: String?,
+    imageModel: Any?,
     isFavourite: Boolean,
     onClick: () -> Unit,
     onFavouriteClick: () -> Unit,
@@ -48,7 +48,7 @@ fun ListItemCard(
     ) {
         AsyncImage(
             modifier = Modifier.fillMaxSize(),
-            model = imageUrl,
+            model = imageModel,
             contentDescription = null,
             contentScale = ContentScale.FillBounds,
             placeholder = painterResource(R.drawable.image_placeholder),
@@ -103,7 +103,7 @@ private fun PreviewListItemCard() {
         ListItemCard(
             title = "Rome",
             label = "Italy",
-            imageUrl = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
+            imageModel = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
             isFavourite = true,
             onClick = {},
             onFavouriteClick = {},

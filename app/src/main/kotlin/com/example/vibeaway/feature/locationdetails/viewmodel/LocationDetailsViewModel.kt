@@ -2,11 +2,9 @@ package com.example.vibeaway.feature.locationdetails.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.vibeaway.data.activitydetails.datasource.ActivityDetailsDataSource
 import com.example.vibeaway.data.database.repository.DatabaseRepository
-import com.example.vibeaway.data.locationdetails.datasource.LocationDetailsDataSource
+import com.example.vibeaway.data.repository.RecommendationRepository
 import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
-import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -18,9 +16,8 @@ import kotlinx.coroutines.launch
 
 class LocationDetailsViewModel(
     private val locationDetailsId: String,
-    private val locationDetailsDataSource: LocationDetailsDataSource,
-    private val activityDetailsDataSource: ActivityDetailsDataSource,
     private val databaseRepository: DatabaseRepository,
+    private val recommendationRepository: RecommendationRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(LocationDetailsUiState())
@@ -35,24 +32,18 @@ class LocationDetailsViewModel(
     private fun getLocationDetails() = viewModelScope.launch {
         _uiState.update { it.copy(isLoading = true) }
 
-        val locationsDetailsAsync = async { locationDetailsDataSource.getLocationsDetails() }
-        val activitiesDetailsAsync = async { activityDetailsDataSource.getActivitiesDetails() }
-
-        val locationsDetails = locationsDetailsAsync.await()
-        val activitiesDetails = activitiesDetailsAsync.await()
+        val locationsDetails = recommendationRepository.getLocationsDetails()
 
         val locationDetails = locationsDetails.firstOrNull {
             it.id == locationDetailsId
         } ?: return@launch
 
-        val locationDetailsActivities = activitiesDetails.filter { activity ->
-            activity.id in locationDetails.activitiesIds
-        }.map { activity ->
+        val locationDetailsActivities = locationDetails.activitiesDetails.map { activityDetails ->
             LocationDetailsUiState.Activity(
-                id = activity.id,
-                title = activity.title,
-                description = activity.description,
-                imageUrl = activity.imageUrl
+                id = activityDetails.id,
+                title = activityDetails.title,
+                description = activityDetails.description,
+                imageUrl = activityDetails.imageUrl
             )
         }
 
@@ -61,7 +52,7 @@ class LocationDetailsViewModel(
                 isLoading = false,
                 city = locationDetails.city,
                 country = locationDetails.country,
-                imageUrl = locationDetails.imageUrl,
+                imageFileName = locationDetails.imageFileName,
                 description = locationDetails.description,
                 latitude = locationDetails.latitude,
                 longitude = locationDetails.longitude,

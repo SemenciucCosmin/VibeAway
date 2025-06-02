@@ -69,6 +69,7 @@ private fun PreviewCategoryScreen() {
                     label = "label: $it",
                     isFavourite = Random.nextBoolean(),
                     imageUrl = "https://i.pinimg.com/236x/ed/61/19/ed61199724b1233673a76f5dbb4392c5.jpg",
+                    imageFileName = null
                 )
             }
         )

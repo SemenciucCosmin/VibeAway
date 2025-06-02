@@ -5,5 +5,5 @@ import com.example.vibeaway.data.activitydetails.datasource.ActivityDetailsDataS
 import org.koin.dsl.module
 
 fun activityDetailsDataModule() = module {
-    factory<ActivityDetailsDataSource> { ActivityDetailsDataSourceImpl() }
+    factory<ActivityDetailsDataSource> { ActivityDetailsDataSourceImpl(get(), get()) }
 }

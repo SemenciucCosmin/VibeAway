@@ -1,0 +1,902 @@
+[
+ {
+   "id": "0a109b07-8fbf-454d-a267-dc8fee092f80",
+   "city": "Hong Kong",
+   "country": "Hong Kong",
+   "longitude": 114.1694,
+   "latitude": 22.3193,
+   "description": "Delectable dim sum, floating islands, and a one-of-a-kind skyline are just some of Hong Kong’s enchanting features. Eat your way across Temple Street Night Market with its fish balls and stinky tofu, or settle in for dim sum at Michelin-starred venues like Tim Ho Wan. For traditional Chinese architecture, head to Ngong Ping Village, then take the tram to the tippity-top of Victoria Peak for skyscraper views. The gentle hills of Nan Lian Garden will deliver serenity, but a detour through the city’s cocktail bars will bring back Hong Kong’s urban buzz.",
+   "imageFileName": "hongkong"
+ },
+ {
+   "id": "13e7b289-a37a-42a4-92d6-34b5cab2e9f0",
+   "city": "Bangkok",
+   "country": "Thailand",
+   "longitude": 100.5018,
+   "latitude": 13.7563,
+   "description": "There's no getting around it: Bangkok is intense. Temples swarm with crowds. Street food sizzles into the early hours. The heat doesn't quit. And the nightlife—from the Patpong entertainment district to ritzy rooftop bars—is nonstop. For travelers craving local secrets and 24/7 energy, there’s nowhere like it. Marvel at Wat Pho's enormous gold Buddha and Wat Arun's epic view, or spend a Saturday souvenir-hunting at Chatuchak Weekend Market. Come evening, hit Chinatown's food stalls for khao geng or kuay jab, then bar-crawl your way through hipstery Soi Nana. It can be a lot, so if you need to recharge, book a traditional Thai massage or relax in Lumpini Park, one of the city's only green spaces. It doesn't stop there—we've got lots more recs below.",
+   "imageFileName": "bangkok"
+ },
+ {
+   "id": "f7abb465-e753-4ab0-b343-1e1f6dc93c33",
+   "city": "London",
+   "country": "United Kingdom",
+   "longitude": -0.1275,
+   "latitude": 51.5072,
+   "description": "From Shoreditch’s swaggering style to Camden’s punky vibe and chic Portobello Road, London is many worlds in one. The city’s energy means that no two days are the same. Explore royal or historic sites, tick off landmarks from your bucket list, eat and drink in exclusive Michelin-starred restaurants, enjoy a pint in a traditional pub, or get lost down winding cobbled streets and see what you stumble across – when it comes to London, the possibilities are endless.",
+   "imageFileName": "london"
+ },
+ {
+   "id": "b55f9dbe-f95c-45af-8633-22bb76925dc0",
+   "city": "Macau",
+   "country": "Macau",
+   "longitude": 113.5461,
+   "latitude": 22.2006,
+   "description": "Macao is full of boundless surprises, concealing a soulful character beneath its glittering surface. Compact but overflowing with diverse experiences, this city beckons travellers with its unique blend of Chinese heritage and Portuguese influences. Its skyline features the juxtaposition of modern marvels with historic landmarks, while the bustling streets pulse with life. Macao stands as a world centre of tourism and leisure, where any sightseeing itinerary can be coupled with gastronomy, sporting events, art festivals, creative pursuits and other activities. With its multifaceted charm, Macao is a captivating destination that goes beyond first impressions, revealing its true depth to those who peel its layers.",
+   "imageFileName": "macau"
+ },
+ {
+   "id": "b84b233e-7e6a-4b70-aa53-2ecf72d38cc2",
+   "city": "Singapore",
+   "country": "Singapore",
+   "longitude": 103.8198,
+   "latitude": 1.3521,
+   "description": "This island city-state is famous for its unique blend of cultures—Malay, Chinese, and Indian communities, among many others, are well-repped. It's exactly this mixing of influences that gives Singapore a vibe all its own (and makes for a pretty amazing dining scene, too). There's world-class restaurants, sure, but you can't miss checking out the street food at any one of its famous hawker centers. At these large food courts, you can sample everything from iconic noodle dishes to Michelin-starred plates. As for the rest of the island, the scenery can't be undersold—it's a place where lush parks sit alongside futuristic skyscrapers and unique historic districts. We recommend starting with the Gardens by the Bay or the MacRitchie Reservoir Park to see some of the green spaces, and be sure to pay a visit to the historical districts of Chinatown, Little India or Kampong Gelam. We've got more recs below.",
+   "imageFileName": "singapore"
+ },
+ {
+   "id": "130c9d99-dbe9-48e3-ba4e-b8fd2c6b2522",
+   "city": "Paris",
+   "country": "France",
+   "longitude": 2.3514,
+   "latitude": 48.8575,
+   "description": "Paris has a reputation for being the ultimate romantic getaway. But what visitors really swoon over is the city itself. Those grand stone and wrought-iron buildings, the sidewalks brimming with cozy cafés, and the Seine’s curving riverbanks are downright cinematic. But the city’s charms go beyond looks. The culinary scene creates an endless list of must-eat French dishes—rich and hearty coq au vin, golden buttery croissants. It’s also worth trying modern fusion and inventive international food here. (Trust us, the city’s falafel is outstanding.) And the spirit of Paris invites ducking down side streets, lingering in museums, and exploring mazes of shops. At the end of the day, head to the Champ-de-Mars to get uninterrupted views of the Eiffel Tower as it glitters into the night.",
+   "imageFileName": "paris"
+ },
+ {
+   "id": "d2d3bb51-b1c2-4c7c-a7f5-b05a6b42c999",
+   "city": "Dubai",
+   "country": "United Arab Emirates",
+   "longitude": 55.2708,
+   "latitude": 25.2048,
+   "description": "Everything feels extra spectacular in Dubai—from the ultra-modern Burj Khalifa to the souks and malls filled with gold and jewelry vendors. It’s a place where if you can dream it, you can do it: Whether that means skiing indoors, dune-surfing in the desert, or zip-lining above the city. But it’s not all glitz and adrenaline-pumping action. Stroll through the winding alleys of Al Fahidi Historical Neighborhood to see what Dubai was like during the mid-19th century. Or visit the Jumeirah Mosque (one of the few mosques open to non-Muslims) and learn about Emirati culture. Spot some street art on Jumeirah Beach Road and grab a bite at a shawarma shop, or spend the day hunting for spices and perfume then round things out with a Michelin-starred meal. You can really do it all and we’ve got more recs, below.",
+   "imageFileName": "dubai"
+ },
+ {
+   "id": "a22d17ba-6060-443b-ae35-3cdd80a0a365",
+   "city": "New York City",
+   "country": "United States",
+   "longitude": -74.006,
+   "latitude": 40.7128,
+   "description": "New York State has it all – booming metropolises, majestic waterfalls, mountains, wine country, chicken wings. Yes, NYC is a magnet for tourists, but an exploration of the rest of the state can be equally thrilling. The Finger Lakes Wine Region is a vision of serene waters, quaint B&Bs, and pretty vineyards. Movie buffs will love Rochester, home of the George Eastman House and one of the world’s most comprehensive film archives. On your way to Niagara Falls, stop in Buffalo to fuel up on spicy wings.",
+   "imageFileName": "newyork"
+ },
+ {
+   "id": "d46144f9-1f3d-4fc5-ae00-06506042ea93",
+   "city": "Istanbul",
+   "country": "Turkey",
+   "longitude": 28.9784,
+   "latitude": 41.0082,
+   "description": "Istanbul is a city that mixes old and new, and the best way to explore it is through its mahalles (neighborhoods). Get your history fix in Beyoğlu—it’s chock-full of 19th-century European elegance—or head to Sultanahmet and see the holy sites. Then, make your way to Nişantaşı for high-end shopping and trendy restaurants, or pop into a bar or cafe in edgy Kadıköy. That’s just the start—we’ve got more ideas below.",
+   "imageFileName": "istanbul"
+ },
+ {
+   "id": "82ecc688-d445-471a-8afe-9e38f9c4f8f4",
+   "city": "Delhi",
+   "country": "India",
+   "longitude": 77.1025,
+   "latitude": 28.7041,
+   "description": "Chaotic and colorful, New Delhi is full-on sensory overload. The Old Delhi neighborhood is a tangle where people, cows, and rickshaws all share the road. In the maze of Chandni Chowk market, vendors sell sizzling kebabs, bright orange marigolds, and souvenirs—spices, puppets, pashminas, jewelry, and so much more. In trendy Haus Khas Village, medieval sites sit next to boutiques, bars, and cool cafes. Lodi Colony, an upscale area built under British rule, has been transformed into an arts district with over 50 vivid murals now covering its walls. The capital city and its surrounds have an incredible history, as you can tell from the sheer number of UNESCO World Heritage Sites: the early 13th-century Qutub Minar, a sandstone minaret, the 17th-century Red Fort of the Mughal emperors, and Humayun’s Tomb, which inspired the Taj Mahal.",
+   "imageFileName": "delhi"
+ },
+ {
+   "id": "a229409d-401c-4386-9099-e120cd42f77d",
+   "city": "Antalya",
+   "country": "Turkey",
+   "longitude": 30.7133,
+   "latitude": 36.8969,
+   "description": "Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park, which features Aqua Land (a waterslide-fanatic's dream) and Dolphin Land (home to dolphins, sea lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate.",
+   "imageFileName": "antalya"
+ },
+ {
+   "id": "7fb41c8c-f3f3-4277-aac6-67085c8b3551",
+   "city": "Shenzhen",
+   "country": "China",
+   "longitude": 114.0596,
+   "latitude": 22.5429,
+   "description": "Located in the south of China, the cityscape--Shenzhen-- is home to some of the most modern buildings worldwide. Although this area is largely industrial, it offers many tourist attractions, such as the Chinese folk Culture Village, Safari Park, and beach resorts. Perhaps one of the most frequented tourist attractions is Window of the World, which offers replicas of the Eiffel tower, the pyramids, and Taj Mahal. ",
+   "imageFileName": "shenzhen"
+ },
+ {
+   "id": "02e3d018-83bf-4109-80c8-c793c1db8849",
+   "city": "Mumbai",
+   "country": "India",
+   "longitude": 72.8321,
+   "latitude": 18.9582,
+   "description": "Though Mumbai can feel chaotic and crowded, there are peaceful moments to be found here. Nibble a paper cone of bhelpuri while you stroll the sands of Chowpatty Beach. Then, take a short walk to Mani Bhavan, where Mahatma Gandhi once lived, strategized, and was ultimately arrested. The markets are spirited places to bargain for spices or souvenirs. Take a guided tour of Dharavi – made famous by \"Slumdog Millionaire\" – for an eye-opening glimpse into what Mumbai life is like for nearly a million people.",
+   "imageFileName": "mumbai"
+ },
+ {
+   "id": "cd5622d3-b37e-4ee9-b1bf-361a8ff8a3ba",
+   "city": "Palma de Mallorca",
+   "country": "Spain",
+   "longitude": 2.6569,
+   "latitude": 39.5727,
+   "description": "Palma, the economic and cultural hub of Majorca, is a delightful base for exploring the island's many gold and white beaches. A former Moorish casbah, or walled city, Palma's Old Town is an appealing maze of narrow streets that are a delight to explore on foot. Hop on the Soller Railway for a 17-mile scenic trip, visit 14th-century Bellver Castle and the museum of contemporary art, and check out the nightlife.",
+   "imageFileName": "palma"
+ },
+ {
+   "id": "c5900834-c362-4046-b674-ec7a655730c1",
+   "city": "Phuket",
+   "country": "Thailand",
+   "longitude": 98.3923,
+   "latitude": 7.8804,
+   "description": "You can really do it all in Phuket: Party ‘til dawn, kick back on a sandy shore, discover hidden temples, stroll through local markets. Yes, the beaches are next level (and definitely worth a stop), but head further inland to the old quarter for a peek into Phuket’s past, and eateries serving up chili and blue ginger-spiced dishes. Whether you want to relax or take things up a notch there’s no wrong way to do it—and we’ve got more ideas below.",
+   "imageFileName": "phuket"
+ },
+ {
+   "id": "2c12d4b2-ccd8-4b78-992e-c0ec1b1a6de4",
+   "city": "Rome",
+   "country": "Italy",
+   "longitude": 12.4822,
+   "latitude": 41.8967,
+   "description": "It’s easy to see why Rome’s one of the most-visited places on the planet: There’s history everywhere (the Pantheon, the Colosseum, the list goes on), sculptural masterpieces in almost every piazza, and—of course—ridiculously good food. Every trip could feel like a whirlwind, but slow down and you’ll discover lots of surprises. Spend a Sunday morning in Trastevere and hunt for vintage finds at Porta Portese flea market. Or hit San Lorenzo—a student neighborhood with an edgy-but-charming vibe—for trendy shops, galleries, and street art. Dinner’s not ‘til late here, so grab an aperitivo in Prati—it’s walkable from the Vatican and packed with quirky sidestreet bars.Yes, the energy’s next-level, so if you need a break, head for the hills (literally) and check out Aventine Hill, a leafy-green suburb with peaceful gardens and some of the best views of the city. There’s always something to do and we’ve got more recs, below.",
+   "imageFileName": "rome"
+ },
+ {
+   "id": "0940383c-713f-4af5-ba9b-fb2ff77b9a0c",
+   "city": "Tokyo",
+   "country": "Japan",
+   "longitude": 139.65,
+   "latitude": 35.6764,
+   "description": "With its futuristic skyscrapers, unrivaled food scene, and wild nightlife, Tokyo is a rush of pure adrenaline. The city is famously cutting-edge, yet its ancient Buddhist temples, vintage teahouses, and peaceful gardens offer a serene escape—and a reminder of its past. Spend the morning in Asakusa, Tokyo’s historical neighborhood, to see the Sensoji temple, then take a stroll along the Sumida River (in the spring, the cherry blossoms are in full force). Or, make your way to Tsukiji Outer Market for a sushi breakfast—the narrow corridors are packed with tons of spots to choose from (most close around noon so get there early). Turn up the volume and get a taste for cosplay culture in Harajuku, or hit Akihabara for video games and anime. In the evening, take a detour down a yokocho—a little side street alleyway—to find laid-back izakayas and chill bars. That’s only scratching the surface—we’ve got more recs below.",
+   "imageFileName": "tokyo"
+ },
+ {
+   "id": "5c1503cd-ae08-46e9-8ac5-55cac09ccf83",
+   "city": "Pattaya",
+   "country": "Thailand",
+   "longitude": 100.8824,
+   "latitude": 12.9236,
+   "description": "A visit to Pattaya is a wonderful way to explore the beaches along the Gulf of Thailand. Relaxed and family-friendly Jomtien Beach is a hot spot for watersports and seaside massages. The giant Buddha of Wat Khao Phra Bat keeps watch over the city, and the wooden Wang Boran Sanctuary of Truth pays homage to Buddhist and Hindu art and architecture. At night, tons of bars and strip clubs attract an adults-only crowd.",
+   "imageFileName": "pattaya"
+ },
+ {
+   "id": "c72e4574-e559-435b-86f5-166cf8982f4f",
+   "city": "Taipei",
+   "country": "Taiwan",
+   "longitude": 121.5654,
+   "latitude": 25.033,
+   "description": "The bustling metropolis of Taipei is where you’ll find shiny skyscrapers and ancient temples hazy with incense standing side by side. Spend your day taking in the view from up above at the Taipei 101 before shopping your way down the streets of Ximending (with a bubble tea in hand, of course). As night falls, eat your way across the numerous night markets. From the XXL fried chicken cutlets to the stinky tofu, the street food here is addictive and will leave you hankering for more.",
+   "imageFileName": "taipei"
+ },
+ {
+   "id": "836043dc-e245-42fd-8977-5b4111bd06a6",
+   "city": "Mecca",
+   "country": "Saudi Arabia",
+   "longitude": 39.8173,
+   "latitude": 21.4241,
+   "description": "The prophet Mohammed's birthplace is Islam's spiritual center and is strictly off-limits to non-Muslims. The pillars of Islam state that all Muslims with the means must undertake Hajj, a pilgrimage to Mecca, once in their lifetime. Those who visit the holy city are rewarded not just by proximity to landmarks and religious sites crucial to the religion, such as the Masjid Al Haram (Holy Mosque), the Mountain of Light, the Black Stone and the Well of Zamzam, but with the forgiveness of all their sins.",
+   "imageFileName": "mecca"
+ },
+ {
+   "id": "a7f215ad-2f44-410e-9f5d-950326339134",
+   "city": "Guangzhou",
+   "country": "China",
+   "longitude": 113.2644,
+   "latitude": 23.1291,
+   "description": "China’s third-largest city is the capital of Guangdong Province and a thriving commercial center. Its location on the Pearl River and proximity to Hong Kong has made Guangzhou a strategic port for centuries. Glimpse old temples and gleaming steel towers on an architectural tour. Visit one of four Chimelong theme parks for thrills and chills. Once called Canton, Guangzhou is considered the home of traditional (read Cantonese) “Chinese food.” Foodies will find more restaurants per capita here than anywhere else in China.",
+   "imageFileName": "guangzhou"
+ },
+ {
+   "id": "6ef85420-a000-49e8-8268-5a4c12100986",
+   "city": "Prague",
+   "country": "Czech Republic",
+   "longitude": 14.4378,
+   "latitude": 50.0755,
+   "description": "There’s something extra-special about Prague that sets it apart from the other big cities of Europe. Whether it’s the Gothic cathedrals and Baroque palaces, or the more than 200 gardens scattered across the city, Prague offers a true escape from the modern world. For architecture and history buffs, there’s really nowhere better to be. From the heart of Old Town Square to Prague Castle up on the hill, you could spend your days wandering up and down the river, marveling at the city. It’s also one of the classical music capitals of the world—be sure to catch a show at the Art Nouveau Municipal House (an architectural marvel, too). Don’t leave without throwing back a pint or two—travelers say Prague has some of the best beer in Europe (you’ll just have to see for yourself).",
+   "imageFileName": "prague"
+ },
+ {
+   "id": "b562149c-a095-4c2c-b6e0-d197cb372cfa",
+   "city": "Medina",
+   "country": "Saudi Arabia",
+   "longitude": 39.6024,
+   "latitude": 24.4672,
+   "description": "Medina, one of Islam's two holiest cities, attracts millions of pilgrims annually for Hajj and Umrah. Its sacred sites inspire prayer and community, and its stunning architecture wows. Central to the city is Al Masjid an Nabawi, also known as the Prophet’s Mosque, built by the Prophet Muhammad in 622 A.D., and his burial site. Other highlights include Quba Mosque, Islam's first mosque, and the historic Mount Uhud. Visitors can also learn about Medina’s past at museums, or take the modern Haramain High-Speed Railway between Medina and Mecca.",
+   "imageFileName": "medina"
+ },
+ {
+   "id": "24aa4c28-c187-49a2-a9df-8d01dc4aefb5",
+   "city": "Seoul",
+   "country": "South Korea",
+   "longitude": 126.9971,
+   "latitude": 37.5503,
+   "description": "The business and cultural hub of South Korea, Seoul seamlessly blends the old and the new—a place where you'll see skyscrapers towering over palaces and pagodas. Kick things off by getting a view of it all at the N Seoul Tower, it's built atop a peak in Namsan Park, so you'll catch fantastic, panoramic city views. After that, you can get exploring on foot: The teahouses and shops of Insadong, the grounds and museums of Gyeongbokgung, and Changdeokgung Palace (a UNESCO World Heritage Site) all nod to traditional Korean culture. By contrast, cutting-edge areas like the ritzy Gangnam District cement Seoul's status as a very-right-now style capital. You'll find a mix of high-fashion houses and lesser-known, emerging designers there, but you can always find specialty boutiques, vintage shops, and wholesale fabric markets throughout the city (and K-beauty fans should be sure to check out the Myeongdong District, which has cosmetic shops at every turn). We've got plenty more recs below.",
+   "imageFileName": "seoul"
+ },
+ {
+   "id": "c0cabe53-0cce-413d-a732-a1bc4864cc45",
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "longitude": 4.9041,
+   "latitude": 52.3676,
+   "description": "From its picturesque canals and bridges to its historic homes, Amsterdam could be considered straight out of a fairytale (and the brightly-colored bicycles and tulip stands around town don’t hurt either). Must-see sights include the Anne Frank House, the Van Gogh Museum, and the world's only floating flower market. Rent a bike and join thousands of locals peddling around. Other visitors might want to linger in the local coffee shops, which is just a normal part of the city's landscape.",
+   "imageFileName": "amsterdam"
+ },
+ {
+   "id": "bba9c992-0d77-4879-8b3f-1819f55f24eb",
+   "city": "Agra",
+   "country": "India",
+   "longitude": 78.0081,
+   "latitude": 27.1767,
+   "description": "Where better to go for a romantic vacation than to the great testament of love, the Taj Mahal? Built by the grieving Mughal Emperor Shah Jahan in memory of his late wife Mumtaz Mahal, the Taj Mahal’s unrivaled beauty explains why it’s regarded as one of the eight wonders of the world. A visit to India wouldn’t be complete without it. Other must-experience destinations in Agra are two other UNESCO World Heritage Sites, the sandstone Red Fort and Fatehpur Sikri.",
+   "imageFileName": "agra"
+ },
+ {
+   "id": "c206d0da-8b2f-4878-a82b-0553bd68f737",
+   "city": "Miami",
+   "country": "United States",
+   "longitude": -80.1918,
+   "latitude": 25.7617,
+   "description": "Miami at night is legendary—it’s all art-deco neon, music spilling into the streets and rooftop cocktails. But by day, there’s just as much to explore. Architecture buffs can visit the reconstructed 12th century Ancient Spanish Monastery and Renaissance-inspired Vizcaya Museum & Gardens, or cruise down the art deco-dotted Ocean Drive. For beach lovers, there’s plenty beyond South Beach: Swim with sea turtles at Boynton Beach, go windsurfing at Hobie Beach, or skip the sand and take a dip at the Venetian Pool (another architectural gem). And thanks to the strong Cuban and Jewish communities, you can snack on pastelitos in Little Havana or grab a loaf of kosher rye in Wynwood—in the same day, if you’re up for it.",
+   "imageFileName": "miami"
+ },
+ {
+   "id": "3b4f2f2a-eecf-44e9-8333-8f3274cd8116",
+   "city": "Osaka",
+   "country": "Japan",
+   "longitude": 135.5023,
+   "latitude": 34.6937,
+   "description": "Called “the nation’s kitchen,” Osaka delivers a standout dining scene. Feast on street food and work your way through the city’s many “Bib Gourmand” restaurants—a Michelin award for spots that serve exceptional food at reasonable prices. Use food crawls to fuel your explorations. Go shopping in Minami, check out nightlife in the neon-lit extravaganza of Dotombori, join the theme park fun at Universal Studios Japan, then take a breather at Osaka Castle, with its peaceful gardens and exceptional city views. Osaka is also an ideal home base for exploring the Kansai region—Kyoto's World Heritage Sites and Nara's temples are about an hour by train.",
+   "imageFileName": "osaka"
+ },
+ {
+   "id": "86c4e5f6-b86d-4465-bc00-9d97323fe1ef",
+   "city": "Las Vegas",
+   "country": "United States",
+   "longitude": -115.1391,
+   "latitude": 36.1716,
+   "description": "Whatever you can dream up, Las Vegas delivers: Michelin-starred restaurants, 24-hour wedding chapels, larger-than-life scenery, slot machines, all of it. But just when you think you have Vegas pinned down, it surprises you. Consider Meow Wolf, an immersive experience that’s equal parts theme park and art gallery. Or the ice rink at the Cosmopolitan (winter in the desert!). And then there’s the nature—head out past the Strip, and you’ll find state parks and views for days in spots like Valley of Fire and Red Rock Canyon. It’s gems like these that round out Vegas as a destination for families and non-partiers too.",
+   "imageFileName": "vegas"
+ },
+ {
+   "id": "1fc35286-5524-4e0b-97cc-ea28939da081",
+   "city": "Shanghai",
+   "country": "China",
+   "longitude": 121.4737,
+   "latitude": 31.2304,
+   "description": "Shanghai is a luxurious playground for the well-heeled, with Michelin-star dining, high-end fashion houses, and over-the-top hotels. The Huangpu River splits the city into two districts: Pudong and Puxi. The Pudong skyline looks like it was ripped from the Jetsons; on the Puxi side, you can walk the Bund riverside district to get a taste of old Shanghai. The food scene is phenomenal; take advantage of tours that focus on local eats, like dumpling houses. Also, don’t miss the chance to fill your suitcase with custom-made clothing from bespoke shops.",
+   "imageFileName": "shanghai"
+ },
+ {
+   "id": "386877a5-5c7e-43fe-b508-4160c027747d",
+   "city": "Denpasar",
+   "country": "Indonesia",
+   "longitude": 115.2126,
+   "latitude": -8.6705,
+   "description": "Home to Bali International Airport, Denpasar is usually overlooked by visitors flocking to Bali’s beaches. For those who stick around, this culture-rich city serves up ornate temples and some of the island's most authentic Balinese food.",
+   "imageFileName": "denpasar"
+ },
+ {
+   "id": "dee68e93-d565-4d22-a214-2f136b5fb578",
+   "city": "Barcelona",
+   "country": "Spain",
+   "longitude": 2.1686,
+   "latitude": 41.3874,
+   "description": "When it comes to history, art, and architecture, Barcelona delivers. There’s Gaudí’s iconic Basílica de la Sagrada Familia, the Picasso Museum, and the Gothic Quarter. But look beyond the landmarks and busy mercados and you’ll notice how nature steals the show—the city’s literally surrounded by it. On one side you’ve got three miles of gorgeous sandy beaches that give the neighboring Balearic Islands a run for their money, and on the other, the Serra de Collserola mountains, home to Parc de Collserola—one of the biggest city parks in the world. It’s probably why bike culture’s big here: Over 180 miles of bike lanes make it easy to get around the Catalan capital. Spend a low-key afternoon cruising the revamped La Rambla (you’ll have to walk your bike once you hit the pedestrian-only drag) and stop for tapas and sangria.",
+   "imageFileName": "barcelona"
+ },
+ {
+   "id": "dcb0e5f2-5421-49fa-8366-e42326db9b50",
+   "city": "Los Angeles",
+   "country": "United States",
+   "longitude": -118.2426,
+   "latitude": 34.0549,
+   "description": "Los Angeles is a place where nature and Hollywood glamour collide. Yes, you’ve got the big movie studios and iconic spots like TCL Chinese Theater and the Walk of Fame. But there’s also gorgeous beaches, hiking trails, and snow-capped mountains just a drive away. Spend time exploring the Westside where you can bike along the beach in Santa Monica. Go shopping on Abbot Kinney in Venice, or take a drive up Pacific Coast Highway to Malibu and check out the unreal coastal views. Then, head east to Downtown for art museums like the MOCA and the Broad, and trendy restaurants. Mexican food is big here, and some of the best can be found at hole-in-the-wall places, taco trucks, or strip malls. Whether you want to go all out or do something more low-key, it’s up to you.",
+   "imageFileName": "losangeles"
+ },
+ {
+   "id": "9d82dd47-2136-4275-b994-221258269336",
+   "city": "Milan",
+   "country": "Italy",
+   "longitude": 9.1824,
+   "latitude": 45.4685,
+   "description": "Milan sits right at the heart of Italy's fashion, design, and architecture scenes—so much so, in fact, that creatives from all over the world come every year for events like Salone del Mobile (the Milan Furniture Fair) and Milan Fashion Week. And the scenery and sights truly live up to the hype. There's the iconic Duomo di Milano, the world's largest Gothic Cathedral; the amazing mosaics and glass vaults of the Scala Opera House and Galleria Vittorio Emanuele II; not to mention museums and galleries like Pinacoteca di Brera. And as an added bonus: Milan's food scene has really grown over the last decade. Now, you can not only find regional classics, but you can also explore a variety of solid international flavors, including Chinese, Middle Eastern, and Ethiopian fare.",
+   "imageFileName": "milan"
+ },
+ {
+   "id": "8261bbe5-ec8f-4d10-8517-967ce26ff171",
+   "city": "Vienna",
+   "country": "Austria",
+   "longitude": 16.3713,
+   "latitude": 48.2081,
+   "description": "With its Baroque palaces and manicured gardens, Vienna is all elegance and charm. What’s more, they’ve got a huge opera scene—with three houses including the Vienna State Opera—and a deep connection to classical music (Mozart, Beethoven, and Haydn all lived here). But it’s not all history at its (literal) finest. To see a modern side, check out MuseumsQuartier, a creative district packed with exhibits, shops, and restaurants. Coffee culture’s a real thing, and there are tons of cozy cafés where you can grab an espresso and a slice of sachertorte and hang out for the day. Want to trade your coffee for something stronger? Head to a vineyard (there’s around 400 of them) or wine tavern for drinks and schnitzel. ",
+   "imageFileName": "vienna"
+ },
+ {
+   "id": "a790b0ae-7671-4e3a-878e-a33b68004f21",
+   "city": "Jaipur",
+   "country": "India",
+   "longitude": 75.7873,
+   "latitude": 26.9124,
+   "description": "If you take one look at the glorious stucco buildings that line Jaipur's wide streets, you'll understand why this is nicknamed \"The Pink City.\" Spend your days exploring City Palace, Hawa Mahal, and Amber and Jaigarh forts. And if you're looking for a unique souvenir, head to one of the bazaars, where you can pick up a pair of camel-leather slippers.",
+   "imageFileName": "jaipur"
+ },
+ {
+   "id": "a3ffb605-e344-4ff9-8f5b-504f6510cbf7",
+   "city": "Cancun",
+   "country": "Mexico",
+   "longitude": -86.8515,
+   "latitude": 21.1619,
+   "description": "Cancun’s a pretty well-known spot for spring breakers (and spring breakers at heart)—but its fun-loving spirit, miles of resorts, and nonstop nightlife is only one small part of the story. The city is one of Mexico’s all-around gems—literally made for vacationing. Its velvety beaches are some of the best the Caribbean has to offer, while scuba divers and snorkeling buffs will find plenty of action in the surf—including the Museo Subacuático de Arte, with its more than 500 underwater sculptures. On the outskirts of the city, sites like the pyramids of Chichen Itza give a deep-dive on the area’s sacred Maya heritage.",
+   "imageFileName": "cancun"
+ },
+ {
+   "id": "a4c02030-ab17-4214-9090-c40cd32a5600",
+   "city": "Berlin",
+   "country": "Germany",
+   "longitude": 13.405,
+   "latitude": 52.52,
+   "description": "Packed with energy and edge, Berlin is a city that’s undeniably cool. Its past sits—literally—alongside its present: The Berlin Wall is a reminder of the city’s history, but the graffiti art that now covers it has become symbolic of social progress. Check out the modern art galleries, classic pubs, and don’t skip the legendary nightlife at world-famous clubs like Berghain. Science lovers shouldn’t miss the Weltzeituhr (world time) Clock, topped by a model of the solar system, and history buffs will want to snag a seat at the historic Zur Letzten Instanz, a 16th-century restaurant that was frequented by Napoleon and Beethoven.",
+   "imageFileName": "berlin"
+ },
+ {
+   "id": "f12c7b98-4245-470d-8f09-f5c51edaa719",
+   "city": "Athens",
+   "country": "Greece",
+   "longitude": 23.7275,
+   "latitude": 37.9838,
+   "description": "In Athens you get the best of both worlds: a modern city with old-world charm and the natural beauty of Greece just beyond. Once the center of ancient civilization, Athens has so much history to discover—from ruins to still-intact treasures. You can’t skip the top hits: the Acropolis, the Temple of Olympian Zeus, and the Parthenon are musts (and worth battling the crowds). Once you’ve crossed those off your bucket list, though, you can really get into the heart of the city—with its neverending hum of activity from the local no-frills tavernas to hip new restaurants and bars, all set against old stone buildings and cobblestoned streets. If you need to get away from it all, take a drive down the coastline or check into a beachside resort.",
+   "imageFileName": "athens"
+ },
+ {
+   "id": "c1446906-aa42-4ed4-a79b-c640c5de3fb2",
+   "city": "Orlando",
+   "country": "United States",
+   "longitude": -81.3789,
+   "latitude": 28.5384,
+   "description": "It's easy to see why vacationers flock to Orlando: great resorts, year-round sunshine, and no shortage of things to do. You can go all in on theme parks, hopping between the Wizarding World of Harry Potter and Magic Kingdom, or spend a day in Winter Park, a scenic lake town with cute shops and an excellent farmers' market. Stargazers can tour Kennedy Space Center, nature lovers can kayak through Blue Spring State Park, and foodies can indulge at the city’s Michelin-starred restaurants (it’s got a few). Yes, Orlando has a family-friendly rep, but there's also a big nightlife scene, everything from dance clubs to speakeasies",
+   "imageFileName": "orlando"
+ },
+ {
+   "id": "381780e7-791c-46d9-b17f-9a7d81ba2489",
+   "city": "Moscow",
+   "country": "Russia",
+   "longitude": 37.6151,
+   "latitude": 55.7569,
+   "description": "The political, scientific, historical, architectural and business center of Russia, Moscow displays the country's contrasts at their most extreme. The ancient and modern are juxtaposed side by side in this city of 10 million. Catch a metro from one of the ornate stations to see Red Square, the Kremlin, the nine domes of St. Basil's Cathedral, Lenin's Mausoleum, the KGB Museum and other symbols of Moscow's great and terrible past, then lighten up and shop Boulevard Ring or people watch in Pushkin Square.",
+   "imageFileName": "moscow"
+ },
+ {
+   "id": "5cf15e71-0f8e-4d55-afc5-7e4a2671efd5",
+   "city": "Venice",
+   "country": "Italy",
+   "longitude": 12.316,
+   "latitude": 45.4404,
+   "description": "Centuries-old architecture, cobblestone alleys, a maze of eye-catching islands, and of course, the famous canals that run through it all—Venice is quite literally unlike anywhere else. While the capital of the Veneto (one of the 20 regions in Italy) is undoubtedly a stunner, it’s also a very real city. The Grand Canal and Piazza San Marco are hotspots for visitors: Their winding streets are filled with cafes, gelaterias, and boutiques interspersed among Renaissance palaces and Gothic churches. But once you’ve ticked off the must-see landmarks (like St. Mark’s Campanile and the Gallerie dell'Accademia museum), explore lesser-known neighborhoods like Cannaregio, Dorsoduro, and Castellom, where locals crowd low-key trattorias for afternoon aperitivo. And don't miss the nearby islands. Just a short ferry ride away, you'll find Burano, which is known for its intricate lace and brightly colored houses, and Murano, world-famous for its vibrant, hand-blown glass. ",
+   "imageFileName": "venice"
+ },
+ {
+   "id": "03411065-41ca-4ffb-9d2e-aaa828cace69",
+   "city": "Madrid",
+   "country": "Spain",
+   "longitude": -3.7033,
+   "latitude": 40.4167,
+   "description": "Smack dab in the middle of Spain lies vibrant Madrid—the country's storybook capital. Each of its eclectic neighborhoods has its own distinct charm: You'll find hipster vibes in Malasaña, where quaint shops make way for club crowds after dark; upscale eats and top-tier boutiques in Salamanca; and steep, maze-like streets lined with authentic restaurants and great people-watching in Lavapies. And don't miss Madrid's popular landmarks. A few favorites: The great bear statue in the central Puerta del Sol, the Reina Sofia and Prado museums, and Plaza Mayor. Finish things off with 10 p.m. tapas (it's how the locals do it), then hit the bars and clubs if that's your thing.",
+   "imageFileName": "madrid"
+ },
+ {
+   "id": "0054fd73-2282-4fbb-ad52-18ab16dd2e84",
+   "city": "Riyadh",
+   "country": "Saudi Arabia",
+   "longitude": 46.6753,
+   "latitude": 24.7136,
+   "description": "Riyadh combines fascinating history with modern dynamism, offering a glimpse into Arabia’s past and future. Bright lights, skyscrapers, and ancient building facades are all to be expected in this high-flying capital city. Explore Riyadh’s rich heritage through souqs, museums, and local food delicacies. Experience its modern side with its high-rises and a thriving art scene, highlighted by an art initiative that turns the city into an open-air gallery. Riyadh Season, an annual series of events, features themed zones for exploring the city’s entertainment and culture.",
+   "imageFileName": "riyadh"
+ },
+ {
+   "id": "ad9d1cf6-6c4e-4b4f-8c5c-13b3235c3673",
+   "city": "Dublin",
+   "country": "Ireland",
+   "longitude": -6.2603,
+   "latitude": 53.3498,
+   "description": "Home to so much historical architecture and countless literary legends, Dublin blends old world-vibes with friendly, down-to-earth charm. For starters, the city's super walkable, so you can get a lot done in a day. We suggest kicking things off with a few well-known sights—admire the ornate details of St. Patrick's Cathedral, explore the “heart of the city” at the Dublin Castle, and take in the sprawling campus of Trinity College. There are tons of museums to explore (many, like the Chester Beatty, are free), and the food really caters to any budget or taste: You can dive into a tasting menu at one of the city's 43 Michelin-starred restaurants or pop into a pub and get the best fish and chips of your life. Dublin is the ideal jumping off point for a host of day trips—Belfast or the fishing village Howth are a great change of pace to round out a longer trip.",
+   "imageFileName": "dublin"
+ },
+ {
+   "id": "3b6923ed-8e84-42dd-a8d3-85b75dbbd027",
+   "city": "Florence",
+   "country": "Italy",
+   "longitude": 11.2577,
+   "latitude": 43.77,
+   "description": "There’s no better place for Renaissance art and architecture than Florence—from the Galleria dell’Accademia (home to Michelangelo’s David) to the cathedrals and arches that make up the Piazzale Michelangelo. But just beyond the main sights, you’ll find some of the city’s off-the-beaten-path gems, with (bonus) way less crowds. San Miniato al Monte is worth the climb for the frescoes and unbeatable views. Oltrarno, just across the river, offers plenty of vintage shops, boutiques, and cool cafes. When in doubt, do as the locals do: Post up in a piazza with a plate of fresh tagliatelle and a glass of Chianti and watch the city go by.",
+   "imageFileName": "florence"
+ },
+ {
+   "id": "151b9813-9550-41d6-9f55-d44b4d5ecef3",
+   "city": "Jerusalem",
+   "country": "Israel",
+   "longitude": 35.2224,
+   "latitude": 31.7769,
+   "description": "Religious pilgrims have been traveling to Jerusalem for centuries, yet you don’t have to share their zeal in order to appreciate this city’s profound cultural and historical significance. Plan on seeing the major sights, but also leave plenty of time to walk through the streets and simply immerse yourself in the daily life of such an ancient and revered place.",
+   "imageFileName": "jerusalem"
+ },
+ {
+   "id": "7eaafad5-ac9e-4ddf-8b8c-9e5d17886892",
+   "city": "Hanoi",
+   "country": "Vietnam",
+   "longitude": 105.8342,
+   "latitude": 21.0278,
+   "description": "Despite centuries of French and Chinese influence, Hanoi is a city that’s wholly (and proudly) Vietnamese. But its layered history is everywhere you look—from the Old Quarter with its French colonial buildings to the more than 600 temples and pagodas around the city. You can get right to the history of the city at sites like Hoa Lo Prison or the Ho Chi Minh Mausoleum. Take it all in by foot (or scooter), making time for detours at some of the city’s newer additions: independent art galleries, boutique shops, and trendy cafes. If you’re coming just for the food, you’re not alone. Banh mi and bun cha are obviously musts, but save room for other street food faves: crispy crepes, stir-fried eel, shrimp cakes, and a few frosty beers to wash it all down. ",
+   "imageFileName": "hanoi"
+ },
+ {
+   "id": "dcd8e610-c16b-4371-a6cf-734176dfd892",
+   "city": "Toronto",
+   "country": "Canada",
+   "longitude": -79.3832,
+   "latitude": 43.6532,
+   "description": "Canada’s largest city is a fast-paced metropolis of nearly 3 million people, with world-class restaurants, shopping, theater, and more scattered throughout different neighborhoods—each with their own vibe. No matter where you end up, the best place to start is at the top (literally) at the CN Tower, the tallest freestanding structure in the Western Hemisphere.",
+   "imageFileName": "toronto"
+ },
+ {
+   "id": "73f15481-5812-4a9c-b913-d47a8093cfc9",
+   "city": "Johannesburg",
+   "country": "South Africa",
+   "longitude": 28.0337,
+   "latitude": 26.2056,
+   "description": "Johannesburg is the place to go to mix big-city culture, shopping, dining and nightlife with outdoor adventures, up-close wildlife encounters and visits to historical sites. Explore caves and nature reserves, or visit a traditional village by day, then enjoy dinner at a hip cafe or five-star restaurant. And if you're a shopper, bring an extra, empty suitcase. With malls, open-air markets and places that blend the two, you'll find plenty of unique souvenirs.",
+   "imageFileName": "johannesburg"
+ },
+ {
+   "id": "3e55b78f-b962-4350-a255-7746ded27587",
+   "city": "Sydney",
+   "country": "Australia",
+   "longitude": 151.2093,
+   "latitude": -33.8688,
+   "description": "Sydney is a place that’s really got it all: It’s a sunny, modern city, right smack in the middle of nature, where gallery-hopping, surfing, and fine dining can all happen before the sun goes down. Start with the views: Take the cliff top coastal walk from Bondi to Coogee, where you’ll pass by beaches, rock pools, and lush parks. Then there’s the world-famous Sydney Opera House—jutting up like a huge sailboat—anchoring iconic Sydney Harbour. It’s also worth seeing the city from the top down; the views from the Sydney Tower Eye observatory are nothing less than epic.",
+   "imageFileName": "sydney"
+ },
+ {
+   "id": "90b55073-b2d8-449c-8212-79eabef53dc0",
+   "city": "Munich",
+   "country": "Germany",
+   "longitude": 11.582,
+   "latitude": 48.1351,
+   "description": "Of course, beer lovers know Munich as the epicenter of Oktoberfest, a celebration of beer and Bavarian culture. Hofbrauhaus, Munich's most iconic beer hall, has been serving up brews since 1589, and the city's Bavarian tavern scene is unrivaled. But if you're looking to go deeper on Munich, there's so much to see, do, and eat. Classic German fare, like pork knuckles, pretzels, and SemmelKnodel dumplings, are on constant rotation. Then there's the sights: Walk (or ice skate) through Olympiapark, or visit Munich's English Garden, one of the world's largest urban parks. Stroll the Marienplatz promenade and take in a view of the Rathaus-Glockenspiel, a giant clock that reenacts historical moments. And in December, the city comes alive with twinkling lights and holiday markets. ",
+   "imageFileName": "munich"
+ },
+ {
+   "id": "396884bf-9220-452b-9f26-1eb37fc2ad5b",
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "longitude": 106.8229,
+   "latitude": -6.1944,
+   "description": "Chaotic, crowded, and cosmopolitan, Jakarta, the capital of Indonesia, is a city of contrasts. Home to millions of people from around the world, the city is a mixture of languages and cultures, poverty and wealth. The city boasts some of the best nightlife in Asia and some of the worst traffic. Every holiday, the locals escape the pollution and the crowds to enjoy relaxing diversions like Ancol Dreamland, an amusement area featuring water parks, beaches, golf courses, and a SeaWorld.",
+   "imageFileName": "jakarta"
+ },
+ {
+   "id": "efdd220d-f207-4c12-b678-aaa5bf287326",
+   "city": "Beijing",
+   "country": "China",
+   "longitude": 116.4074,
+   "latitude": 39.9042,
+   "description": "Welcome to a capital city whose story goes back at least 3,000 years. In Beijing, you'll find a wealth of history, both ancient (the Hall of Preserving Harmony, Summer Palace, Forbidden City) and more recent (Chairman Mao Memorial Hall, Tiananmen Square). For the best market experience, choose the Dirt Market over the touristy Silk Market. A visit to the Great Wall, the longest manmade structure in the world, is absolutely essential.",
+   "imageFileName": "beijing"
+ },
+ {
+   "id": "6ec24feb-3734-41fc-9b82-ab1f3c9d6adb",
+   "city": "Saint Petersburg",
+   "country": "Russia",
+   "longitude": 30.3609,
+   "latitude": 59.9311,
+   "description": "The second largest city in Russia, St. Petersburg is the country’s cultural heart. View splendid architectural gems like the Winter Palace and the Kazan Cathedral, and give yourself plenty of time to browse the world-renowned art collection of the Hermitage. Sprawling across the Neva River delta, St. Petersburg offers enough art, nightlife, fine dining and cultural destinations for many repeat visits.",
+   "imageFileName": "petersburg"
+ },
+ {
+   "id": "75ecddba-0db6-442c-b9b4-9dbc7e65498e",
+   "city": "Brussels",
+   "country": "Belgium",
+   "longitude": 4.3572,
+   "latitude": 50.8477,
+   "description": "Unassuming Brussels is the capital of Belgium, Flanders and Europe. Medieval Grand-Place, is indeed grand, with many 17th-century buildings and daily flower markets. Reopened in 2006, the Atomium, Brussels' Eiffel Tower, provides great views, inside and out. Architecture fans should visit Musee Horta, home of Belgian master architect Victor Horta. St. Gery's clubs and bars are packed year-round. Seafood eateries abound in Ste. Catherine. Walk, rather than get snarled up in traffic, in the narrow streets.",
+   "imageFileName": "brussels"
+ },
+ {
+   "id": "f93fb780-6533-4cc4-b96d-ee33169ba413",
+   "city": "Budapest",
+   "country": "Hungary",
+   "longitude": 19.0402,
+   "latitude": 47.4979,
+   "description": "Over 15 million gallons of water bubble into Budapest's 118 springs and boreholes every day. That number points to the astounding array of baths in this city, from the sparkling Gellert Baths to the vast 1913 neo-baroque Szechenyi Spa to Rudas Spa, a dramatic 16th-century Turkish pool with original Ottoman architecture. The \"Queen of the Danube\" is also steeped in history, culture, and natural beauty. Get your camera ready for the Hungarian Parliament Building, Heroes' Square, and the Danube at sunset.",
+   "imageFileName": "budapest"
+ },
+ {
+   "id": "cace976b-1988-4ed1-b978-dcd87b220a76",
+   "city": "Naples",
+   "country": "Italy",
+   "longitude": 14.2681,
+   "latitude": 40.8518,
+   "description": "As Southern Italy's largest city, Naples isn't quite as postcard-perfect as its more photogenic neighbors—it's got more of a bustling, lived-in sensibility. But there's no shortage of beauty. It's the kind of place where ancient sculptures, lush courtyards, and unexpected ocean views pop up alongside parking lots and apartment buildings. And that's exactly why visitors love it (that and the wood-fired pizza—it's pretty much the best in the world). Naples’ historic center is a UNESCO World Heritage site, so definitely start your visit there. Then, take in the Chiesa di San Gregorio Armeno, a 16th-century Baroque masterpiece, and the Duomo, a Roman Catholic cathedral. Check out artifacts from Pompeii at the Museo Archeologico Nazionale di Napoli or revel in Rococo art at Museo Cappella Sansevero.",
+   "imageFileName": "naples"
+ },
+ {
+   "id": "6530ed32-9a32-42c7-9b3f-308d247235a7",
+   "city": "Lisbon",
+   "country": "Portugal",
+   "longitude": -9.1393,
+   "latitude": 38.7223,
+   "description": "The museums of Lisbon celebrate the rich history and culture of this Portuguese capital city. The Maritime Museum is perfect for kids (and grown-ups!) who adore all things nautical, while the Casa-Museu Dr. Anastácio Gonçalves is a hidden gem of colorful artwork. To fully appreciate the city’s dramatic stone architecture you can take a guided walking tour, or customize your own tour, making sure to visit the Padrao dos Descobrimentos, the Mosteiro dos Jeronimos, and the UNESCO World Heritage site the Torre de Belem.",
+   "imageFileName": "lisbon"
+ },
+ {
+   "id": "da8634ac-1014-4c3d-9241-229ba3ceffc7",
+   "city": "Dammam",
+   "country": "Saudi Arabia",
+   "longitude": 50.0888,
+   "latitude": 26.4207,
+   "description": "Dammam, a vibrant city in Saudi Arabia's Eastern Province, offers more than just its famous port. This relaxing metropolis attracts beachgoers and vacationers looking to chase the sunshine. Enjoy the serene Arabian Gulf views, stroll along the Dammam Corniche, or visit the lush King Fahad Park, one of Saudi's largest. Explore Al Marjan Island, Saudi's first man-made island, or relax at Half Moon Bay. The city also boasts a growing entertainment hub, with options ranging from movies to shopping to a dazzling souq, where local crafts and jewelry abound.",
+   "imageFileName": "dammam"
+ },
+ {
+   "id": "eec7434d-8304-4590-bb6b-d16f592e10ed",
+   "city": "Penang Island",
+   "country": "Malaysia",
+   "longitude": 100.2486,
+   "latitude": 5.3673,
+   "description": "Famed throughout Asia for its heady mix of eastern cultures, Penang Island is Malaysia’s prime melting pot. Roadside vendors serve some of the world’s best street food; its national parks offer white-sand beaches and wildlife; and UNESCO-listed George Town is full of colorful heritage houses.",
+   "imageFileName": "penang"
+ },
+ {
+   "id": "51864e4d-ec1b-422d-9801-f5e7bf63b129",
+   "city": "Crete",
+   "country": "Greece",
+   "longitude": 24.8093,
+   "latitude": 35.2401,
+   "description": "If you want to go back to where it all began, start in Crete. The largest Greek island is also known as the birthplace of ancient Minoan civilization (think: BCE), which means endless ruins and historic sites to uncover. The Knossos Palace is a can’t-miss, with its 4,000-year-old frescoes and architectural wonders. No matter where you go, you’re bound to find something incredible—from the old Venetian Harbor in Chania to the fortresses of Rethymno. Add to that the jaw-dropping scenery: cliffside beaches, rugged mountains, and canyons, and you’ll need a few extra days to pack it all in. Hike the Samaria Gorge, visit the palm forest in Lassithi, or catch the sunset at Falasarna Beach to get the best of the island’s nature. ",
+   "imageFileName": "crete"
+ },
+ {
+   "id": "c8f10fd5-55b6-4b47-bb1f-e6b97639e701",
+   "city": "Kyoto",
+   "country": "Japan",
+   "longitude": 135.7681,
+   "latitude": 35.0116,
+   "description": "Kyoto, Japan’s capital for over 1,000 years, offers a rare link between modern life in a city and its very ancient past. Here, Buddhist temples, Shinto shrines, Zen rock gardens, and UNESCO World Heritage Sites are at every turn. Visit the 7th-century Shimogamo Shrine with its stunning arcade of orange gates, the elegant Kinkakuji Temple with a gold-leaf exterior perfectly reflected in a placid lake, and Kiyomizu-dera Temple with a hillside location that makes for spectacular city views. Still the center of traditional Japanese culture, Kyoto is the place to experience a tea ceremony, savor multi-course Kaiseki haute cuisine, and catch sight of a geisha as you stroll through Gion at dusk.",
+   "imageFileName": "kyoto"
+ },
+ {
+   "id": "cf76f07e-c8c3-4288-8d49-8a5b339f905c",
+   "city": "Vancouver",
+   "country": "Canada",
+   "longitude": -123.1207,
+   "latitude": 49.2827,
+   "description": "This British Columbia city is a real jewel of Canada’s west coast, combining the cultural perks of city life with all the nature you could want. Get your history fix at the Museum of Anthropology (known for its extensive First Nations collection). The city’s food scene serves up everything from dim sum at the country’s largest Chinatown, to Canadian comfort classics like poutine. But during the summer, it’s all about churros and butter beer at Richmond Night Market, the biggest of its kind in North America. When you’ve had your fill, explore Vancouver’s past on a stroll through Gastown, taking in the cobblestone streets and Victorian-style architecture. Or spend your days exploring the city’s incredible nature: don’t miss Grouse Mountain, Stanley Park, and the world-famous Capilano Suspension Bridge, which spans 450 feet across the Capilano River. ",
+   "imageFileName": "vancouver"
+ },
+ {
+   "id": "7824cc52-39c2-4ad7-b806-7a3f3a9c8b83",
+   "city": "Chiang Mai",
+   "country": "Thailand",
+   "longitude": 98.9853,
+   "latitude": 18.7883,
+   "description": "You could spend your whole vacation just exploring Chiang Mai's famous city center, where the remains of ancient walls wrap around 30-plus temples. Energetic travelers can climb 300 stairs to Wat Phrathat Doi Suthep, an ornate Buddhist temple in the hills. Wat Chedi Luang holds a jade replica of the famed emerald Buddha. But don’t just explore historical sights—experience Thailand’s vibrant present, too. At the Night Bazaar, master the art of haggling for souvenirs and treat yourself with spicy pad Thai and sweet banana roti. The Botanic Garden is the place to soak up some local culture and to breathe in the delicate fragrance of Thai orchids. And when you need to recharge from all your exploration, treat yourself to a spa moment at one of the local spots.",
+   "imageFileName": "chiang"
+ },
+ {
+   "id": "381cd12e-33dd-4cd2-a02f-8f413cff3f54",
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "longitude": 12.5683,
+   "latitude": 55.6761,
+   "description": "Copenhagen was once a Viking fishing settlement, and you can still find traces of those roots. But beyond the remains of a 1,000-year-old castle, museums dedicated to the famous raiders, and narrow streets slotted between picturesque canals, you’ll find that Copenhagen is a thoroughly modern—even futuristic—city. The Danish capital is home to design-focused hotels and cutting-edge art galleries. Fourteen Michelin-star restaurants prove that Copenhagen is reinventing Scandinavian food. And yes, the crayon-colored houses of Nyhavn, whimsical Tivoli Gardens, and a 120-year-old mermaid statue still draw visitors during the long summer days that bring 20 hours of sunlight.",
+   "imageFileName": "copenhagen"
+ },
+ {
+   "id": "a8361cb4-63d6-4a8e-95c5-1ef85da34834",
+   "city": "San Francisco",
+   "country": "United States",
+   "longitude": -122.4194,
+   "latitude": 37.7749,
+   "description": "San Francisco may be small by big city standards, but it packs a lot into its seven-mile-by-seven-mile grid. Each neighborhood has its own identity, its own vibe, and even its own weather. Spend an afternoon in Haight-Ashbury, where indie bookstores and craft breweries sit next to tie-dye boutiques and vintage shops. Or take a cable car to Chinatown, known as much for dim sum and tea rooms as it is for upscale restaurants and dive bars. There's no shortage of nature here, either. You can hike in the Presidio, play volleyball at Ocean Beach, or sprawl out on Marina Green and take in the Golden Gate views. The food scene is constantly evolving, though staples like Mission-style burritos and the chicken at Zuni Cafe aren't going anywhere.",
+   "imageFileName": "sanfrancisco"
+ },
+ {
+   "id": "6ec30d81-aedb-48d0-94fe-632f3d62928d",
+   "city": "Melbourne",
+   "country": "Australia",
+   "longitude": 144.9631,
+   "latitude": -37.8136,
+   "description": "Melbourne’s earned its spot as one of the great big cities of the world. It’s got it all: parks and nature, colorful neighborhoods, a hip food scene, and plenty of history. Sip flat whites in cozy cafes, go thrift shopping on Brunswick Street, and spend your afternoons laying out in Fitzroy Gardens. There’s also endless art and culture to explore—take a stroll down Hosier Lane for the city’s most iconic street art, or check out the Bunjilaka Aboriginal Cultural Center in the Melbourne Museum to learn more about indigenous history. When you’re ready to skip town, you can hang with penguins on Phillip Island, sip chardonnay in the Yarra Valley, or cruise down the Great Ocean Road—it’s all right there.",
+   "imageFileName": "melbourne"
+ },
+ {
+   "id": "5dace5e5-f82a-4c70-9673-de4c90029c43",
+   "city": "Warsaw",
+   "country": "Poland",
+   "longitude": 21.0122,
+   "latitude": 52.2297,
+   "description": "Warsaw is a mixture of relaxing green spaces, historic sites and vivid modernity. Discover the charming Old Town, Wilanów Palace and amazing Lazienki Park, where you can watch free Chopin concerts every Sunday during the summer. Experience a few of the dozens of interactive museums, including the Warsaw Uprising Museum, the Museum of the History of Polish Jews and the Copernicus Science Centre. For exciting nightlife, visit the vibrant Vistula boulevards and upscale clubs.",
+   "imageFileName": "warsaw"
+ },
+ {
+   "id": "301d496a-db22-4f4b-a5a7-5fc37175cdda",
+   "city": "Marrakesh",
+   "country": "Morocco",
+   "longitude": -7.9898,
+   "latitude": 31.6225,
+   "description": "Vibrant and bustling, Marrakech has an energy all its own (there's a reason it's one of Morocco's most well-visited cities). To get right to the heart of things, wind your way through its busy Medina—the walled, historic neighborhood that serves as the city's main square. Fair warning, it can be a bit intense, but while there, you can fully immerse yourself browsing souks for local wares, taking in the Moorish architecture, and filling up on street food. On the slower end of things, places like Le Jardin Secret, Bahia Palace, and the famed technicolor Jardin Majorelle give some breathing room alongside seriously gorgeous scenery. And you can always take a full time-out at one of Marrakech's many luxe spas or relaxing hammams.",
+   "imageFileName": "marrakesh"
+ },
+ {
+   "id": "fb35dfa2-5789-48e5-ab0b-afb413395289",
+   "city": "Kolkata",
+   "country": "India",
+   "longitude": 88.3629,
+   "latitude": 22.5744,
+   "description": "This former British colonial stronghold boasts evidence of over two millennia of habitation, with ornate, architecturally diverse buildings, ranging from crumbing ruins to Victorian treasures. Home to lively festivals and a vibrant artistic community, clamorous markets and packed temples, this city is crowded and polluted, but ultimately invigorating.",
+   "imageFileName": "kolkata"
+ },
+ {
+   "id": "6f42d825-ebc9-4fdd-b22f-6b58290c07f3",
+   "city": "Cebu City",
+   "country": "Philippines",
+   "longitude": 123.8854,
+   "latitude": 10.3157,
+   "description": "Surpassed only by Manila in size, the Philippines’ second city combines colonial architecture and mountainous surrounds with a burgeoning cultural and culinary scene. As the gateway to both Bohol and Cebu Island, Cebu City impresses with chic rooftop bars and intriguing museums.",
+   "imageFileName": "cebu"
+ },
+ {
+   "id": "ec9608cb-df51-44e3-80f5-1a059f0eb184",
+   "city": "Auckland",
+   "country": "New Zealand",
+   "longitude": 174.7645,
+   "latitude": -36.8509,
+   "description": "The Māori call Auckland Tāmaki Makaurau — a maiden desired by 100 lovers, and a valuable territory fought over for centuries for its fertile land and natural harbors on the Pacific Ocean (to the east) and Tasman Sea (to the west). Today, it’s New Zealand’s largest city: A vibrant and diverse place where nature and urban life go hand-in- hand, with 48 volcanic cones, more than 50 islands, and 29,000 km of coastline and beaches just minutes away from the arts and shopping of the central city.",
+   "imageFileName": "auckland"
+ },
+ {
+   "id": "d0506f1e-de44-4f8e-a48f-3941b6c2e9d0",
+   "city": "Tel Aviv",
+   "country": "Israel",
+   "longitude": 34.7818,
+   "latitude": 32.0853,
+   "description": "A youthful, modern metropolis with a diverse population, Tel Aviv dates back only to 1909. Clubs, bars, a thriving arts community, gay life and beaches attract artists, musicians and young professionals to Tel Aviv's more secular scene. Its UNESCO-designated Bauhaus architecture has won the city the moniker \"The White City.\" Walk, drive or catch cabs between the cultural exhibition pavilions of Haaretz Museum, historic Independence Hall Museum, bustling Carmel Market and Old Jaffa's boardwalk.",
+   "imageFileName": "aviv"
+ },
+ {
+   "id": "5714f39a-0e30-4652-a72c-4247b778695f",
+   "city": "Guilin",
+   "country": "China",
+   "longitude": 110.29,
+   "latitude": 25.2736,
+   "description": "Fascinating limestone hills and towers lure tourists from China and around the world to this city of 630,000. Popular sights include 120-hectare Seven Star Park, Reed Flute Cave, 200-foot high Fubo Hill and the much-loved Elephant Trunk Hill. Guilin is very popular as a starting point for Li River cruises to Yangshuo and for visits to the nearby minority villages of Yao, Miao and Dong. April, May, September and October are the best months to visit, as they avoid the extremes of heat and rain.",
+   "imageFileName": "guilin"
+ },
+ {
+   "id": "feb0ac7f-e360-4b56-b4a3-9aa4fc3319c1",
+   "city": "Honolulu",
+   "country": "United States",
+   "longitude": -157.8581,
+   "latitude": 21.3099,
+   "description": "As the capital of Hawaii, Honolulu delivers on big-city vibes just steps from some of the best nature on the islands (in the world, really). Spend your city days in downtown Waikiki, with its blocks of shops and sky-high hotels, or head to the food haven of Kapahulu to snack on poke bowls and shaved ice. The beaches are always right there—ready for surfing, sunbathing, snorkeling, and swimming with sea turtles and dolphins. There’s also nearby waterfalls and volcanos to check out—from Diamond Head Crater to Waimea Falls. Don’t forget to carve out a day or two to get to know the island’s roots: Roam through the remnants of Hawaii’s monarchy at Iolani Palace and Washington Place, or learn about Hawaiian natural history and Polynesian culture at the Bishop Museum. ",
+   "imageFileName": "honolulu"
+ },
+ {
+   "id": "fd667ef3-0de2-4e13-bde3-f641f313bf28",
+   "city": "Hurghada",
+   "country": "Egypt",
+   "longitude": 33.8116,
+   "latitude": 27.2579,
+   "description": "Stunning coral reefs and turquoise waters perfect for windsurfing have made Hurghada, on Egypt's Red Sea Coast, a busy resort town. Within easy reach of the stunning Giftun Islands and the Eastern Arabian Desert, Hurghada has seen enormous amounts of development in the past decade—and yes, it does seem overrun with tourists at times. But it’s a relatively easy beach escape for Europeans, and some of the world's best diving and snorkeling sites are just offshore. Walk or catch a cab to explore the old quarter, El Dahar.",
+   "imageFileName": "hurghada"
+ },
+ {
+   "id": "73d70a8c-19bf-4446-98cd-a54477aea654",
+   "city": "Krakow",
+   "country": "Poland",
+   "longitude": 19.945,
+   "latitude": 50.0647,
+   "description": "With its historic streets, delicious food, and buzzy nightlife, Krakow might well be one of Europe’s best hidden gems. For a refresher course on medieval history, explore the charming UNESCO-listed Old Town, which has the largest medieval market square in Europe (Rynek Glówny) along with the gothic St. Mary’s Basilica and Wawel Castle. Then fast-forward into modern times with local shops, bars, and a high-energy nightlife in Kazimierz, the city’s historic Jewish quarter. Krakow dining is another surprise, offering everything from hearty street food (pierogies, kielbasa, and so much more) to fine dining and international cuisine. Save time for UNESCO sites farther afield—Auschwitz can be a powerful day trip, while the Wieliczka Salt Mines is an astounding labyrinth of passages and shafts filled with rock-salt statues and underground chapels.",
+   "imageFileName": "krakow"
+ },
+ {
+   "id": "59598e34-6d0f-4df7-81aa-e4337f306782",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "longitude": -58.3821,
+   "latitude": -34.6037,
+   "description": "Buenos Aires has a red-hot energy you can’t ignore. The city will wine and dine you with Malbec and unbelievably good steak, and keep you up ‘til dawn at clubs and dance halls. But there’s a low-key side that’s worth getting to know, too. Stroll the cobblestone streets of the barrios in the morning to see the neoclassical architecture at your own speed. Sure, Palermo’s got trendy restaurants and boutiques, but there’s something to be said for grabbing a choripán and having an easy picnic in Bosques de Palermo. Head to San Telmo for Feria de San Telmo—a huge street fair every Sunday—and to tango (see a show or catch it outdoors at Plaza Dorrego). For something more laid-back, check out an art museum or gallery, then hit a food stall at Mercado de San Telmo. Go fast or take it slow—the choice is yours. We’ve got more ideas below.",
+   "imageFileName": "buenos"
+ },
+ {
+   "id": "430e6028-3f4e-4869-83fa-346849e19754",
+   "city": "Frankfurt am Main",
+   "country": "Germany",
+   "longitude": 8.6821,
+   "latitude": 50.1109,
+   "description": "There’s plenty to see and do in this 2,000-year-old German city. The gothic Saint Bartholomeus Cathedral is a perseverant structure, having been destroyed and rebuilt twice since its 14th century construction. Catch a screening at the German Film Museum, stroll the exhibit halls of one of Frankfurt’s many galleries, or climb to the top of the Main Tower for sweeping 360-degree views of the city.",
+   "imageFileName": "frankfurt"
+ },
+ {
+   "id": "a402d7ae-2af5-4963-b5e2-ceb9f770e626",
+   "city": "Stockholm",
+   "country": "Sweden",
+   "longitude": 18.0656,
+   "latitude": -59.3327,
+   "description": "Sweden's dynamic capital combines contemporary attractions—avant-garde art, chic shopping, innovative dining—with regal palaces and gabled buildings that look lifted out of a storybook. Stroll through fantastic parks and gardens (the 19th-century Skansen was the world’s first open-air museum), over picturesque bridges connecting the city's islands, and down narrow cobblestone streets of Old Town—possibly the most impeccably preserved historic center in Europe. Dedicate a day or two for exploring Stockholm’s UNESCO World Heritage Sites: Drottningholm Palace (the residence of the royal family) and the magical Skogskyrkogården (aka Woodland Cemetery).",
+   "imageFileName": "stockholm"
+ },
+ {
+   "id": "3d658b58-e844-40ee-8ecc-794a33668ec9",
+   "city": "Lima",
+   "country": "Peru",
+   "longitude": 77.0431,
+   "latitude": 12.0467,
+   "description": "Lima, founded by Francisco Pizarro in 1535, is a fascinating city and a treasure trove of history. Explore ancient Incan archeological sites, or stroll through the elegant cathedrals and opulent palaces dating from Spanish colonial times. Downtown Lima is crowded, but you'll enjoy exploring the city's neighborhoods—especially the beachfront areas, which have great shopping and dining and fabulous hotels.",
+   "imageFileName": "lima"
+ },
+ {
+   "id": "c3493f90-e6da-4bae-b6c2-014399a2b76a",
+   "city": "Batam",
+   "country": "Indonesia",
+   "longitude": 104.053,
+   "latitude": 1.1296,
+   "description": "Just a speedboat ride from Singapore, Batam’s beaches and bars tempt visitors with dishes of chili crab, grilled lobster, and freshly caught fish. While travelers golf, snorkel, and spa-hop, the island’s traditional culture thrives in fishing villages built on wooden stilts.",
+   "imageFileName": "batam"
+ },
+ {
+   "id": "b72506a3-507c-49d9-8afc-0ac0b80f9b12",
+   "city": "Nice",
+   "country": "France",
+   "longitude": 7.262,
+   "latitude": 43.7102,
+   "description": "The deep blue waters of the Cote d’Azur are the dramatic backdrop for elegant Nice, the cultural capital of the French Riviera, set on the Baie des Anges (Bay of Angels). Stroll, bike, or rollerblade the famous Promenade des Anglais, a palm-tree-lined, four-mile stretch that runs along the Mediterranean. A hike up Castle Hill offers up incredible panoramic views, while a walk through the pretty streets of Old Town delivers on cute cafés, a famed flower market, and busy brasseries serving delicious Provençal food. It’s easy to see why Nice was a haven for painters like Marc Chagall and Matisse, and if you need a break from Nice’s endless sun, you can visit local museums highlighting their work. Don’t pass up the chance to experience the French Riviera’s glitz and glamor by taking day trips to Saint Tropez and Monaco or by joining a group to go clubbing ‘til dawn.",
+   "imageFileName": "nice"
+ },
+ {
+   "id": "1877f407-61aa-4090-b941-776956cfc428",
+   "city": "Abu Dhabi",
+   "country": "United Arab Emirates",
+   "longitude": 54.3773,
+   "latitude": 24.4539,
+   "description": "Atmospheric backstreets paint a very different picture to first impressions of Abu Dhabi. The often slick and modern capital of the U.A.E. presents a fascinating mixture of tradition and progression. Tracing its rich history back to around 3000 B.C., Abu Dhabi maintains a more distinctly Arabian ambiance than glitzy Dubai. Taxis are a safe, reliable way to get around sites such as The Corniche Park, the White Fort, the Heritage Village, which offers glimpses into Bedouin life, and the Women's Craft Centre.",
+   "imageFileName": "abudhabi"
+ },
+ {
+   "id": "e14f93b4-cc60-4194-89d8-4c80287a2dff",
+   "city": "Jeju",
+   "country": "South Korea",
+   "longitude": 126.5198,
+   "latitude": 33.5043,
+   "description": "Jeju is a hot tourist spot, booming with unique attractions. Romantic sunrises and sunsets, mild climate and beautiful sandy beaches make Jeju a popular honeymoon destination. Adventurers can hike to Baeknok Lake at the top of Mount Halla, South Korea’s highest peak. Keep an eye out for the “haenyeo,” female divers gathering fresh seafood, and the iconic “grandfather statues” displayed outside of many restaurants.",
+   "imageFileName": "jeju"
+ },
+ {
+   "id": "5b481fb3-e174-40b8-883b-2b948bbe5ad5",
+   "city": "Porto",
+   "country": "Portugal",
+   "longitude": -8.6291,
+   "latitude": 41.1579,
+   "description": "Portugal’s second-largest city, and the one that gave the country (and port wine) its name, Porto is the perfect blend of classic vibes and modern energy. First off, it's a fantastic walking city. Stroll the winding cobblestone streets and take in 18th-century townhouses alongside chic shops, restaurants, and design-forward boutique hotels. And be sure to check out the port wine cellars across the Douro River at Vila Nova de Gaia. Porto's also a hotspot for contemporary art, from the Museu de Arte Contemporanea de Serralves (a modern art mecca) to the galleries on Rua Miguel Bombarda. But to deep dive on the city’s history, head to its old town—the vibrant Ribeira district. A UNESCO World heritage site, it shows centuries-old architecture (its 14th-century São Francisco church is a main attraction) against a backdrop of some fantastic views of the Douro River. There's a lot more to see and we've got all your recs below.",
+   "imageFileName": "porto"
+ },
+ {
+   "id": "a05de76d-80ff-4183-b66b-efd60b8c171c",
+   "city": "Rhodes",
+   "country": "Greece",
+   "longitude": 28.2176,
+   "latitude": 36.4341,
+   "description": "Rhodes is the star of Greece’s Dodecanese islands thanks to its large size and incredible history. Packed with ancient and medieval sites, gorgeous beaches, and plenty of bars and restaurants, it’s easy to see why it’s so popular. The UNESCO-listed medieval city is incredibly well-preserved, complete with a castle, 2.5 miles of stone walls, and a maze of streets and their modern additions: shops, restaurants, and bars. The interior of the 50-mile island is hilly and rural, while the coast is dotted with resorts, high-rise hotels, and small villages, like photogenic Lindos with its ancient hilltop acropolis, modern village of whitewashed houses, and incredible beaches.",
+   "imageFileName": "rhodes"
+ },
+ {
+   "id": "436a4047-b78b-4a93-88ef-291af8ab130e",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "longitude": -43.1729,
+   "latitude": -22.9068,
+   "description": "With its pretty beaches, dramatic mountains, and soundtrack of samba and bossa nova humming in the background, Rio de Janeiro casts a spell. Famed Ipanema Beach is still the place to stroll, sunbathe, and be seen. The largest Art Deco statue in the world, Christ the Redeemer, calls visitors to Corcovado Mountain. If that’s not enough, Rio is home to science and art museums, a buzzing food scene, a massive soccer stadium, incredible nightlife, and some 50 miles of beaches. If you're coming for Carnaval, Rio’s annual celebrations are full-on sensory overload with music, dance, floats, costumes, and food and drink all powering an around-the-clock party.",
+   "imageFileName": "rio"
+ },
+ {
+   "id": "8a094eca-fc83-432e-98ba-896576f0a8dd",
+   "city": "Krabi",
+   "country": "Thailand",
+   "longitude": 98.9063,
+   "latitude": 8.0855,
+   "description": "The southern Thailand town of Krabi serves as base camp for exploring the province of the same name, a lush region of jungles, limestone cliffs and idyllic isles floating just offshore in the Andaman Sea. Buddhist shrines still used by local monks are tucked into the chambers of the town's top attraction, Tiger Cave. The riverside pier links travelers with ferries and longboats to the best scuba diving, rock climbing and white sand beaches on the coast.",
+   "imageFileName": "krabi"
+ },
+ {
+   "id": "2c9e3314-7771-4dc1-b7e1-1e7253e39608",
+   "city": "Bengaluru",
+   "country": "India",
+   "longitude": 77.5775,
+   "latitude": 12.9629,
+   "description": "Known as both the \"Garden City\" and \"The Silicon Valley of India,\" Bangalore (officially \"Bengaluru\") is a techie’s paradise, boasting the highest concentration of IT companies in the country. When you’re done geeking out, there are plenty of gardens, museums, natural features, palaces and temples to fill your dance card. Visit Vidhana Soudha, Cubbon Park and the Ulsoor Lake of Bangalore, well known for its beautiful locales and boating facilities. Bangalore is also a major center of Indian classical music and dance, and of vivid, cutting-edge nightlife.",
+   "imageFileName": "bengaluru"
+ },
+ {
+   "id": "76685290-8a47-46dc-bdf8-7dafe3aea17e",
+   "city": "Mexico City",
+   "country": "Mexico",
+   "longitude": -99.1332,
+   "latitude": 19.4326,
+   "description": "There’s no one way to experience Mexico City, just like there’s no one way to describe it. Art Deco palaces sit next to Spanish colonial buildings, while family-run taquerias share the block with trendy cocktail bars. In neighborhoods like Condesa and Roma Norte, you’ll find hip boutiques, cafes, and clubs, while in more down-to-earth quarters like Santa Maria La Ribera you’ll get a taste of local life from the markets to the plazas. Art and design lovers can visit Frida Kahlo’s Casa Azul, history buffs (who also like to party) can spend the day at the Floating Gardens of Xochimilco, and opera fans can enjoy a performance in the historic Palacio de Bellas Artes. Top all that off with some strong mezcal and tacos de suadero (a CDMX speciality), and you’re still just scratching the surface of all the city has to offer.",
+   "imageFileName": "mexico"
+ },
+ {
+   "id": "38572353-5633-4cb7-b10c-288e995e15a6",
+   "city": "Punta Cana",
+   "country": "Dominican Republic",
+   "longitude": -68.3725,
+   "latitude": 18.5601,
+   "description": "Trust the postcards—Punta Cana really is as amazing as it looks. For top-tier R&R, go all-inclusive: You’ll spend your days lounging by the pool, dining at five-star restaurants, and getting pampered at the spa. When you’ve had your fill of piña coladas and beachside cabanas, venture beyond the resort to some of the island’s best natural gems. Go ziplining, explore underground caves, and take a dip in the cenotes at Scape Park in Capa Cana. You can also cool off in the freshwater lagoons at Indigenous Eyes Ecological Park or hop over to Saona Island for an untouched (and less crowded) piece of paradise. If you can squeeze in a game of golf, head to Punta Espada for a quick 18 with sweeping views of the ocean. There’s so much more to do, and we’ve got all the best recs below.",
+   "imageFileName": "punta"
+ },
+ {
+   "id": "b996812b-fa8f-4ca4-9052-9e178cb58225",
+   "city": "Dubrovnik",
+   "country": "Croatia",
+   "longitude": 18.0944,
+   "latitude": 42.6507,
+   "description": "Medieval history meets breezy Mediterranean vibes in Dubrovnik, where towering stone fortresses rise from the sparkling Adriatic Sea. Walk along the ancient walls that surround Old Town to get a sweeping view of the city dotted with monasteries, palaces, and terracotta rooftops. Or, hit the beach: Most are pebbly and rugged, but if you’re looking for a stretch of sand, hop on a ferry and head to Lopud, a car-free island where you can kick back on Šunj beach, grab a bite in the village, or check out Lopud 1483—a restored 15th-century Franciscan monastery. ",
+   "imageFileName": "dubrovnik"
+ },
+ {
+   "id": "5e25a7e4-9ce0-40c6-b26b-b18ee06dcda4",
+   "city": "Zurich",
+   "country": "Switzerland",
+   "longitude": 8.5417,
+   "latitude": 47.3769,
+   "description": "This ritzy Alpine city set on a bright blue lake is the largest in Switzerland and a major destination for contemporary art, shopping, and nightlife. Wealthy, tidy, and efficient, Zurich is easy to navigate thanks to excellent public transit and a free bike rental system. Use it to visit Kunsthaus Zurich, with its impressive modern art collection, and the 13th-century Fraumunster Church with Chagall’s stained glass windows. Then explore the cobblestone streets of Old Town (Alstadt), shop along Niederdorf and Bahnhofstrasse, and even take a dip in Lake Zurich. At night, choose from over 500 clubs and bars—from smart and sophisticated to waterside Badi-Bars (aka bathing pool bars).",
+   "imageFileName": "zurich"
+ },
+ {
+   "id": "6a8a8973-38aa-4545-8321-4b5e676d9de1",
+   "city": "Akumal",
+   "country": "Mexico",
+   "longitude": -87.3159,
+   "latitude": 20.396,
+   "description": "Akumal means \"Place of the Turtle\" in the Mayan language, and if you snorkel here, you just might see one swimming alongside you. (Don’t touch it, though. That’s prohibited by law.) You’ll definitely see coral and beautiful fish in the clear, sparkling waters. This tourist-friendly little town is about an hour south of Cancun—but it seems light-years away.",
+   "imageFileName": "akumal"
+ },
+ {
+   "id": "6224b887-c578-4044-943c-0d448a725cc9",
+   "city": "Aruba",
+   "country": "Aruba",
+   "longitude": -69.9683,
+   "latitude": 12.5211,
+   "description": "If an island could be made entirely for relaxation, Aruba is one for the books. Welcoming travelers with soft sands, turquoise waters, and tropical vibes, it's a quintessential Caribbean experience (and a close neighbor of Curaçao and Bonaire, too). When you're not lounging on one of Aruba's 40 beaches, there's a vibrant Dutch Caribbean culture to check out. Stroll among the pastel buildings and shops of Oranjestad, the island's capital. Check out the National Archaeological Museum Aruba or stock up on incredible local eats like seafood or keshi yena (a cheese-covered casserole). And for nature of the non-beach variety, don't miss the Butterfly Farm—no explanation required—as well as Aruba's natural bridge and Conchi Natural Pool, both located in Arikok National Park",
+   "imageFileName": "aruba"
+ },
+ {
+   "id": "05249a68-4144-462e-b792-a281b15ac607",
+   "city": "Maldives",
+   "country": "Maldives",
+   "longitude": 3.2028,
+   "latitude": 73.2207,
+   "description": "With 26 atolls and 1,000+ islands spread out across the idyllic waters of the Indian Ocean, the Maldives are an island-hopper’s dream. Below the water, there’s miles of coral reef that are home to thousands of species of marine life and underwater treasures. To get the best of it: Go diving at Broken Rock, snorkel with manta rays in Hanifaru Bay, or charter a boat to hit all the top spots. Then there’s the world above, which is known for its beautiful beaches and luxury villas, but has a rich culture and history to uncover as well: Explore the 17th-century architecture of the Old Friday Mosque or get a taste of local life (and some of the islands’ freshest seafood) at the Fish Market in Malé. It doesn’t stop there—we’ve got more hidden gems and must-do’s below.",
+   "imageFileName": "maldives"
+ },
+ {
+   "id": "94d21b2f-a428-4150-9188-ebc22270536b",
+   "city": "Cambodia",
+   "country": "Southeast Asia",
+   "longitude": 104.991,
+   "latitude": 12.5657,
+   "description": "Set your own pace by cycling through Khmer ruins at Angkor Wat or pedaling the banks of the mighty Mekong. Trek off the beaten path on eco-adventures through the Cardamom Mountains, southern tropical islands or crater lakes of the remote northeast. Add urban adventure and hire a \"motodop\" taxi in Siem Reap.",
+   "imageFileName": "cambodia"
+ },
+ {
+   "id": "bd870882-cc6c-4dd5-a94a-feb91f5bfa32",
+   "city": "Mauritius",
+   "country": "Africa",
+   "longitude": 57.5522,
+   "latitude": -20.3484,
+   "description": "Mauritius is a tropical paradise with tons to do and some of the most beautiful landscapes on the planet. Of course, this Indian Ocean island nation is known for its gorgeous beaches, waterfalls, lagoons, and mountain views. Port Louis, the modern capital of this 38-mile by 29-mile island, is a bustling port with a revitalized waterfront and busy market. It’s worth a visit, but most visitors gravitate toward resort areas such as ritzy Mont Choisy, quiet Trou-aux-Biches, and the bustling Flic en Flac, popular with divers. Rivière Noise has all the right conditions for deep-sea fishing. While you can go the five-star resort route here, there are also budget options with a bohemian vibe.",
+   "imageFileName": "mauritius"
+ }
+]
