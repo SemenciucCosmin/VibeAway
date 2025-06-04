@@ -12,6 +12,8 @@ import com.example.vibeaway.data.location.datasource.LocationsDataSource
 import com.example.vibeaway.data.location.model.Location
 import com.example.vibeaway.data.locationdetails.model.LocationDetails
 import com.example.vibeaway.data.quiz.model.BFIResult
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
 
 /**
  * Repository responsible with computing a set of compatible [Location] with a BFI dataset, using
@@ -21,7 +23,7 @@ class RecommendationRepositoryImpl(
     private val activityCategoriesDataSource: ActivityCategoriesDataSource,
     private val activitiesDataSource: ActivitiesDataSource,
     private val locationsDataSource: LocationsDataSource,
-    private val activityDetailsDataSource: ActivityDetailsDataSource
+    private val activityDetailsDataSource: ActivityDetailsDataSource,
 ) : RecommendationRepository {
 
     /**
@@ -83,7 +85,8 @@ class RecommendationRepositoryImpl(
     override suspend fun getLocationsDetails(): List<LocationDetails> {
         val locations = locationsDataSource.getLocations()
         val locationsWithActivitiesDetails = activityDetailsDataSource.getActivitiesDetails(
-            forceApi = false
+            forceApi = false,
+            forceGoogle = false
         )
 
         val locationDetails = locations.map { location ->
@@ -104,7 +107,8 @@ class RecommendationRepositoryImpl(
 
     private suspend fun getActivitiesDetails(): List<ActivityDetails> {
         return activityDetailsDataSource.getActivitiesDetails(
-            forceApi = false
+            forceApi = false,
+            forceGoogle = false
         ).values.flatten()
     }
 }

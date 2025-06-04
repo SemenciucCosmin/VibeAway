@@ -8,6 +8,7 @@ val localProperties = Properties().apply {
 
 val amadeusApiKey = localProperties.getProperty("AMADEUS_API_KEY") ?: ""
 val amadeusApiSecret = localProperties.getProperty("AMADEUS_API_SECRET") ?: ""
+val googlePlacesApiKey = localProperties.getProperty("GOOGLE_PLACES_API_KEY") ?: ""
 
 plugins {
     alias(libs.plugins.android.application)
@@ -33,6 +34,7 @@ android {
 
         buildConfigField("String", "AMADEUS_API_KEY", "\"${amadeusApiKey}\"")
         buildConfigField("String", "AMADEUS_API_SECRET", "\"${amadeusApiSecret}\"")
+        buildConfigField("String", "GOOGLE_PLACES_API_KEY", "\"${googlePlacesApiKey}\"")
     }
 
     buildTypes {
@@ -92,6 +94,8 @@ dependencies {
     // GOOGLE
     implementation(libs.play.services.auth)
     implementation(libs.google.id)
+    implementation(libs.google.places)
+    implementation(libs.google.material)
 
     // KOIN
     implementation(platform(libs.koin.bom))
@@ -110,9 +114,6 @@ dependencies {
     implementation(platform(libs.retrofit.bom))
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
-
-    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
-
 }
 
 detekt {

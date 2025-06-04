@@ -25,9 +25,10 @@ data class ActivityDetailsFileDTO(
     @SerialName("shortDescription") val description: String? = null,
     @SerialName("latitude") val latitude: Double? = null,
     @SerialName("longitude") val longitude: Double? = null,
-    @SerialName("rating") val rating: Float? = null,
+    @SerialName("rating") val rating: Double? = null,
     @SerialName("imageUrl") val imageUrl: String? = null,
     @SerialName("bookingLink") val bookingUrl: String? = null,
     @SerialName("currencyCode") val currencyCode: String? = null,
     @SerialName("priceAmount") val priceAmount: Double? = null,
+    @SerialName("types") val types: List<String> = emptyList(),
 )

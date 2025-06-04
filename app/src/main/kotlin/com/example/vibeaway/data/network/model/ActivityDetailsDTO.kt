@@ -20,7 +20,7 @@ data class ActivityDetailsDTO(
     @SerialName("name") val name: String? = null,
     @SerialName("shortDescription") val description: String? = null,
     @SerialName("geoCode") val geolocation: GeolocationDTO? = null,
-    @SerialName("rating") val rating: Float? = null,
+    @SerialName("rating") val rating: Double? = null,
     @SerialName("pictures") val imagesUrls: List<String?> = emptyList(),
     @SerialName("bookingLink") val bookingUrl: String? = null,
     @SerialName("price") val price: PriceDTO? = null,

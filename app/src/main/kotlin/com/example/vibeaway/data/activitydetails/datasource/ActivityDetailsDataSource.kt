@@ -7,5 +7,8 @@ import com.example.vibeaway.data.activitydetails.model.ActivityDetails
  */
 interface ActivityDetailsDataSource {
 
-    suspend fun getActivitiesDetails(forceApi: Boolean): Map<String, List<ActivityDetails>>
+    suspend fun getActivitiesDetails(
+        forceApi: Boolean,
+        forceGoogle: Boolean,
+    ): Map<String, List<ActivityDetails>>
 }

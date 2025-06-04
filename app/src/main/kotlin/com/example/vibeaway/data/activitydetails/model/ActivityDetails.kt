@@ -15,5 +15,6 @@ data class ActivityDetails(
     val priceAmount: Double?,
     val currencyCode: String?,
     val bookingUrl: String?,
-    val rating: Float
+    val rating: Double,
+    val types: List<String>,
 )

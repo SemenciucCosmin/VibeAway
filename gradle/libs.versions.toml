@@ -21,6 +21,8 @@ firebaseBom = "33.14.0"
 googleServices = "4.4.2"
 playServicesAuth = "21.3.0"
 googleId = "1.1.1"
+googlePlaces = "4.3.1"
+googleMaterial = "1.12.0"
 
 # GRADLE
 androidGradlePlugin = "8.10.0"
@@ -80,6 +82,8 @@ firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-fires
 # GOOGLE
 play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
 google-id = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleId" }
+google-places = { group = "com.google.android.libraries.places", name = "places", version.ref = "googlePlaces" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "googleMaterial" }
 
 # KOIN
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }

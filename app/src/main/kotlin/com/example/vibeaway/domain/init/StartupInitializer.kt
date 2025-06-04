@@ -16,7 +16,8 @@ class StartupInitializer : Initializer<Unit> {
 
     override fun dependencies(): List<Class<out Initializer<*>>> = listOf(
         KoinInitializer::class.java,
-        AuthTokenInitializer::class.java
+        AuthTokenInitializer::class.java,
+        GooglePlacesInitializer::class.java
     )
 
     companion object {
