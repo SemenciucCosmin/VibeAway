@@ -53,7 +53,9 @@ class KoinInitializer : Initializer<Unit> {
                     ),
                     onboardingFeatureModule(),
                     quizDataModule(),
-                    recommendationDataModule()
+                    recommendationDataModule(
+                        googleAiApiKey = BuildConfig.GOOGLE_AI_API_KEY,
+                    )
                 )
             )
         }

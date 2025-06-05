@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.vibeaway.data.activitydetails.datasource.ActivityDetailsDataSource
 import com.example.vibeaway.data.database.repository.DatabaseRepository
-import com.example.vibeaway.data.repository.RecommendationRepository
+import com.example.vibeaway.domain.locationdetails.usecase.GetLocationDetailsUseCase
 import com.example.vibeaway.feature.activitydetails.viewmodel.model.ActivityDetailsUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -19,7 +19,7 @@ class ActivityDetailsViewModel(
     private val activityDetailsId: String,
     private val databaseRepository: DatabaseRepository,
     private val activityDetailsDataSource: ActivityDetailsDataSource,
-    private val recommendationRepository: RecommendationRepository,
+    private val getLocationDetailsUseCase: GetLocationDetailsUseCase,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(ActivityDetailsUiState())
@@ -32,7 +32,7 @@ class ActivityDetailsViewModel(
         )
 
     private fun getActivityDetails() = viewModelScope.launch {
-        val locationsDetails = recommendationRepository.getLocationsDetails()
+        val locationsDetails = getLocationDetailsUseCase()
         val favouriteActivityIds = databaseRepository.getFavouriteActivityIds()
         val allActivityDetails = activityDetailsDataSource.getActivitiesDetails(
             forceApi = false,

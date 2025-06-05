@@ -17,4 +17,5 @@ data class ActivityDetails(
     val bookingUrl: String?,
     val rating: Double,
     val types: List<String>,
+    val score: Double?
 )

@@ -3,7 +3,7 @@ package com.example.vibeaway.feature.locationdetails.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.vibeaway.data.database.repository.DatabaseRepository
-import com.example.vibeaway.data.repository.RecommendationRepository
+import com.example.vibeaway.domain.locationdetails.usecase.GetLocationDetailsUseCase
 import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 class LocationDetailsViewModel(
     private val locationDetailsId: String,
     private val databaseRepository: DatabaseRepository,
-    private val recommendationRepository: RecommendationRepository,
+    private val getLocationDetailsUseCase: GetLocationDetailsUseCase,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(LocationDetailsUiState())
@@ -32,7 +32,7 @@ class LocationDetailsViewModel(
     private fun getLocationDetails() = viewModelScope.launch {
         _uiState.update { it.copy(isLoading = true) }
 
-        val locationsDetails = recommendationRepository.getLocationsDetails()
+        val locationsDetails = getLocationDetailsUseCase()
         val favouriteLocationsIds = databaseRepository.getFavouriteLocationIds()
 
         val locationDetails = locationsDetails.firstOrNull {

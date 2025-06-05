@@ -38,7 +38,7 @@ class BFIQuestionsDataSourceImpl : BFIQuestionsDataSource, JsonDataSource() {
      * Parses a json file into a list of [BFIQuestionDTO] and maps it to a list of [BFIQuestion].
      */
     private fun getBfiQuestionsFromFile(): List<BFIQuestion> {
-        val jsonString = getJson(FILE_PATH)
+        val jsonString = getJsonFromResources(FILE_PATH)
         val bfiQuestionDTOs = Json.decodeFromString<List<BFIQuestionDTO>>(jsonString)
         return mapBFIQuestionDTOtoBFIQuestion(bfiQuestionDTOs)
     }

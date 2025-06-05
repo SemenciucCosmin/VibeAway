@@ -7,12 +7,14 @@ import com.example.vibeaway.data.network.datasource.AuthTokenDataSource
 import com.example.vibeaway.data.network.datasource.AuthTokenDataSourceImpl
 import com.example.vibeaway.data.network.service.ActivitiesDetailsApi
 import com.example.vibeaway.data.network.service.AuthApi
+import com.example.vibeaway.data.network.service.GoogleAiApi
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import org.koin.dsl.module
 import retrofit2.Retrofit
+import java.util.concurrent.TimeUnit
 import kotlin.jvm.java
 
 fun networkDataModule(
@@ -67,5 +69,20 @@ fun networkDataModule(
             .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
             .build()
             .create(ActivitiesDetailsApi::class.java)
+    }
+
+    single<GoogleAiApi> {
+        Retrofit.Builder()
+            .baseUrl("https://generativelanguage.googleapis.com")
+            .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
+            .client(
+                OkHttpClient.Builder().apply {
+                    readTimeout(300, TimeUnit.SECONDS)
+                    connectTimeout(300, TimeUnit.SECONDS)
+                    connectTimeout(300, TimeUnit.SECONDS)
+                }.build()
+            )
+            .build()
+            .create(GoogleAiApi::class.java)
     }
 }

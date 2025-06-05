@@ -17,7 +17,9 @@ fun FeedRoute(navController: NavController) {
 
     FeedScreen(
         locationsDetails = uiState.locationsDetails,
-        isLoading = uiState.isLoading,
+        isLoading = uiState.isRecommendationsLoading || uiState.isFeedLoading,
+        isError = uiState.isError,
+        onRetry = viewModel::loadRecommendations,
         onLocationDetailsFavouriteClick = viewModel::changeLocationDetailsFavouriteState,
         onLocationsCategoryClick = {
             val categoryId = Category.RECOMMENDED_LOCATIONS.ordinal

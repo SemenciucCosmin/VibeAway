@@ -118,7 +118,7 @@ class ActivityDetailsDataSourceImpl(
      * it to a list of [ActivityDetails].
      */
     private fun getActivitiesDetailsFromFile(): Map<String, List<ActivityDetails>> {
-        val jsonString = getJson(FILE_PATH)
+        val jsonString = getJsonFromResources(FILE_PATH)
         val json = Json {
             ignoreUnknownKeys = true
             coerceInputValues = true
@@ -210,7 +210,8 @@ class ActivityDetailsDataSourceImpl(
                 currencyCode = activityDetailsDTO.price?.currencyCode,
                 bookingUrl = activityDetailsDTO.bookingUrl,
                 rating = activityDetailsDTO.rating ?: return@mapNotNull null,
-                types = emptyList()
+                types = emptyList(),
+                score = null,
             )
         }
     }
@@ -233,7 +234,8 @@ class ActivityDetailsDataSourceImpl(
                 currencyCode = activityDetailsFileDTO.currencyCode,
                 bookingUrl = activityDetailsFileDTO.bookingUrl,
                 rating = activityDetailsFileDTO.rating ?: return@mapNotNull null,
-                types = activityDetailsFileDTO.types
+                types = activityDetailsFileDTO.types,
+                score = null
             )
         }
     }
@@ -252,6 +254,7 @@ class ActivityDetailsDataSourceImpl(
                 bookingUrl = null,
                 rating = place.rating ?: return@mapNotNull null,
                 types = place.placeTypes ?: return@mapNotNull null,
+                score = null
             )
         }
     }

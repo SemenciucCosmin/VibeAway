@@ -37,7 +37,7 @@ class LocationsDataSourceImpl : LocationsDataSource, JsonDataSource() {
      * Parses a json file into a list of [LocationDTO] and maps it to a list of [Location].
      */
     private fun getLocationsFromFile(): List<Location> {
-        val jsonString = getJson(FILE_PATH)
+        val jsonString = getJsonFromResources(FILE_PATH)
         val locationDTOs = Json.decodeFromString<List<LocationDTO>>(jsonString)
         return mapLocationDTOtoLocation(locationDTOs)
     }

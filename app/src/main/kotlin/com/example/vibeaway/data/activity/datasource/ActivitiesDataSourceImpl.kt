@@ -36,7 +36,7 @@ class ActivitiesDataSourceImpl : ActivitiesDataSource, JsonDataSource() {
      * Parses a json file into a list of [ActivityDTO] and maps it to a list of [Activity].
      */
     private fun getActivitiesFromFile(): List<Activity> {
-        val jsonString = getJson(FILE_PATH)
+        val jsonString = getJsonFromResources(FILE_PATH)
         val activityDTOs = Json.decodeFromString<List<ActivityDTO>>(jsonString)
         return mapActivityDTOtoActivity(activityDTOs)
     }

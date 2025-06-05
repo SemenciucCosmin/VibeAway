@@ -5,7 +5,9 @@ package com.example.vibeaway.feature.feed.viewmodel.model
  */
 data class FeedUiState(
     val locationsDetails: List<LocationDetails> = emptyList(),
-    val isLoading: Boolean = false,
+    val isRecommendationsLoading: Boolean = false,
+    val isFeedLoading: Boolean = false,
+    val isError: Boolean = false,
 ) {
     /**
      * Data class for popular location details model on feed screen

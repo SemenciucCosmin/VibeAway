@@ -38,7 +38,7 @@ class ActivityCategoriesDataSourceImpl : ActivityCategoriesDataSource, JsonDataS
      * it to a list of [ActivityInfo].
      */
     private fun getActivityCategoriesFromFile(): List<ActivityInfo> {
-        val jsonString = getJson(FILE_PATH)
+        val jsonString = getJsonFromResources(FILE_PATH)
         val activityCategoryDTOs = Json.decodeFromString<List<ActivityCategoryDTO>>(jsonString)
         return mapActivityCategoryDTOtoActivityCategory(activityCategoryDTOs)
     }

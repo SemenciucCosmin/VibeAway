@@ -7,7 +7,7 @@ import com.example.vibeaway.data.locationdetails.model.LocationDetails
 /**
  * Use case for fetching the list of popular [LocationDetails]
  */
-class GetPopularLocationDetailsUseCase(
+class GetLocationDetailsUseCase(
     private val locationsDataSource: LocationsDataSource,
     private val activityDetailsDataSource: ActivityDetailsDataSource,
 ) {
@@ -31,12 +31,6 @@ class GetPopularLocationDetailsUseCase(
             )
         }
 
-        val sortedLocationsDetails = locationsDetails.sortedBy { locationDetails ->
-            val activitiesRatings = locationDetails.activitiesDetails.map { it.rating }
-            val score = activitiesRatings.sum()
-            score
-        }
-
-        return sortedLocationsDetails
+        return locationsDetails
     }
 }

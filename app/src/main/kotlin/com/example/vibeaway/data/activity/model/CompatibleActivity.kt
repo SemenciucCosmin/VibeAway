@@ -9,5 +9,6 @@ package com.example.vibeaway.data.activity.model
  */
 data class CompatibleActivity(
     val id: String,
+    val description: String,
     val score: Double
 )

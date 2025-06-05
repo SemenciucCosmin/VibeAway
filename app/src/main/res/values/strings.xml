@@ -81,6 +81,8 @@
     <string name="lbl_activities">Activities</string>
     <string name="lbl_recommended_locations_message">See recommended locations based on your personality.</string>
     <string name="lbl_recommended_activities_message">See recommended activities based on your personality.</string>
+    <string name="lbl_recommendations_error">Something went wrong with computing your recommendations. Please retry.</string>
+    <string name="lbl_recommendations_loading">This may take some time to process.\nPlease, be patient.</string>
 
     <!--  DETAILS  -->
     <string name="lbl_description_title">Description</string>

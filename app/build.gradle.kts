@@ -9,6 +9,7 @@ val localProperties = Properties().apply {
 val amadeusApiKey = localProperties.getProperty("AMADEUS_API_KEY") ?: ""
 val amadeusApiSecret = localProperties.getProperty("AMADEUS_API_SECRET") ?: ""
 val googlePlacesApiKey = localProperties.getProperty("GOOGLE_PLACES_API_KEY") ?: ""
+val googleAiApiKey = localProperties.getProperty("GOOGLE_AI_API_KEY") ?: ""
 
 plugins {
     alias(libs.plugins.android.application)
@@ -35,6 +36,7 @@ android {
         buildConfigField("String", "AMADEUS_API_KEY", "\"${amadeusApiKey}\"")
         buildConfigField("String", "AMADEUS_API_SECRET", "\"${amadeusApiSecret}\"")
         buildConfigField("String", "GOOGLE_PLACES_API_KEY", "\"${googlePlacesApiKey}\"")
+        buildConfigField("String", "GOOGLE_AI_API_KEY", "\"${googleAiApiKey}\"")
     }
 
     buildTypes {

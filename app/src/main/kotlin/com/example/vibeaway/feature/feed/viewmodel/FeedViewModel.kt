@@ -3,6 +3,7 @@ package com.example.vibeaway.feature.feed.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.vibeaway.data.database.repository.DatabaseRepository
+import com.example.vibeaway.data.repository.RecommendationRepository
 import com.example.vibeaway.domain.locationdetails.usecase.GetPopularLocationDetailsUseCase
 import com.example.vibeaway.feature.feed.viewmodel.model.FeedUiState
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -19,22 +20,37 @@ import kotlinx.coroutines.launch
  */
 class FeedViewModel(
     private val getPopularLocationDetailsUseCase: GetPopularLocationDetailsUseCase,
-    private val databaseRepository: DatabaseRepository
+    private val databaseRepository: DatabaseRepository,
+    private val recommendationRepository: RecommendationRepository
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(FeedUiState())
     val uiState: StateFlow<FeedUiState> = _uiState.asStateFlow()
-        .onStart { getPopularLocationDetails() }
+        .onStart {
+            loadRecommendations()
+            getPopularLocationDetails()
+        }
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.Eagerly,
             initialValue = _uiState.value
         )
 
-    private fun getPopularLocationDetails() = viewModelScope.launch {
+    fun loadRecommendations() = viewModelScope.launch {
+        _uiState.update { it.copy(isRecommendationsLoading = true) }
+
+        val recommendations = recommendationRepository.getRecommendedActivitiesDetails()
+
         _uiState.update {
-            it.copy(isLoading = true)
+            it.copy(
+                isRecommendationsLoading = false,
+                isError = recommendations.isEmpty()
+            )
         }
+    }
+
+    private fun getPopularLocationDetails() = viewModelScope.launch {
+        _uiState.update { it.copy(isFeedLoading = true) }
 
         val favouriteLocationsIds = databaseRepository.getFavouriteLocationIds()
         val popularLocationDetails = getPopularLocationDetailsUseCase().map {
@@ -55,7 +71,7 @@ class FeedViewModel(
         _uiState.update {
             it.copy(
                 locationsDetails = restrictedPopularLocationDetails,
-                isLoading = false,
+                isFeedLoading = false
             )
         }
     }
