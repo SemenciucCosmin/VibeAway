@@ -33,6 +33,7 @@ class LocationDetailsViewModel(
         _uiState.update { it.copy(isLoading = true) }
 
         val locationsDetails = recommendationRepository.getLocationsDetails()
+        val favouriteLocationsIds = databaseRepository.getFavouriteLocationIds()
 
         val locationDetails = locationsDetails.firstOrNull {
             it.id == locationDetailsId
@@ -43,13 +44,15 @@ class LocationDetailsViewModel(
                 id = activityDetails.id,
                 title = activityDetails.title,
                 description = activityDetails.description,
-                imageUrl = activityDetails.imageUrl
+                imageUrl = activityDetails.imageUrl,
+                rating = activityDetails.rating
             )
         }
 
         _uiState.update {
             it.copy(
                 isLoading = false,
+                isFavourite = locationDetailsId in favouriteLocationsIds,
                 city = locationDetails.city,
                 country = locationDetails.country,
                 imageFileName = locationDetails.imageFileName,

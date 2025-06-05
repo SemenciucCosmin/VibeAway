@@ -12,8 +12,6 @@ import com.example.vibeaway.data.location.datasource.LocationsDataSource
 import com.example.vibeaway.data.location.model.Location
 import com.example.vibeaway.data.locationdetails.model.LocationDetails
 import com.example.vibeaway.data.quiz.model.BFIResult
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.launch
 
 /**
  * Repository responsible with computing a set of compatible [Location] with a BFI dataset, using

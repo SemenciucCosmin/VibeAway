@@ -13,7 +13,7 @@ import com.example.vibeaway.ui.navigation.model.RecommendationNavDestination
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
 
-private const val GOOGLE_MAPS_URI = "geo:%s,%s"
+private const val GOOGLE_MAPS_URI = "geo:0,0?q=%s,%s(%s)"
 private const val GOOGLE_MAPS_PACKAGE = "com.google.android.apps.maps"
 
 @Composable
@@ -45,7 +45,12 @@ fun LocationDetailsRoute(
             val latitude = uiState.latitude ?: return@LocationDetailsScreen
             val longitude = uiState.longitude ?: return@LocationDetailsScreen
 
-            val googleMapsUri = GOOGLE_MAPS_URI.format(latitude, longitude).toUri()
+            val googleMapsUri = GOOGLE_MAPS_URI.format(
+                latitude,
+                longitude,
+                uiState.city
+            ).toUri()
+
             val googleMapsIntent = Intent(Intent.ACTION_VIEW, googleMapsUri).apply {
                 setPackage(GOOGLE_MAPS_PACKAGE)
             }

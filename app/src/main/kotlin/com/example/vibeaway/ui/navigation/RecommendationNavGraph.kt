@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
+import com.example.vibeaway.feature.activitydetails.route.ActivityDetailsRoute
 import com.example.vibeaway.feature.category.route.CategoryRoute
 import com.example.vibeaway.feature.feed.route.FeedRoute
 import com.example.vibeaway.feature.locationdetails.route.LocationDetailsRoute
@@ -71,6 +72,11 @@ fun RecommendationNavGraph(
         }
 
         composable<RecommendationNavDestination.ActivityDetails> { navBackStackEntry ->
+            val args = navBackStackEntry.toRoute<RecommendationNavDestination.ActivityDetails>()
+            ActivityDetailsRoute(
+                activityId = args.id,
+                navController = navController
+            )
         }
     }
 }

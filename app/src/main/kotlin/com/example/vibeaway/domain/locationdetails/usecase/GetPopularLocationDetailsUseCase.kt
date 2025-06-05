@@ -10,6 +10,13 @@ class GetPopularLocationDetailsUseCase(
     private val recommendationRepository: RecommendationRepository
 ) {
     suspend operator fun invoke(): List<LocationDetails> {
-        return recommendationRepository.getRecommendedLocationsDetails()
+        val locationsDetails = recommendationRepository.getRecommendedLocationsDetails()
+        val sortedLocationsDetails = locationsDetails.sortedBy { locationDetails ->
+            val activitiesRatings = locationDetails.activitiesDetails.map { it.rating }
+            val score = activitiesRatings.sum()
+            score
+        }
+
+        return sortedLocationsDetails
     }
 }

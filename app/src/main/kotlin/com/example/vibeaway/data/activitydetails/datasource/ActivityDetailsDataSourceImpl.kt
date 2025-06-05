@@ -22,7 +22,6 @@ import kotlinx.serialization.json.Json
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.collections.mapNotNull
 
-
 /**
  * Data source for providing the list of [ActivityDetails]
  */

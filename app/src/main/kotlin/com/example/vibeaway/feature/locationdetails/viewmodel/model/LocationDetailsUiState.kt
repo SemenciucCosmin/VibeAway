@@ -17,6 +17,7 @@ data class LocationDetailsUiState(
         val id: String,
         val title: String,
         val description: String?,
+        val rating: Double,
         val imageUrl: String?,
     )
 }

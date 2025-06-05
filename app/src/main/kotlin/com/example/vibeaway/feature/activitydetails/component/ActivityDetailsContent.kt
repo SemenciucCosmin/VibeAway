@@ -1,7 +1,6 @@
-package com.example.vibeaway.feature.locationdetails.component
+package com.example.vibeaway.feature.activitydetails.component
 
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
@@ -24,8 +23,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.example.vibeaway.R
+import com.example.vibeaway.feature.activitydetails.viewmodel.model.ActivityDetailsUiState
 import com.example.vibeaway.feature.feed.component.FavouriteButton
-import com.example.vibeaway.feature.locationdetails.viewmodel.model.LocationDetailsUiState
 import com.example.vibeaway.ui.catalog.components.ListItem
 import com.example.vibeaway.ui.catalog.dimension.Radius
 import com.example.vibeaway.ui.catalog.dimension.Spacing
@@ -33,21 +32,23 @@ import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 @Composable
-fun LocationDetailsContent(
+fun ActivityDetailsContent(
+    title: String,
     city: String,
     country: String,
-    description: String,
+    rating: Double,
     isFavourite: Boolean,
-    activities: List<LocationDetailsUiState.Activity>,
+    relatedActivities: List<ActivityDetailsUiState.Activity>,
     onLocationClick: () -> Unit,
     onFavouriteClicked: () -> Unit,
-    onActivityClick: (String) -> Unit,
+    onLocationDetailsClick: () -> Unit,
+    onActivityDetailsClick: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
-                text = city,
+                text = title,
                 color = MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.headlineLarge,
                 fontWeight = FontWeight.Bold,
@@ -63,44 +64,48 @@ fun LocationDetailsContent(
 
         Spacer(modifier = Modifier.size(Spacing.XSmall))
 
+        Text(
+            text = "$country, $city",
+            color = MaterialTheme.colorScheme.onSurface,
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.clickable { onLocationDetailsClick() }
+        )
+
+        Spacer(modifier = Modifier.size(Spacing.XSmall))
+
         Row(
-            horizontalArrangement = Arrangement.spacedBy(Spacing.Small),
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.clickable { onLocationClick() }
         ) {
             Icon(
                 painter = painterResource(R.drawable.ic_location),
                 contentDescription = null,
+                modifier = Modifier.size(12.dp)
             )
 
+            Spacer(modifier = Modifier.size(Spacing.Small))
+
             Text(
-                text = country,
+                text = "$title, $rating",
                 color = MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.bodyMedium,
                 fontWeight = FontWeight.Bold
+            )
+
+            Spacer(modifier = Modifier.size(Spacing.XXSmall))
+
+            Icon(
+                painter = painterResource(R.drawable.ic_star),
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onPrimary,
+                modifier = Modifier.size(12.dp)
             )
         }
 
         Spacer(modifier = Modifier.size(Spacing.Large))
 
-        Text(
-            text = stringResource(R.string.lbl_description_title),
-            color = MaterialTheme.colorScheme.onSurface,
-            style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold
-        )
-
-        Spacer(modifier = Modifier.size(Spacing.Medium))
-
-        Text(
-            text = description,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            style = MaterialTheme.typography.bodyLarge,
-        )
-
-        Spacer(modifier = Modifier.size(Spacing.Large))
-
-        if (activities.isNotEmpty()) {
+        if (relatedActivities.isNotEmpty()) {
             Text(
                 text = stringResource(R.string.lbl_activities_for_you_title),
                 color = MaterialTheme.colorScheme.onSurface,
@@ -111,12 +116,12 @@ fun LocationDetailsContent(
             Spacer(modifier = Modifier.size(Spacing.Medium))
         }
 
-        activities.forEach { activity ->
+        relatedActivities.forEach { activity ->
             ListItem(
                 modifier = Modifier.height(IntrinsicSize.Min),
                 title = activity.title,
                 description = "$city, ${activity.rating}",
-                onClick = { onActivityClick(activity.id) },
+                onClick = { onActivityDetailsClick(activity.id) },
                 leadingContent = {
                     AsyncImage(
                         model = activity.imageUrl,
@@ -140,24 +145,30 @@ fun LocationDetailsContent(
 @Preview
 @PreviewVibeAway
 @Composable
-private fun PreviewLocationDetailsContent() {
+private fun PreviewActivityDetailsContent() {
     VibeAwayTheme {
-        @Suppress("MaximumLineLength", "MaxLineLength")
-        LocationDetailsContent(
+        ActivityDetailsContent(
+            title = "Moose",
+            rating = 4.6,
             city = "Satu Mare",
             country = "Romania",
-            description = "Best city in Romania for all its beautiful locations, especially the cemetery from the city center; must've been a very intelligent man that put it there. <3",
             isFavourite = true,
             onLocationClick = {},
-            onActivityClick = {},
             onFavouriteClicked = {},
-            activities = List(4) {
-                LocationDetailsUiState.Activity(
+            onActivityDetailsClick = {},
+            onLocationDetailsClick = {},
+            relatedActivities = List(4) {
+                ActivityDetailsUiState.Activity(
                     id = it.toString(),
                     title = "Activity $it",
-                    description = "This activity has index $it",
                     imageUrl = null,
-                    rating = 4.6
+                    latitude = 0.0,
+                    longitude = 0.0,
+                    rating = 4.6,
+                    locationId = it.toString(),
+                    locationCity = "Satu Mare",
+                    locationCountry = "Romania",
+                    isFavourite = true,
                 )
             }
         )

@@ -14,6 +14,7 @@ import com.example.vibeaway.data.quiz.di.quizDataModule
 import com.example.vibeaway.data.recommendation.di.recommendationDataModule
 import com.example.vibeaway.di.appModule
 import com.example.vibeaway.domain.locationdetails.di.locationDetailsDomainModule
+import com.example.vibeaway.feature.activitydetails.di.activityDetailsFeatureModule
 import com.example.vibeaway.feature.auth.di.authFeatureModule
 import com.example.vibeaway.feature.category.di.categoryFeatureModule
 import com.example.vibeaway.feature.feed.di.feedFeatureModule
@@ -36,6 +37,7 @@ class KoinInitializer : Initializer<Unit> {
                 listOf(
                     activityDataModule(),
                     activityDetailsDataModule(),
+                    activityDetailsFeatureModule(),
                     appModule(),
                     authDataModule(defaultWebClientId),
                     authFeatureModule(),

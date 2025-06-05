@@ -74,6 +74,7 @@ fun LocationDetailsScreen(
 @Composable
 private fun PreviewLocationDetailsScreen() {
     VibeAwayTheme {
+        @Suppress("MaximumLineLength", "MaxLineLength")
         LocationDetailsScreen(
             city = "Satu Mare",
             country = "Romania",
@@ -89,7 +90,8 @@ private fun PreviewLocationDetailsScreen() {
                     id = it.toString(),
                     title = "Activity $it",
                     description = "This activity has index $it",
-                    imageUrl = null
+                    imageUrl = null,
+                    rating = 4.6
                 )
             }
         )
