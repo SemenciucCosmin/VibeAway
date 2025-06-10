@@ -20,6 +20,7 @@ import com.example.vibeaway.feature.category.di.categoryFeatureModule
 import com.example.vibeaway.feature.feed.di.feedFeatureModule
 import com.example.vibeaway.feature.locationdetails.di.locationDetailsFeatureModule
 import com.example.vibeaway.feature.onboarding.di.onboardingFeatureModule
+import com.example.vibeaway.feature.settings.di.settingsFeatureModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -55,7 +56,8 @@ class KoinInitializer : Initializer<Unit> {
                     quizDataModule(),
                     recommendationDataModule(
                         googleAiApiKey = BuildConfig.GOOGLE_AI_API_KEY,
-                    )
+                    ),
+                    settingsFeatureModule()
                 )
             )
         }

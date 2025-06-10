@@ -13,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -37,11 +38,18 @@ fun FeedScreen(
     onLocationDetailsClick: (String) -> Unit,
     onLocationDetailsFavouriteClick: (String) -> Unit,
     onRetry: () -> Unit,
+    onSettingsClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Scaffold(
         modifier = modifier,
-        topBar = { TitleBar(label = stringResource(R.string.lbl_feed_title)) }
+        topBar = {
+            TitleBar(
+                label = stringResource(R.string.lbl_feed_title),
+                actionIcon = painterResource(R.drawable.ic_settings),
+                onAction = onSettingsClick
+            )
+        }
     ) { paddingValues ->
         when {
             isLoading -> ProgressOverlay(
@@ -69,7 +77,7 @@ fun FeedScreen(
                 )
 
                 Button(
-                    modifier = modifier,
+                    modifier = Modifier,
                     onClick = onRetry,
                     shape = RoundedCornerShape(Radius.Large),
                     contentPadding = PaddingValues(Spacing.Medium),
@@ -111,6 +119,7 @@ private fun PreviewFeedScreen() {
             onLocationDetailsClick = {},
             onLocationDetailsFavouriteClick = {},
             onRetry = {},
+            onSettingsClick = {},
             locationsDetails = List(6) {
                 FeedUiState.LocationDetails(
                     id = it.toString(),

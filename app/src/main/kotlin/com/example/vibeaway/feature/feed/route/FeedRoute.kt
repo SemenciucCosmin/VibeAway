@@ -39,6 +39,10 @@ fun FeedRoute(navController: NavController) {
         onLocationDetailsClick = { locationDetailsId ->
             val destination = RecommendationNavDestination.LocationDetails(locationDetailsId)
             navController.navigate(destination)
+        },
+        onSettingsClick = {
+            val destination = RecommendationNavDestination.Settings
+            navController.navigate(destination)
         }
     )
 }

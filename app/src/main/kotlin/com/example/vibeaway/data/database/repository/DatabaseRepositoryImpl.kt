@@ -53,6 +53,18 @@ class DatabaseRepositoryImpl : DatabaseRepository {
         }
     }
 
+    override suspend fun removeBFIScores() {
+        val firestore = Firebase.firestore
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: return
+
+        firestore.collection(USERS_COLLECTION_NAME)
+            .document(userId + BFI_SCORES_DOCUMENT)
+            .delete()
+            .addOnSuccessListener { Log.d(TAG, "Firestore write successful") }
+            .addOnFailureListener { Log.d(TAG, "Firestore write failure") }
+            .await()
+    }
+
     override suspend fun saveFavouriteLocation(locationId: String) {
         val newFavouriteLocations = getFavouriteLocationIds().toMutableList().apply {
             add(locationId)

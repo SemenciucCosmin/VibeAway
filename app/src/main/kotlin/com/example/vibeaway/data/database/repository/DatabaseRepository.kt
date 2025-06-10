@@ -15,6 +15,11 @@ interface DatabaseRepository {
     suspend fun getBFIScores(): Map<String, Int>?
 
     /**
+     * Removes user score for each BFI Question in Firestore
+     */
+    suspend fun removeBFIScores()
+
+    /**
      * Saves location by [locationId] which is favourite by user
      */
     suspend fun saveFavouriteLocation(locationId: String)

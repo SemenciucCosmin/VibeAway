@@ -5,7 +5,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.vibeaway.R
 import com.example.vibeaway.feature.category.viewmodel.model.CategoryUiState
 import com.example.vibeaway.ui.catalog.components.ProgressOverlay
 import com.example.vibeaway.ui.catalog.components.TitleBar
@@ -28,7 +30,8 @@ fun CategoryScreen(
         topBar = {
             TitleBar(
                 label = title,
-                onBack = onBack
+                actionIcon = painterResource(R.drawable.ic_arrow_left_large),
+                onAction = onBack
             )
         }
     ) { paddingValues ->

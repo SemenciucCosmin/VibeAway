@@ -12,6 +12,7 @@ import com.example.vibeaway.feature.activitydetails.route.ActivityDetailsRoute
 import com.example.vibeaway.feature.category.route.CategoryRoute
 import com.example.vibeaway.feature.feed.route.FeedRoute
 import com.example.vibeaway.feature.locationdetails.route.LocationDetailsRoute
+import com.example.vibeaway.feature.settings.route.SettingsRoute
 import com.example.vibeaway.ui.navigation.model.RecommendationNavDestination
 
 /**
@@ -77,6 +78,10 @@ fun RecommendationNavGraph(
                 activityId = args.id,
                 navController = navController
             )
+        }
+
+        composable<RecommendationNavDestination.Settings> {
+            SettingsRoute()
         }
     }
 }

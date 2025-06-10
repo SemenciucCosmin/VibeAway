@@ -59,5 +59,14 @@ class OnboardingActivity : ComponentActivity() {
             activity.startActivity(intent)
             activity.finish()
         }
+
+        fun startActivity(activity: MainActivity) {
+            val intent = Intent(activity, OnboardingActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            }
+
+            activity.startActivity(intent)
+            activity.finish()
+        }
     }
 }

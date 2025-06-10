@@ -1,7 +1,9 @@
 package com.example.vibeaway.ui.catalog.components
 
+import android.R.attr.contentDescription
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -17,9 +19,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.example.vibeaway.R
+import com.example.vibeaway.ui.catalog.dimension.IconSize
 import com.example.vibeaway.ui.catalog.dimension.Spacing
 import com.example.vibeaway.ui.catalog.model.TitleBarMenuItem
 import kotlinx.collections.immutable.ImmutableList
@@ -33,7 +37,8 @@ import kotlinx.collections.immutable.persistentListOf
 fun TitleBar(
     label: String,
     modifier: Modifier = Modifier,
-    onBack: (() -> Unit)? = null,
+    actionIcon: Painter? = null,
+    onAction: (() -> Unit)? = null,
     isOverflow: Boolean = false,
     menuItems: ImmutableList<TitleBarMenuItem> = persistentListOf(),
 ) {
@@ -41,10 +46,11 @@ fun TitleBar(
         modifier = modifier,
         title = { Text(label) },
         navigationIcon = {
-            onBack?.let {
-                IconButton(onClick = it) {
+            if (onAction != null && actionIcon != null) {
+                IconButton(onClick = onAction) {
                     Icon(
-                        painter = painterResource(R.drawable.ic_arrow_left_large),
+                        modifier = Modifier.size(IconSize.Medium),
+                        painter = actionIcon,
                         contentDescription = stringResource(R.string.lbl_accessibility_back)
                     )
                 }

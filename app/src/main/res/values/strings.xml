@@ -87,4 +87,9 @@
     <!--  DETAILS  -->
     <string name="lbl_description_title">Description</string>
     <string name="lbl_activities_for_you_title">Activities for you</string>
+
+    <!--  SETTINGS  -->
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_sign_out">Sign out</string>
+    <string name="lbl_reset_score">Reset BFI score</string>
 </resources>

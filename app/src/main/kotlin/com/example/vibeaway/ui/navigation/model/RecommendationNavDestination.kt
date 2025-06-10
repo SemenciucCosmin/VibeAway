@@ -19,4 +19,7 @@ sealed class RecommendationNavDestination {
 
     @Serializable
     data class LocationDetails(val id: String)
+
+    @Serializable
+    data object Settings
 }
