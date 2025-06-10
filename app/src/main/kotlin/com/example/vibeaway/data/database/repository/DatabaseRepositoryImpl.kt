@@ -120,7 +120,7 @@ class DatabaseRepositoryImpl : DatabaseRepository {
     }
 
     override suspend fun saveFavouriteActivity(activityId: String) {
-        val newFavouriteLocations = getFavouriteLocationIds().toMutableList().apply {
+        val newFavouriteActivities = getFavouriteActivityIds().toMutableList().apply {
             add(activityId)
         }.toSet().associateWith { true }
 
@@ -129,7 +129,7 @@ class DatabaseRepositoryImpl : DatabaseRepository {
 
         firestore.collection(USERS_COLLECTION_NAME)
             .document(userId + FAVOURITE_ACTIVITIES_DOCUMENT)
-            .set(newFavouriteLocations)
+            .set(newFavouriteActivities)
             .addOnSuccessListener { Log.d(TAG, "Firestore write successful") }
             .addOnFailureListener { Log.d(TAG, "Firestore write failure") }
             .await()

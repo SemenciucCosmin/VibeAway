@@ -64,7 +64,7 @@ class RecommendationRepositoryImpl(
             else -> cachedRecommendations
         }
 
-        return recommendations.toList().sortedBy { (_, activitiesDetails) ->
+        return recommendations.toList().sortedByDescending { (_, activitiesDetails) ->
             val totalScore = activitiesDetails.mapNotNull { it.score }.sum()
             val totalRating = activitiesDetails.sumOf { it.rating }
             activitiesDetails.size * totalScore * totalRating
@@ -85,7 +85,7 @@ class RecommendationRepositoryImpl(
         val sortedRecommendations = recommendations.toList().sortedByDescending { (_, activitiesDetails) ->
             val totalScore = activitiesDetails.mapNotNull { it.score }.sum()
             val totalRating = activitiesDetails.sumOf { it.rating }
-            activitiesDetails.size * totalScore * totalRating
+            totalScore * totalRating
         }.toMap()
 
         sortedRecommendations.entries.forEach { (locationDetails, activities) ->

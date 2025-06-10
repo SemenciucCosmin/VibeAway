@@ -18,13 +18,19 @@ fun SettingsRoute() {
 
     SettingsScreen(
         onResetBfiScoresClick = viewModel::resetBfiScores,
-        onSignOutClick = { activity?.let { AuthActivity.startActivity(activity) } }
+        onSignOutClick = viewModel::signOut
     )
 
     EventHandler(viewModel.events) { event ->
         when (event) {
-            SettingsEvent.START_ONBOARDING -> activity?.let {
-                OnboardingActivity.startActivity(activity)
+            SettingsEvent.START_ONBOARDING -> {
+                viewModel.unregisterEvent(event)
+                activity?.let { OnboardingActivity.startActivity(activity) }
+            }
+
+            SettingsEvent.SIGN_OUT -> {
+                viewModel.unregisterEvent(event)
+                activity?.let { AuthActivity.startActivity(activity) }
             }
         }
     }

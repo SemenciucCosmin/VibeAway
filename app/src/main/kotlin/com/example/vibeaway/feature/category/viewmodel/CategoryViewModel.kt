@@ -65,7 +65,7 @@ class CategoryViewModel(
     }
 
     private fun loadRecommendedActivities() = viewModelScope.launch {
-        val favouriteLocationsIds = databaseRepository.getFavouriteLocationIds()
+        val favouriteLocationsIds = databaseRepository.getFavouriteActivityIds()
         val items = recommendationRepository.getRecommendedActivitiesDetails().map {
             CategoryUiState.Item(
                 id = it.id,
