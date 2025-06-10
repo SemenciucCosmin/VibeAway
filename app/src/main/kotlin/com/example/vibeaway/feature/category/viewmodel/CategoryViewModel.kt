@@ -40,6 +40,8 @@ class CategoryViewModel(
             Category.RECOMMENDED_LOCATIONS -> loadRecommendedLocations()
             Category.RECOMMENDED_ACTIVITIES -> loadRecommendedActivities()
             Category.POPULAR_LOCATIONS -> loadPopularLocations()
+            Category.FAVOURITE_LOCATIONS -> loadFavouriteLocations()
+            Category.FAVOURITE_ACTIVITIES -> loadFavouriteActivities()
         }
     }
 
@@ -106,13 +108,56 @@ class CategoryViewModel(
         }
     }
 
+    private fun loadFavouriteLocations() = viewModelScope.launch {
+        val favouriteLocationsIds = databaseRepository.getFavouriteLocationIds()
+        val items = recommendationRepository.getRecommendedLocationsDetails().map {
+            CategoryUiState.Item(
+                id = it.id,
+                title = it.city,
+                label = it.country,
+                imageUrl = null,
+                imageFileName = it.imageFileName,
+                isFavourite = favouriteLocationsIds.contains(it.id)
+            )
+        }.filter { it.isFavourite }
+
+        _uiState.update {
+            it.copy(
+                items = items,
+                isLoading = false,
+            )
+        }
+    }
+
+    private fun loadFavouriteActivities() = viewModelScope.launch {
+        val favouriteLocationsIds = databaseRepository.getFavouriteActivityIds()
+        val items = recommendationRepository.getRecommendedActivitiesDetails().map {
+            CategoryUiState.Item(
+                id = it.id,
+                title = it.title,
+                label = String.BLANK,
+                imageUrl = it.imageUrl,
+                imageFileName = null,
+                isFavourite = favouriteLocationsIds.contains(it.id)
+            )
+        }.filter { it.isFavourite }
+
+        _uiState.update {
+            it.copy(
+                items = items,
+                isLoading = false,
+            )
+        }
+    }
+
     fun changeItemFavouriteState(itemId: String) = viewModelScope.launch {
         _uiState.update {
             val updatedItems = it.items.map { item ->
                 when {
                     item.id == itemId && item.isFavourite -> {
                         when (category) {
-                            Category.RECOMMENDED_ACTIVITIES -> {
+                            Category.RECOMMENDED_ACTIVITIES,
+                            Category.FAVOURITE_ACTIVITIES -> {
                                 databaseRepository.removeFavouriteActivity(itemId)
                             }
 
@@ -126,7 +171,8 @@ class CategoryViewModel(
 
                     item.id == itemId -> {
                         when (category) {
-                            Category.RECOMMENDED_ACTIVITIES -> {
+                            Category.RECOMMENDED_ACTIVITIES,
+                            Category.FAVOURITE_ACTIVITIES -> {
                                 databaseRepository.saveFavouriteActivity(itemId)
                             }
 

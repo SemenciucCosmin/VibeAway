@@ -77,10 +77,14 @@
     <string name="lbl_feed_title">Discover</string>
     <string name="lbl_recommendation_title">Based on your personality, discover:</string>
     <string name="lbl_popular_title">Popular this month</string>
+    <string name="lbl_favourites_activities_title">Favourite Activities</string>
+    <string name="lbl_favourites_locations_title">Favourite Locations</string>
     <string name="lbl_locations">Locations</string>
     <string name="lbl_activities">Activities</string>
-    <string name="lbl_recommended_locations_message">See recommended locations based on your personality.</string>
     <string name="lbl_recommended_activities_message">See recommended activities based on your personality.</string>
+    <string name="lbl_recommended_locations_message">See recommended locations based on your personality.</string>
+    <string name="lbl_favourite_activities_message">See favourite activities.</string>
+    <string name="lbl_favourite_locations_message">See favourite locations.</string>
     <string name="lbl_recommendations_error">Something went wrong with computing your recommendations. Please retry.</string>
     <string name="lbl_recommendations_loading">This may take some time to process.\nPlease, be patient.</string>
 

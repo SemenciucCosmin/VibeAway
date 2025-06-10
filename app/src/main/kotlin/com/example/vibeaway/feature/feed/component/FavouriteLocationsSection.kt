@@ -22,14 +22,14 @@ import com.example.vibeaway.ui.catalog.preview.PreviewVibeAway
 import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 @Composable
-fun RecommendedLocationsSection(
+fun FavouriteLocationsSection(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     ListItem(
         modifier = modifier,
-        title = stringResource(R.string.lbl_locations),
-        description = stringResource(R.string.lbl_recommended_locations_message),
+        title = stringResource(R.string.lbl_favourites_locations_title),
+        description = stringResource(R.string.lbl_favourite_locations_message),
         onClick = onClick,
         leadingContent = {
             Box(
@@ -53,9 +53,9 @@ fun RecommendedLocationsSection(
 @Preview
 @PreviewVibeAway
 @Composable
-private fun PreviewRecommendedLocationsSection() {
+private fun PreviewFavouriteLocationsSection() {
     VibeAwayTheme {
-        RecommendedLocationsSection(
+        FavouriteLocationsSection(
             onClick = {},
             modifier = Modifier.padding(
                 vertical = Spacing.Medium,

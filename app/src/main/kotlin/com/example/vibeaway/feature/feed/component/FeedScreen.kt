@@ -34,6 +34,8 @@ fun FeedScreen(
     isError: Boolean,
     onLocationsCategoryClick: () -> Unit,
     onActivitiesCategoryClick: () -> Unit,
+    onFavouriteLocationsCategoryClick: () -> Unit,
+    onFavouriteActivitiesCategoryClick: () -> Unit,
     onViewAllClick: () -> Unit,
     onLocationDetailsClick: (String) -> Unit,
     onLocationDetailsFavouriteClick: (String) -> Unit,
@@ -97,6 +99,8 @@ fun FeedScreen(
                 onViewAllClick = onViewAllClick,
                 onLocationDetailsClick = onLocationDetailsClick,
                 onLocationDetailsFavouriteClick = onLocationDetailsFavouriteClick,
+                onFavouriteLocationsCategoryClick = onFavouriteLocationsCategoryClick,
+                onFavouriteActivitiesCategoryClick = onFavouriteActivitiesCategoryClick,
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues)
@@ -120,6 +124,8 @@ private fun PreviewFeedScreen() {
             onLocationDetailsFavouriteClick = {},
             onRetry = {},
             onSettingsClick = {},
+            onFavouriteActivitiesCategoryClick = {},
+            onFavouriteLocationsCategoryClick = {},
             locationsDetails = List(6) {
                 FeedUiState.LocationDetails(
                     id = it.toString(),

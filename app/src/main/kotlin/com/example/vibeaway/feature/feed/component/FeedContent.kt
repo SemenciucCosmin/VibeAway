@@ -32,6 +32,8 @@ fun FeedContent(
     locationsDetails: List<FeedUiState.LocationDetails>,
     onLocationsCategoryClick: () -> Unit,
     onActivitiesCategoryClick: () -> Unit,
+    onFavouriteLocationsCategoryClick: () -> Unit,
+    onFavouriteActivitiesCategoryClick: () -> Unit,
     onViewAllClick: () -> Unit,
     onLocationDetailsClick: (String) -> Unit,
     onLocationDetailsFavouriteClick: (String) -> Unit,
@@ -57,13 +59,25 @@ fun FeedContent(
 
         item(span = { GridItemSpan(COLUMN_COUNT) }) {
             RecommendedLocationsSection(
-                onLocationsCategoryClick = onLocationsCategoryClick
+                onClick = onLocationsCategoryClick
             )
         }
 
         item(span = { GridItemSpan(COLUMN_COUNT) }) {
             RecommendedActivitiesSection(
-                onActivitiesCategoryClick = onActivitiesCategoryClick
+                onClick = onActivitiesCategoryClick
+            )
+        }
+
+        item(span = { GridItemSpan(COLUMN_COUNT) }) {
+            FavouriteLocationsSection(
+                onClick = onFavouriteLocationsCategoryClick
+            )
+        }
+
+        item(span = { GridItemSpan(COLUMN_COUNT) }) {
+            FavouriteActivitiesSection(
+                onClick = onFavouriteActivitiesCategoryClick
             )
         }
 
@@ -106,6 +120,8 @@ private fun PreviewFeedContent() {
             onViewAllClick = {},
             onLocationDetailsClick = {},
             onLocationDetailsFavouriteClick = {},
+            onFavouriteLocationsCategoryClick = {},
+            onFavouriteActivitiesCategoryClick = {},
             locationsDetails = List(6) {
                 FeedUiState.LocationDetails(
                     id = it.toString(),

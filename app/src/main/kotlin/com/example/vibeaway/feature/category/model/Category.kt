@@ -8,7 +8,9 @@ enum class Category(
 ) {
     RECOMMENDED_LOCATIONS(R.string.lbl_locations),
     RECOMMENDED_ACTIVITIES(R.string.lbl_activities),
-    POPULAR_LOCATIONS(R.string.lbl_popular_title);
+    POPULAR_LOCATIONS(R.string.lbl_popular_title),
+    FAVOURITE_LOCATIONS(R.string.lbl_favourites_locations_title),
+    FAVOURITE_ACTIVITIES(R.string.lbl_favourites_activities_title);
 
     companion object {
         fun getById(id: Int): Category {

@@ -15,4 +15,6 @@ interface RecommendationRepository {
     suspend fun getRecommendedActivitiesDetails(): List<ActivityDetails>
 
     suspend fun getRecommendedLocationsDetails(): List<LocationDetails>
+
+    fun invalidate()
 }

@@ -23,14 +23,14 @@ import com.example.vibeaway.ui.theme.VibeAwayTheme
 
 @Composable
 fun RecommendedActivitiesSection(
-    onActivitiesCategoryClick: () -> Unit,
+    onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     ListItem(
         modifier = modifier,
         title = stringResource(R.string.lbl_activities),
         description = stringResource(R.string.lbl_recommended_activities_message),
-        onClick = onActivitiesCategoryClick,
+        onClick = onClick,
         leadingContent = {
             Box(
                 modifier = Modifier
@@ -56,7 +56,7 @@ fun RecommendedActivitiesSection(
 private fun PreviewRecommendedActivitiesSection() {
     VibeAwayTheme {
         RecommendedActivitiesSection(
-            onActivitiesCategoryClick = {},
+            onClick = {},
             modifier = Modifier.padding(
                 vertical = Spacing.Medium,
                 horizontal = Spacing.Large

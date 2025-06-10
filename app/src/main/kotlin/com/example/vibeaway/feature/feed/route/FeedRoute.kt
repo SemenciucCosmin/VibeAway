@@ -31,6 +31,16 @@ fun FeedRoute(navController: NavController) {
             val destination = RecommendationNavDestination.Category(categoryId)
             navController.navigate(destination)
         },
+        onFavouriteLocationsCategoryClick = {
+            val categoryId = Category.FAVOURITE_LOCATIONS.ordinal
+            val destination = RecommendationNavDestination.Category(categoryId)
+            navController.navigate(destination)
+        },
+        onFavouriteActivitiesCategoryClick = {
+            val categoryId = Category.FAVOURITE_ACTIVITIES.ordinal
+            val destination = RecommendationNavDestination.Category(categoryId)
+            navController.navigate(destination)
+        },
         onViewAllClick = {
             val categoryId = Category.POPULAR_LOCATIONS.ordinal
             val destination = RecommendationNavDestination.Category(categoryId)
@@ -43,6 +53,6 @@ fun FeedRoute(navController: NavController) {
         onSettingsClick = {
             val destination = RecommendationNavDestination.Settings
             navController.navigate(destination)
-        }
+        },
     )
 }

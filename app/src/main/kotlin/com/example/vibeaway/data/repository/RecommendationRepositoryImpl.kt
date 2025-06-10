@@ -24,6 +24,7 @@ import com.example.vibeaway.data.network.service.GoogleAiApi
 import com.example.vibeaway.data.quiz.model.BFIDimension
 import com.example.vibeaway.data.quiz.model.BFIResult
 import com.example.vibeaway.data.recommendation.model.MatchedActivityDTO
+import com.example.vibeaway.domain.core.string.BLANK
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext
@@ -94,6 +95,10 @@ class RecommendationRepositoryImpl(
         }
 
         return sortedRecommendations.values.flatten()
+    }
+
+    override fun invalidate() {
+        writeJson(context, FILE_PATH, String.BLANK)
     }
 
     /**
