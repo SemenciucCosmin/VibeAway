@@ -10,6 +10,7 @@ import com.example.vibeaway.data.activity.model.CompatibleActivity
 import com.example.vibeaway.data.activity.model.CompatibleActivityCategory
 import com.example.vibeaway.data.activitydetails.datasource.ActivityDetailsDataSource
 import com.example.vibeaway.data.activitydetails.model.ActivityDetails
+import com.example.vibeaway.data.activitydetails.model.ActivityDetailsFileDTO
 import com.example.vibeaway.data.core.datasource.JsonDataSource
 import com.example.vibeaway.data.database.repository.DatabaseRepository
 import com.example.vibeaway.data.location.datasource.LocationsDataSource
@@ -55,8 +56,13 @@ class RecommendationRepositoryImpl(
     private val recommendations = ConcurrentHashMap<LocationDetails, List<ActivityDetails>>()
 
     override suspend fun getRecommendedLocationsDetails(): List<LocationDetails> {
-        val cachedRecommendations = when {
+        val cachedEnrichedRecommendations = when {
             this.recommendations.isEmpty() -> getRecommendedActivitiesDetailsFromFile()
+            else -> this.recommendations
+        }
+
+        val cachedRecommendations = when {
+            cachedEnrichedRecommendations.isEmpty() -> getActivitiesDetailsFromFile()
             else -> this.recommendations
         }
 
@@ -73,8 +79,13 @@ class RecommendationRepositoryImpl(
     }
 
     override suspend fun getRecommendedActivitiesDetails(): List<ActivityDetails> {
-        val cachedRecommendations = when {
+        val cachedEnrichedRecommendations = when {
             this.recommendations.isEmpty() -> getRecommendedActivitiesDetailsFromFile()
+            else -> this.recommendations
+        }
+
+        val cachedRecommendations = when {
+            cachedEnrichedRecommendations.isEmpty() -> getActivitiesDetailsFromFile()
             else -> this.recommendations
         }
 
@@ -83,11 +94,12 @@ class RecommendationRepositoryImpl(
             else -> cachedRecommendations
         }
 
-        val sortedRecommendations = recommendations.toList().sortedByDescending { (_, activitiesDetails) ->
-            val totalScore = activitiesDetails.mapNotNull { it.score }.sum()
-            val totalRating = activitiesDetails.sumOf { it.rating }
-            totalScore * totalRating
-        }.toMap()
+        val sortedRecommendations =
+            recommendations.toList().sortedByDescending { (_, activitiesDetails) ->
+                val totalScore = activitiesDetails.mapNotNull { it.score }.sum()
+                val totalRating = activitiesDetails.sumOf { it.rating }
+                totalScore * totalRating
+            }.toMap()
 
         sortedRecommendations.entries.forEach { (locationDetails, activities) ->
             Log.d(TAG, "LocationDetails: ${locationDetails.city}")
@@ -98,7 +110,7 @@ class RecommendationRepositoryImpl(
     }
 
     override fun invalidate() {
-        writeJson(context, FILE_PATH, String.BLANK)
+        writeJson(context, MATCHED_ACTIVITIES_FILE_PATH, String.BLANK)
     }
 
     /**
@@ -279,14 +291,14 @@ class RecommendationRepositoryImpl(
         }
     }
 
-    private suspend fun getRecommendedActivitiesDetailsFromFile(): Map<LocationDetails, List<ActivityDetails>> {
+    private suspend fun getActivitiesDetailsFromFile(): Map<LocationDetails, List<ActivityDetails>> {
         val locationDetails = getLocationsDetails()
         val allActivitiesDetails = activityDetailsDataSource.getActivitiesDetails(
             forceApi = false,
             forceGoogle = false
         )
 
-        val jsonString = getJson(context, FILE_PATH) ?: return emptyMap()
+        val jsonString = getJson(context, MATCHED_ACTIVITIES_FILE_PATH) ?: return emptyMap()
         val json = Json {
             ignoreUnknownKeys = true
             coerceInputValues = true
@@ -300,8 +312,74 @@ class RecommendationRepositoryImpl(
                         it.id == activityDetails.id
                     }
 
-                    val score = matchedActivityDTO?.score?.toDoubleOrNull() ?: return@mapNotNull null
+                    val score =
+                        matchedActivityDTO?.score?.toDoubleOrNull() ?: return@mapNotNull null
                     activityDetails.copy(score = score)
+                } catch (_: Exception) {
+                    return@mapNotNull null
+                }
+            }
+        }
+
+        val recommendations = allMatchedActivityDetails.mapKeys { (locationId, _) ->
+            locationDetails.first { it.id == locationId }
+        }
+
+        this.recommendations.clear()
+        recommendations.forEach { (locationDetails, activitiesDetails) ->
+            this.recommendations[locationDetails] = activitiesDetails
+        }
+
+        return recommendations
+    }
+
+    private suspend fun getRecommendedActivitiesDetailsFromFile(): Map<LocationDetails, List<ActivityDetails>> {
+        val locationDetails = getLocationsDetails()
+        val allActivitiesDetails = activityDetailsDataSource.getActivitiesDetails(
+            forceApi = false,
+            forceGoogle = false
+        )
+
+        val jsonString = getJsonFromResources(RECOMMENDED_ACTIVITIES_FILE_PATH)
+        val json = Json {
+            ignoreUnknownKeys = true
+            coerceInputValues = true
+        }
+        val activitiesDTOs = json.decodeFromString<List<ActivityDetailsFileDTO>>(jsonString)
+        val compatibleCategories = getCompatibleActivityCategories()
+
+        val enrichedActivitiesDetails = activitiesDTOs.mapNotNull { activityDTO ->
+            val computedCategory = compatibleCategories.firstOrNull { computedCategory ->
+                computedCategory.id == activityDTO.categoryId
+            } ?: return@mapNotNull null
+
+            val estimatedCorrelation = activityDTO.estimatedCorrelation ?: return@mapNotNull null
+            val score = estimatedCorrelation * computedCategory.score
+
+            ActivityDetails(
+                id = activityDTO.id ?: return@mapNotNull null,
+                title = activityDTO.name ?: return@mapNotNull null,
+                description = activityDTO.description,
+                imageUrl = activityDTO.imageUrl,
+                latitude = activityDTO.latitude ?: return@mapNotNull null,
+                longitude = activityDTO.longitude ?: return@mapNotNull null,
+                priceAmount = activityDTO.priceAmount,
+                currencyCode = activityDTO.currencyCode,
+                bookingUrl = activityDTO.bookingUrl,
+                rating = activityDTO.rating ?: return@mapNotNull null,
+                types = activityDTO.types,
+                score = score,
+            )
+        }
+
+        val allMatchedActivityDetails = allActivitiesDetails.mapValues { (_, activitiesDetails) ->
+            activitiesDetails.mapNotNull { activityDetails ->
+                try {
+                    val enrichedActivityDetails = enrichedActivitiesDetails.firstOrNull {
+                        it.id == activityDetails.id
+                    }
+
+                    activityDetails.copy(score = enrichedActivityDetails?.score)
                 } catch (_: Exception) {
                     return@mapNotNull null
                 }
@@ -336,11 +414,13 @@ class RecommendationRepositoryImpl(
         }
 
         val jsonString = json.encodeToString(jsonObj)
-        writeJson(context, FILE_PATH, jsonString)
+        writeJson(context, MATCHED_ACTIVITIES_FILE_PATH, jsonString)
     }
 
     companion object {
         private const val TAG = "RecommendationRepository"
-        private const val FILE_PATH = "matched_activities.json"
+        private const val MATCHED_ACTIVITIES_FILE_PATH = "matched_activities.json"
+        private const val RECOMMENDED_ACTIVITIES_FILE_PATH =
+            "activities_details_google_enriched.json"
     }
 }

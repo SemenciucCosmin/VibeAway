@@ -31,4 +31,6 @@ data class ActivityDetailsFileDTO(
     @SerialName("currencyCode") val currencyCode: String? = null,
     @SerialName("priceAmount") val priceAmount: Double? = null,
     @SerialName("types") val types: List<String> = emptyList(),
+    @SerialName("categoryId") val categoryId: String? = null,
+    @SerialName("estimatedCorrelation") val estimatedCorrelation: Double? = null,
 )

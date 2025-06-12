@@ -29,7 +29,8 @@ fun CategoryRoute(
         onFavouriteClick = viewModel::changeItemFavouriteState,
         onItemClick = { itemId ->
             val destination = when (category) {
-                Category.RECOMMENDED_ACTIVITIES -> {
+                Category.RECOMMENDED_ACTIVITIES,
+                Category.FAVOURITE_ACTIVITIES -> {
                     RecommendationNavDestination.ActivityDetails(itemId)
                 }
 
