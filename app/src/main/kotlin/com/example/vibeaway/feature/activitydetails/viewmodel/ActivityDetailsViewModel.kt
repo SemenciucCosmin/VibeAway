@@ -81,8 +81,8 @@ class ActivityDetailsViewModel(
             val isFavourite = it.currentActivity?.isFavourite == false
 
             when {
-                isFavourite -> databaseRepository.saveFavouriteLocation(activityDetailsId)
-                else -> databaseRepository.removeFavouriteLocation(activityDetailsId)
+                isFavourite -> databaseRepository.saveFavouriteActivity(activityDetailsId)
+                else -> databaseRepository.removeFavouriteActivity(activityDetailsId)
             }
 
             it.copy(currentActivity = it.currentActivity?.copy(isFavourite = isFavourite))
